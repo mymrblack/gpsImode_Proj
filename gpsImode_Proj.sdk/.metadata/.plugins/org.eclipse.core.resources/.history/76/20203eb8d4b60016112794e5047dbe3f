@@ -1,0 +1,89 @@
+/*
+ * tdc.h
+ *
+ *  Created on: 2016Äê11ÔÂ12ÈÕ
+ *      Author: lin.zheng
+ */
+#include "SD_Card.h"
+#ifndef SRC_TDC_H_
+#define SRC_TDC_H_
+
+
+#define TDC_REG_0	0x00
+#define TDC_REG_1	0x01
+#define TDC_REG_2	0x02
+#define TDC_REG_3	0x03
+#define TDC_REG_4	0x04
+#define TDC_REG_5	0x05
+#define TDC_REG_6	0x06
+#define TDC_REG_7	0x07
+#define TDC_REG_8	8
+#define TDC_REG_9	9
+#define TDC_REG_10	10
+#define TDC_REG_11	0x0b
+#define TDC_REG_12	0x0c
+#define TDC_REG_13	13
+#define TDC_REG_14	0x0e
+
+
+#define REG_CSN		MYIMODE_S00_AXI_SLV_REG0_OFFSET
+#define REG_RDN		MYIMODE_S00_AXI_SLV_REG2_OFFSET
+#define REG_ADDR	MYIMODE_S00_AXI_SLV_REG3_OFFSET
+#define	REG_DATA	MYIMODE_S00_AXI_SLV_REG4_OFFSET
+
+#define REG_EF1		MYIMODE_S00_AXI_SLV_REG5_OFFSET
+#define REG_EF2		MYIMODE_S00_AXI_SLV_REG6_OFFSET
+#define REG_STOPDIS	MYIMODE_S00_AXI_SLV_REG7_OFFSET
+#define REG_RECV_FLAG	MYIMODE_S00_AXI_SLV_REG20_OFFSET
+
+#define REG_START_TRI_COUNTTER	MYIMODE_S00_AXI_SLV_REG2_OFFSET
+#define REG_IRFLAG	MYIMODE_S00_AXI_SLV_REG8_OFFSET
+#define	REG_ERRFLAG	MYIMODE_S00_AXI_SLV_REG12_OFFSET
+
+
+
+/*
+#define REG_CSN		0
+#define REG_RDN		2
+#define REG_ADDR	3
+#define	REG_DATA	4
+
+#define REG_EF1	5
+#define REG_EF2	6
+#define REG_STOPDIS	7
+#define REG_RECV_FLAG	20
+
+#define REG_START_TRI_COUNTTER	30
+#define REG_IRFLAG	31
+#define	REG_ERRFLAG	32
+*/
+
+#define I_MODE_MAX_CH_NUM	8
+
+
+#define TDC_BASEADDR XPAR_MYIMODE_0_S00_AXI_BASEADDR
+
+typedef struct {
+	int ErrFlag;
+	int IrFlag;
+	int EF1;
+	int EF2;
+}TDC_FlagInfo;
+
+
+
+
+void TDC_init(void);
+void TDC_config(void);
+void TDC_RegConfig(int regNum, int configData);
+int  TDC_ReadRegData(int regNum);
+void TDC_CheckIfNeedMasterRest(void);
+void TDC_PrintChDatas(unsigned int  (*chandata)[I_MODE_MAX_CH_NUM]);
+unsigned int TDC_GetTriTimes(int firstFlag);
+void TDC_resetFifoFullFlag(void);
+TDC_FlagInfo TdcFlagCheck(TDC_FlagInfo tdcFlag);
+void TDC_DataHandle(unsigned int triTimes,TDC_FlagInfo tdcFlag, int firstFlag);
+
+void TDC_setChData(int channel, int chRecvFlag, int time, unsigned int triTimes, unsigned int (*chandata)[I_MODE_MAX_CH_NUM]);
+void TDC_FlagCheck1(TDC_FlagInfo *tdcFlag);
+#endif /* SRC_TDC_H_ */

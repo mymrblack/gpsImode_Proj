@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Auto Detect" key="gpsImode_hw-device"/>
+	<item value="" key="gpsImode_hw-bmmFile"/>
+	<item value="gpsImode_hw" key="programfpga.hwplatform"/>
+	<item value="gpsImode_wrapper.bit" key="gpsImode_hw-bitFile"/>
+	<item value="Local" key="gpsImode_hw-target"/>
+	<item value="false" key="gpsImode_hw-partial_bit"/>
+</section>
