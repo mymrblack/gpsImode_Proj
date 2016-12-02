@@ -111,3 +111,5 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1420.492 ; gain = 326.191
 file copy -force E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/impl_1/gpsImode_wrapper.sysdef E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_wrapper.hdf
 
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 02 16:27:49 2016...
