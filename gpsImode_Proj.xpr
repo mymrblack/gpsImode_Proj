@@ -35,13 +35,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="17"/>
-    <Option Name="WTModelSimExportSim" Val="17"/>
-    <Option Name="WTQuestaExportSim" Val="17"/>
-    <Option Name="WTIesExportSim" Val="17"/>
-    <Option Name="WTVcsExportSim" Val="17"/>
-    <Option Name="WTRivieraExportSim" Val="17"/>
-    <Option Name="WTActivehdlExportSim" Val="17"/>
+    <Option Name="WTXSimExportSim" Val="18"/>
+    <Option Name="WTModelSimExportSim" Val="18"/>
+    <Option Name="WTQuestaExportSim" Val="18"/>
+    <Option Name="WTIesExportSim" Val="18"/>
+    <Option Name="WTVcsExportSim" Val="18"/>
+    <Option Name="WTRivieraExportSim" Val="18"/>
+    <Option Name="WTActivehdlExportSim" Val="18"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
@@ -62,9 +62,9 @@
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_newGpsIp_0_0/gpsImode_newGpsIp_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_auto_pc_0/gpsImode_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="gpsImode_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hw_handoff/gpsImode.hwh"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hw_handoff/gpsImode_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hdl/gpsImode.hwdef"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hw_handoff/gpsImode.hwh"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/gpsImode/hdl/gpsImode_wrapper.v">
         <FileInfo>

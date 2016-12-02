@@ -595,3 +595,49 @@ Design is not opened in the current session.
 17:41:03 INFO  : ps7_post_config is completed.
 17:41:03 INFO  : Processor reset is completed for ps7_cortexa9_0
 17:42:47 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:10:39 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Lin\Desktop\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+14:10:41 INFO  : XSDB server has started successfully.
+14:12:15 ERROR : (XSDB Server)R6025
+- pure virtual function call
+
+14:12:23 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Lin\Desktop\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+14:12:24 INFO  : XSDB server has started successfully.
+14:13:06 INFO  : Project 'gpsImode_hw1' created. You can now create BSPs and application projects targeting this hardware platform.
+14:13:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:13:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+14:13:36 INFO  : FPGA configured successfully with bitstream "C:/Users/Lin/Desktop/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw1/gpsImode_wrapper.bit"
+14:14:07 INFO  : ps7_init is completed.
+14:14:07 INFO  : ps7_post_config is completed.
+14:14:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:15:07 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:29:47 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Lin\Desktop\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+14:29:48 INFO  : XSDB server has started successfully.
+14:30:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+14:30:13 INFO  : FPGA configured successfully with bitstream "C:/Users/Lin/Desktop/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw/gpsImode_wrapper.bit"
+14:30:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:31:36 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:42:58 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+14:42:59 INFO  : XSDB server has started successfully.
+14:45:24 INFO  : Project 'gpsImode_hw2' created. You can now create BSPs and application projects targeting this hardware platform.
+14:48:46 INFO  : Refreshed build settings on project ImodeGps_Proj
+14:50:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:50:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+14:50:46 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+14:51:26 INFO  : ps7_init is completed.
+14:51:26 INFO  : ps7_post_config is completed.
+14:51:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:51:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:54:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:54:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:54:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+14:54:59 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+14:55:04 INFO  : ps7_init is completed.
+14:55:04 INFO  : ps7_post_config is completed.
+14:55:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:57:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:57:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+14:57:43 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+14:57:48 INFO  : ps7_init is completed.
+14:57:48 INFO  : ps7_post_config is completed.
+14:57:49 INFO  : Processor reset is completed for ps7_cortexa9_0

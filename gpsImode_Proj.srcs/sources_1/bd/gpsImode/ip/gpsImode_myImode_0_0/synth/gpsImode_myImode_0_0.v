@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:myImode:1.0
-// IP Revision: 15
+// IP Revision: 16
 
 (* X_CORE_INFO = "myImode_v1_0,Vivado 2016.2" *)
 (* CHECK_LICENSE_TYPE = "gpsImode_myImode_0_0,myImode_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "gpsImode_myImode_0_0,myImode_v1_0,{x_ipProduct=Vivado 2016.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=myImode,x_ipVersion=1.0,x_ipCoreRevision=15,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}" *)
+(* CORE_GENERATION_INFO = "gpsImode_myImode_0_0,myImode_v1_0,{x_ipProduct=Vivado 2016.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=myImode,x_ipVersion=1.0,x_ipCoreRevision=16,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module gpsImode_myImode_0_0 (
   StartTrigger,

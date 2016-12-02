@@ -6271,3 +6271,1534 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
+14:10:45 **** Auto Build of project ImodeAndGps_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/myImode_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/myImode_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/myImode_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/myImode_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling myImode..."
+"Running Make libs in ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling newGpsIp..."
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling XilFFs Library"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+'Finished building libraries'
+14:11:01 **** Auto Build of configuration Debug for project ImodeAndGps_proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPS.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeAndGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPS.d" -MT"src/GPS.o" -o "src/GPS.o" "../src/GPS.c"
+../src/GPS.c: In function 'Gps_GetTimeInfo':
+../src/GPS.c:71:2: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+  ^
+../src/GPS.c:71:2: warning: incompatible implicit declaration of built-in function 'sscanf'
+../src/GPS.c:71:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+         ^
+../src/GPS.c:71:9: note: expected 'const char *' but argument is of type 'u8 *'
+../src/GPS.c:74:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer+Index-15,"%2d%2d%2d",
+         ^
+../src/GPS.c:74:9: note: expected 'const char *' but argument is of type 'u8 *'
+'Finished building: ../src/GPS.c'
+' '
+'Building file: ../src/SD_Card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SD_Card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeAndGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SD_Card.d" -MT"src/SD_Card.o" -o "src/SD_Card.o" "../src/SD_Card.c"
+../src/SD_Card.c: In function 'FfsSdPolledExample':
+../src/SD_Card.c:84:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(SourceAddress + count_page * 72, "%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\n",
+           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:221:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/SD_Card.c:93:59: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:94:28: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    printf("%d\r\n", strlen(SourceAddress));
+                            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:101:12: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  if(strlen(SourceAddress) != 0)
+            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:103:58: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                          ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:104:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   printf("%d\r\n", strlen(SourceAddress));
+                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+'Finished building: ../src/SD_Card.c'
+' '
+'Building file: ../src/imodeAndGps_proj.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imodeAndGps_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeAndGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/imodeAndGps_proj.d" -MT"src/imodeAndGps_proj.o" -o "src/imodeAndGps_proj.o" "../src/imodeAndGps_proj.c"
+../src/imodeAndGps_proj.c: In function 'main':
+../src/imodeAndGps_proj.c:75:17: warning: initialization from incompatible pointer type
+  int *pchandata=chandata;
+                 ^
+In file included from ../src/tdc.h:7:0,
+                 from ../src/imodeAndGps_proj.c:45:
+../src/imodeAndGps_proj.c: At top level:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/imodeAndGps_proj.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeAndGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/tdc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tdc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeAndGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tdc.d" -MT"src/tdc.o" -o "src/tdc.o" "../src/tdc.c"
+In file included from ../src/tdc.h:7:0,
+                 from ../src/tdc.c:18:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/tdc.c'
+' '
+'Building target: ImodeAndGps_proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeAndGps_bsp/ps7_cortexa9_0/lib -o "ImodeAndGps_proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ImodeAndGps_proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ImodeAndGps_proj.elf  |tee "ImodeAndGps_proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162336	   2812	21959744	22124892	151995c	ImodeAndGps_proj.elf
+'Finished building: ImodeAndGps_proj.elf.size'
+' '
+14:11:02 **** Auto Build of project gpsImode_proj_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/myImode_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/myImode_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/myImode_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/myImode_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling myImode..."
+"Running Make libs in ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling newGpsIp..."
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+14:11:17 **** Auto Build of configuration Debug for project gpsImode_proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPS.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../gpsImode_proj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPS.d" -MT"src/GPS.o" -o "src/GPS.o" "../src/GPS.c"
+../src/GPS.c: In function 'Gps_GetTimeInfo':
+../src/GPS.c:71:2: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+  ^
+../src/GPS.c:71:2: warning: incompatible implicit declaration of built-in function 'sscanf'
+../src/GPS.c:71:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+         ^
+../src/GPS.c:71:9: note: expected 'const char *' but argument is of type 'u8 *'
+../src/GPS.c:74:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer+Index-15,"%2d%2d%2d",
+         ^
+../src/GPS.c:74:9: note: expected 'const char *' but argument is of type 'u8 *'
+'Finished building: ../src/GPS.c'
+' '
+'Building file: ../src/gps_proj.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gps_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../gpsImode_proj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gps_proj.d" -MT"src/gps_proj.o" -o "src/gps_proj.o" "../src/gps_proj.c"
+'Finished building: ../src/gps_proj.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../gpsImode_proj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: gpsImode_proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpsImode_proj_bsp/ps7_cortexa9_0/lib -o "gpsImode_proj.elf"  ./src/GPS.o ./src/gps_proj.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpsImode_proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size gpsImode_proj.elf  |tee "gpsImode_proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 114168	   2696	  23340	 140204	  223ac	gpsImode_proj.elf
+'Finished building: gpsImode_proj.elf.size'
+' '
+14:14:03 **** Incremental Build of configuration Debug for project ImodeAndGps_proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:14:03 **** Incremental Build of configuration Debug for project gpsImode_proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:30:26 **** Incremental Build of configuration Debug for project ImodeAndGps_proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:30:27 **** Incremental Build of configuration Debug for project gpsImode_proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:46:05 **** Build of project ImodeGps_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/myImode_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/myImode_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: 正在创建 ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/myImode_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/myImode_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling myImode..."
+"Running Make libs in ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling newGpsIp..."
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+14:46:20 **** Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ImodeGps_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ImodeGps_Proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ImodeGps_Proj.elf  |tee "ImodeGps_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22964	   1152	  22580	  46696	   b668	ImodeGps_Proj.elf
+'Finished building: ImodeGps_Proj.elf.size'
+' '
+14:46:21 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:48:08 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPS.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPS.d" -MT"src/GPS.o" -o "src/GPS.o" "../src/GPS.c"
+../src/GPS.c: In function 'Gps_GetTimeInfo':
+../src/GPS.c:71:2: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+  ^
+../src/GPS.c:71:2: warning: incompatible implicit declaration of built-in function 'sscanf'
+../src/GPS.c:71:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+         ^
+../src/GPS.c:71:9: note: expected 'const char *' but argument is of type 'u8 *'
+../src/GPS.c:74:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer+Index-15,"%2d%2d%2d",
+         ^
+../src/GPS.c:74:9: note: expected 'const char *' but argument is of type 'u8 *'
+'Finished building: ../src/GPS.c'
+' '
+'Building file: ../src/SD_Card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SD_Card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SD_Card.d" -MT"src/SD_Card.o" -o "src/SD_Card.o" "../src/SD_Card.c"
+../src/SD_Card.c:14:16: fatal error: ff.h: No such file or directory
+ #include "ff.h"
+                ^
+compilation terminated.
+make: *** [src/SD_Card.o] 错误 1
+14:48:18 **** Auto Build of configuration Debug for project ImodeAndGps_proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:48:47 **** Auto Build of project ImodeGps_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/myImode_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/myImode_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: 正在创建 ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/myImode_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/myImode_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling myImode..."
+"Running Make libs in ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/newGpsIp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling newGpsIp..."
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling XilFFs Library"
+'Finished building libraries'
+14:49:01 **** Clean-only build of configuration Debug for project ImodeGps_Proj ****
+make clean 
+rm -rf  ./src/GPS.o ./src/SD_Card.o ./src/helloworld.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o  ./src/GPS.d ./src/SD_Card.d ./src/helloworld.d ./src/imodeAndGps_proj.d ./src/platform.d ./src/tdc.d  ImodeGps_Proj.elf.size  ImodeGps_Proj.elf
+' '
+14:49:01 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPS.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPS.d" -MT"src/GPS.o" -o "src/GPS.o" "../src/GPS.c"
+../src/GPS.c: In function 'Gps_GetTimeInfo':
+../src/GPS.c:71:2: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+  ^
+../src/GPS.c:71:2: warning: incompatible implicit declaration of built-in function 'sscanf'
+../src/GPS.c:71:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+         ^
+../src/GPS.c:71:9: note: expected 'const char *' but argument is of type 'u8 *'
+../src/GPS.c:74:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer+Index-15,"%2d%2d%2d",
+         ^
+../src/GPS.c:74:9: note: expected 'const char *' but argument is of type 'u8 *'
+'Finished building: ../src/GPS.c'
+' '
+'Building file: ../src/SD_Card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SD_Card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SD_Card.d" -MT"src/SD_Card.o" -o "src/SD_Card.o" "../src/SD_Card.c"
+../src/SD_Card.c: In function 'FfsSdPolledExample':
+../src/SD_Card.c:84:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(SourceAddress + count_page * 72, "%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\n",
+           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:221:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/SD_Card.c:93:59: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:94:28: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    printf("%d\r\n", strlen(SourceAddress));
+                            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:101:12: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  if(strlen(SourceAddress) != 0)
+            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:103:58: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                          ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:104:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   printf("%d\r\n", strlen(SourceAddress));
+                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+'Finished building: ../src/SD_Card.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/imodeAndGps_proj.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imodeAndGps_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/imodeAndGps_proj.d" -MT"src/imodeAndGps_proj.o" -o "src/imodeAndGps_proj.o" "../src/imodeAndGps_proj.c"
+../src/imodeAndGps_proj.c: In function 'main':
+../src/imodeAndGps_proj.c:75:17: warning: initialization from incompatible pointer type
+  int *pchandata=chandata;
+                 ^
+In file included from ../src/tdc.h:7:0,
+                 from ../src/imodeAndGps_proj.c:45:
+../src/imodeAndGps_proj.c: At top level:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/imodeAndGps_proj.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/tdc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tdc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tdc.d" -MT"src/tdc.o" -o "src/tdc.o" "../src/tdc.c"
+In file included from ../src/tdc.h:7:0,
+                 from ../src/tdc.c:18:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/tdc.c'
+' '
+'Building target: ImodeGps_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/helloworld.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+./src/imodeAndGps_proj.o: In function `main':
+E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\ImodeGps_Proj\Debug/../src/imodeAndGps_proj.c:71: multiple definition of `main'
+./src/helloworld.o:E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\ImodeGps_Proj\Debug/../src/helloworld.c:54: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [ImodeGps_Proj.elf] 错误 1
+14:50:00 **** Clean-only build of configuration Debug for project ImodeGps_Proj ****
+make clean 
+rm -rf  ./src/GPS.o ./src/SD_Card.o ./src/helloworld.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o  ./src/GPS.d ./src/SD_Card.d ./src/helloworld.d ./src/imodeAndGps_proj.d ./src/platform.d ./src/tdc.d  ImodeGps_Proj.elf.size  ImodeGps_Proj.elf
+' '
+14:50:00 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPS.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPS.d" -MT"src/GPS.o" -o "src/GPS.o" "../src/GPS.c"
+../src/GPS.c: In function 'Gps_GetTimeInfo':
+../src/GPS.c:71:2: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+  ^
+../src/GPS.c:71:2: warning: incompatible implicit declaration of built-in function 'sscanf'
+../src/GPS.c:71:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+         ^
+../src/GPS.c:71:9: note: expected 'const char *' but argument is of type 'u8 *'
+../src/GPS.c:74:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer+Index-15,"%2d%2d%2d",
+         ^
+../src/GPS.c:74:9: note: expected 'const char *' but argument is of type 'u8 *'
+'Finished building: ../src/GPS.c'
+' '
+'Building file: ../src/SD_Card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SD_Card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SD_Card.d" -MT"src/SD_Card.o" -o "src/SD_Card.o" "../src/SD_Card.c"
+../src/SD_Card.c: In function 'FfsSdPolledExample':
+../src/SD_Card.c:84:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(SourceAddress + count_page * 72, "%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\n",
+           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:221:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/SD_Card.c:93:59: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:94:28: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    printf("%d\r\n", strlen(SourceAddress));
+                            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:101:12: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  if(strlen(SourceAddress) != 0)
+            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:103:58: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                          ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:104:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   printf("%d\r\n", strlen(SourceAddress));
+                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+'Finished building: ../src/SD_Card.c'
+' '
+'Building file: ../src/imodeAndGps_proj.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imodeAndGps_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/imodeAndGps_proj.d" -MT"src/imodeAndGps_proj.o" -o "src/imodeAndGps_proj.o" "../src/imodeAndGps_proj.c"
+../src/imodeAndGps_proj.c: In function 'main':
+../src/imodeAndGps_proj.c:75:17: warning: initialization from incompatible pointer type
+  int *pchandata=chandata;
+                 ^
+In file included from ../src/tdc.h:7:0,
+                 from ../src/imodeAndGps_proj.c:45:
+../src/imodeAndGps_proj.c: At top level:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/imodeAndGps_proj.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/tdc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tdc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tdc.d" -MT"src/tdc.o" -o "src/tdc.o" "../src/tdc.c"
+In file included from ../src/tdc.h:7:0,
+                 from ../src/tdc.c:18:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/tdc.c'
+' '
+'Building target: ImodeGps_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ImodeGps_Proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ImodeGps_Proj.elf  |tee "ImodeGps_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162336	   2812	21959744	22124892	151995c	ImodeGps_Proj.elf
+'Finished building: ImodeGps_Proj.elf.size'
+' '
+14:51:07 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/imodeAndGps_proj.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imodeAndGps_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/imodeAndGps_proj.d" -MT"src/imodeAndGps_proj.o" -o "src/imodeAndGps_proj.o" "../src/imodeAndGps_proj.c"
+../src/imodeAndGps_proj.c: In function 'main':
+../src/imodeAndGps_proj.c:75:17: warning: initialization from incompatible pointer type
+  int *pchandata=chandata;
+                 ^
+In file included from ../src/tdc.h:7:0,
+                 from ../src/imodeAndGps_proj.c:45:
+../src/imodeAndGps_proj.c: At top level:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/imodeAndGps_proj.c'
+' '
+'Building target: ImodeGps_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ImodeGps_Proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ImodeGps_Proj.elf  |tee "ImodeGps_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162336	   2812	21959744	22124892	151995c	ImodeGps_Proj.elf
+'Finished building: ImodeGps_Proj.elf.size'
+' '
+14:51:09 **** Incremental Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:51:23 **** Incremental Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:51:36 **** Incremental Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:52:36 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/imodeAndGps_proj.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imodeAndGps_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/imodeAndGps_proj.d" -MT"src/imodeAndGps_proj.o" -o "src/imodeAndGps_proj.o" "../src/imodeAndGps_proj.c"
+../src/imodeAndGps_proj.c: In function 'main':
+../src/imodeAndGps_proj.c:75:17: warning: initialization from incompatible pointer type
+  int *pchandata=chandata;
+                 ^
+In file included from ../src/tdc.h:7:0,
+                 from ../src/imodeAndGps_proj.c:45:
+../src/imodeAndGps_proj.c: At top level:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/imodeAndGps_proj.c'
+' '
+'Building target: ImodeGps_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ImodeGps_Proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ImodeGps_Proj.elf  |tee "ImodeGps_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162336	   2812	21959744	22124892	151995c	ImodeGps_Proj.elf
+'Finished building: ImodeGps_Proj.elf.size'
+' '
+14:53:25 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPS.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPS.d" -MT"src/GPS.o" -o "src/GPS.o" "../src/GPS.c"
+../src/GPS.c: In function 'Gps_GetTimeInfo':
+../src/GPS.c:71:2: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+  ^
+../src/GPS.c:71:2: warning: incompatible implicit declaration of built-in function 'sscanf'
+../src/GPS.c:71:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+         ^
+../src/GPS.c:71:9: note: expected 'const char *' but argument is of type 'u8 *'
+../src/GPS.c:74:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer+Index-15,"%2d%2d%2d",
+         ^
+../src/GPS.c:74:9: note: expected 'const char *' but argument is of type 'u8 *'
+'Finished building: ../src/GPS.c'
+' '
+'Building target: ImodeGps_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ImodeGps_Proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ImodeGps_Proj.elf  |tee "ImodeGps_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162336	   2812	21959744	22124892	151995c	ImodeGps_Proj.elf
+'Finished building: ImodeGps_Proj.elf.size'
+' '
+14:53:55 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPS.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPS.d" -MT"src/GPS.o" -o "src/GPS.o" "../src/GPS.c"
+../src/GPS.c: In function 'Gps_GetTimeInfo':
+../src/GPS.c:71:2: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+  ^
+../src/GPS.c:71:2: warning: incompatible implicit declaration of built-in function 'sscanf'
+../src/GPS.c:71:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+         ^
+../src/GPS.c:71:9: note: expected 'const char *' but argument is of type 'u8 *'
+../src/GPS.c:74:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer+Index-15,"%2d%2d%2d",
+         ^
+../src/GPS.c:74:9: note: expected 'const char *' but argument is of type 'u8 *'
+'Finished building: ../src/GPS.c'
+' '
+'Building target: ImodeGps_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ImodeGps_Proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ImodeGps_Proj.elf  |tee "ImodeGps_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162336	   2812	21959744	22124892	151995c	ImodeGps_Proj.elf
+'Finished building: ImodeGps_Proj.elf.size'
+' '
+14:55:03 **** Incremental Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:57:09 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/SD_Card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SD_Card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SD_Card.d" -MT"src/SD_Card.o" -o "src/SD_Card.o" "../src/SD_Card.c"
+../src/SD_Card.c: In function 'FfsSdPolledExample':
+../src/SD_Card.c:83:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(SourceAddress + count_page * 72, "%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\n",
+           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:221:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/SD_Card.c:92:59: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:93:28: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    printf("%d\r\n", strlen(SourceAddress));
+                            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:100:12: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  if(strlen(SourceAddress) != 0)
+            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:102:58: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                          ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:103:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   printf("%d\r\n", strlen(SourceAddress));
+                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+'Finished building: ../src/SD_Card.c'
+' '
+'Building target: ImodeGps_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ImodeGps_Proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ImodeGps_Proj.elf  |tee "ImodeGps_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162336	   2812	21959744	22124892	151995c	ImodeGps_Proj.elf
+'Finished building: ImodeGps_Proj.elf.size'
+' '
+14:57:27 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/SD_Card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SD_Card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SD_Card.d" -MT"src/SD_Card.o" -o "src/SD_Card.o" "../src/SD_Card.c"
+../src/SD_Card.c: In function 'FfsSdPolledExample':
+../src/SD_Card.c:83:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(SourceAddress + count_page * 72, "%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\n",
+           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:221:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/SD_Card.c:92:59: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:93:28: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    printf("%d\r\n", strlen(SourceAddress));
+                            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:100:12: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  if(strlen(SourceAddress) != 0)
+            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:102:58: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                          ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:103:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   printf("%d\r\n", strlen(SourceAddress));
+                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+'Finished building: ../src/SD_Card.c'
+' '
+'Building file: ../src/imodeAndGps_proj.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imodeAndGps_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/imodeAndGps_proj.d" -MT"src/imodeAndGps_proj.o" -o "src/imodeAndGps_proj.o" "../src/imodeAndGps_proj.c"
+../src/imodeAndGps_proj.c: In function 'main':
+../src/imodeAndGps_proj.c:75:17: warning: initialization from incompatible pointer type
+  int *pchandata=chandata;
+                 ^
+In file included from ../src/tdc.h:7:0,
+                 from ../src/imodeAndGps_proj.c:45:
+../src/imodeAndGps_proj.c: At top level:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/imodeAndGps_proj.c'
+' '
+'Building file: ../src/tdc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tdc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tdc.d" -MT"src/tdc.o" -o "src/tdc.o" "../src/tdc.c"
+In file included from ../src/tdc.h:7:0,
+                 from ../src/tdc.c:18:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/tdc.c'
+' '
+'Building target: ImodeGps_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ImodeGps_Proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ImodeGps_Proj.elf  |tee "ImodeGps_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162336	   2812	21959744	22124892	151995c	ImodeGps_Proj.elf
+'Finished building: ImodeGps_Proj.elf.size'
+' '
+14:57:47 **** Incremental Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:00:03 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/SD_Card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SD_Card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SD_Card.d" -MT"src/SD_Card.o" -o "src/SD_Card.o" "../src/SD_Card.c"
+../src/SD_Card.c:40:5: error: conflicting types for 'FfsSdPolledExample'
+ int FfsSdPolledExample(int *pchandata)
+     ^
+In file included from ../src/tdc.h:7:0,
+                 from ../src/SD_Card.c:19:
+../src/SD_Card.h:35:5: note: previous declaration of 'FfsSdPolledExample' was here
+ int FfsSdPolledExample(int *pchandata, Time_Data *timeData);
+     ^
+../src/SD_Card.c: In function 'FfsSdPolledExample':
+../src/SD_Card.c:83:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(SourceAddress + count_page * 72, "%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\n",
+           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:221:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/SD_Card.c:92:59: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:93:28: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    printf("%d\r\n", strlen(SourceAddress));
+                            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:100:12: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  if(strlen(SourceAddress) != 0)
+            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:102:58: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                          ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:103:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   printf("%d\r\n", strlen(SourceAddress));
+                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+make: *** [src/SD_Card.o] 错误 1
+15:00:14 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/SD_Card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SD_Card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SD_Card.d" -MT"src/SD_Card.o" -o "src/SD_Card.o" "../src/SD_Card.c"
+../src/SD_Card.c: In function 'FfsSdPolledExample':
+../src/SD_Card.c:83:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(SourceAddress + count_page * 72, "%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\n",
+           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:221:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/SD_Card.c:92:59: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:93:28: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    printf("%d\r\n", strlen(SourceAddress));
+                            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:100:12: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  if(strlen(SourceAddress) != 0)
+            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:102:58: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                          ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:103:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   printf("%d\r\n", strlen(SourceAddress));
+                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+'Finished building: ../src/SD_Card.c'
+' '
+'Building file: ../src/imodeAndGps_proj.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imodeAndGps_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/imodeAndGps_proj.d" -MT"src/imodeAndGps_proj.o" -o "src/imodeAndGps_proj.o" "../src/imodeAndGps_proj.c"
+../src/imodeAndGps_proj.c: In function 'main':
+../src/imodeAndGps_proj.c:75:17: warning: initialization from incompatible pointer type
+  int *pchandata=chandata;
+                 ^
+../src/imodeAndGps_proj.c:115:15: error: too few arguments to function 'FfsSdPolledExample'
+      Status = FfsSdPolledExample(pchandata);//bylk
+               ^
+In file included from ../src/tdc.h:7:0,
+                 from ../src/imodeAndGps_proj.c:45:
+../src/SD_Card.h:35:5: note: declared here
+ int FfsSdPolledExample(int *pchandata, Time_Data *timeData);
+     ^
+../src/imodeAndGps_proj.c: At top level:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+make: *** [src/imodeAndGps_proj.o] 错误 1
+15:00:28 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/imodeAndGps_proj.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imodeAndGps_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/imodeAndGps_proj.d" -MT"src/imodeAndGps_proj.o" -o "src/imodeAndGps_proj.o" "../src/imodeAndGps_proj.c"
+../src/imodeAndGps_proj.c: In function 'main':
+../src/imodeAndGps_proj.c:75:17: warning: initialization from incompatible pointer type
+  int *pchandata=chandata;
+                 ^
+In file included from ../src/tdc.h:7:0,
+                 from ../src/imodeAndGps_proj.c:45:
+../src/imodeAndGps_proj.c: At top level:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/imodeAndGps_proj.c'
+' '
+'Building file: ../src/tdc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tdc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tdc.d" -MT"src/tdc.o" -o "src/tdc.o" "../src/tdc.c"
+In file included from ../src/tdc.h:7:0,
+                 from ../src/tdc.c:18:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+'Finished building: ../src/tdc.c'
+' '
+'Building target: ImodeGps_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ImodeGps_Proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ImodeGps_Proj.elf  |tee "ImodeGps_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162336	   2812	21959744	22124892	151995c	ImodeGps_Proj.elf
+'Finished building: ImodeGps_Proj.elf.size'
+' '

@@ -729,20 +729,20 @@
          end
      end
    
-   	 testedge Tstart(StartTrigger,S_AXI_ACLK,S_AXI_ARESETN,set_zero);
-     testedge Tstop1(StopTrigger1,S_AXI_ACLK,S_AXI_ARESETN,stop1_set_zero);
-     testedge Tstop2(StopTrigger2,S_AXI_ACLK,S_AXI_ARESETN,stop2_set_zero);
-     testedge Tstop3(StopTrigger3,S_AXI_ACLK,S_AXI_ARESETN,stop3_set_zero);
-     testedge Tstop4(StopTrigger4,S_AXI_ACLK,S_AXI_ARESETN,stop4_set_zero);
-     testedge Tstop5(StopTrigger5,S_AXI_ACLK,S_AXI_ARESETN,stop5_set_zero);
-     testedge Tstop6(StopTrigger6,S_AXI_ACLK,S_AXI_ARESETN,stop6_set_zero);
-     testedge Tstop7(StopTrigger7,S_AXI_ACLK,S_AXI_ARESETN,stop7_set_zero);
-     testedge Tstop8(StopTrigger8,S_AXI_ACLK,S_AXI_ARESETN,stop8_set_zero);   
+   	 testedge TstartEdgeGet(StartTrigger,S_AXI_ACLK,S_AXI_ARESETN,set_zero);
+     testedge TstopEdgeGet1(StopTrigger1,S_AXI_ACLK,S_AXI_ARESETN,stop1_set_zero);
+     testedge TstopEdgeGet2(StopTrigger2,S_AXI_ACLK,S_AXI_ARESETN,stop2_set_zero);
+     testedge TstopEdgeGet3(StopTrigger3,S_AXI_ACLK,S_AXI_ARESETN,stop3_set_zero);
+     testedge TstopEdgeGet4(StopTrigger4,S_AXI_ACLK,S_AXI_ARESETN,stop4_set_zero);
+     testedge TstopEdgeGet5(StopTrigger5,S_AXI_ACLK,S_AXI_ARESETN,stop5_set_zero);
+     testedge TstopEdgeGet6(StopTrigger6,S_AXI_ACLK,S_AXI_ARESETN,stop6_set_zero);
+     testedge TstopEdgeGet7(StopTrigger7,S_AXI_ACLK,S_AXI_ARESETN,stop7_set_zero);
+     testedge TstopEdgeGet8(StopTrigger8,S_AXI_ACLK,S_AXI_ARESETN,stop8_set_zero);   
      
      always@(posedge S_AXI_ACLK or negedge S_AXI_ARESETN) begin
       if(S_AXI_ARESETN == 1'b0) begin
         time_counter<=0;
- //       flag_Tstart<=0;
+        count<=8'hFF;
         Tstart_counter<=0;
       end
       else begin
@@ -788,14 +788,7 @@
           assign rdn=m_rdn;
           assign oen=m_oen;
           assign data=(rdn)?m_data:28'bzzzzzzzzzzzzzzzzzzzzzzzzzzzz;
-//          assign count[0]=(stop1_set_zero&&(time_counter<1000))?1'h0:1'h1;
-//          assign count[1]=(stop2_set_zero&&(time_counter<1000))?1'h0:1'h1;
-//          assign count[2]=(stop3_set_zero&&(time_counter<1000))?1'h0:1'h1;
-//          assign count[3]=(stop4_set_zero&&(time_counter<1000))?1'h0:1'h1;
-//          assign count[4]=(stop5_set_zero&&(time_counter<1000))?1'h0:1'h1;
-//          assign count[5]=(stop6_set_zero&&(time_counter<1000))?1'h0:1'h1;
-//          assign count[6]=(stop7_set_zero&&(time_counter<1000))?1'h0:1'h1;
-//          assign count[7]=(stop8_set_zero&&(time_counter<1000))?1'h0:1'h1;
+
           
           assign  addr=m_addr;
           assign AluTrigger=m_AluTrigger;
@@ -810,16 +803,6 @@
           assign Tstop8=StopTrigger8;
                                        //bylk
                      
-//    always@(posedge S_AXI_ACLK or negedge S_AXI_ARESETN )
-//      begin
-//        if (!S_AXI_ARESETN) 
-//          begin
-//            {ext_trig_reg1,ext_trig_reg0}<=2'b00;
-//          end
-//        else begin
-//            {ext_trig_reg1,ext_trig_reg0}<={ext_trig_reg0,ext_trig};
-//        end
-//      end
 
 	// User logic ends
 
@@ -828,7 +811,6 @@
 	
 module testedge(input TTL,input S_AXI_ACLK,input S_AXI_ARESETN,output set_zero);
     reg temp1,temp2,temp3;
-    wire set_zero; 
     
     always@(posedge S_AXI_ACLK or negedge S_AXI_ARESETN) begin
     if(S_AXI_ARESETN == 1'b0) begin

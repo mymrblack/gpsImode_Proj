@@ -4,6 +4,11 @@
 	<item value="" key="gpsImode_hw-bmmFile"/>
 	<item value="gpsImode_hw" key="programfpga.hwplatform"/>
 	<item value="gpsImode_wrapper.bit" key="gpsImode_hw-bitFile"/>
+	<item value="false" key="gpsImode_hw1-partial_bit"/>
+	<item value="" key="gpsImode_hw1-bmmFile"/>
 	<item value="Local" key="gpsImode_hw-target"/>
 	<item value="false" key="gpsImode_hw-partial_bit"/>
+	<item value="Auto Detect" key="gpsImode_hw1-device"/>
+	<item value="Local" key="gpsImode_hw1-target"/>
+	<item value="gpsImode_wrapper.bit" key="gpsImode_hw1-bitFile"/>
 </section>

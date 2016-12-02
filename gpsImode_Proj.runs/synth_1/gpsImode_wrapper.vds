@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Dec 02 10:07:19 2016
-# Process ID: 13924
+# Start of session at: Fri Dec 02 14:39:19 2016
+# Process ID: 5888
 # Current directory: E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/synth_1
 # Command line: vivado.exe -log gpsImode_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source gpsImode_wrapper.tcl
 # Log file: E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/synth_1/gpsImode_wrapper.vds
@@ -19,19 +19,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12884 
-WARNING: [Synth 8-2254] instance name 'Tstart' matches net/port name [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:732]
-WARNING: [Synth 8-2254] instance name 'Tstop1' matches net/port name [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:733]
-WARNING: [Synth 8-2254] instance name 'Tstop2' matches net/port name [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:734]
-WARNING: [Synth 8-2254] instance name 'Tstop3' matches net/port name [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:735]
-WARNING: [Synth 8-2254] instance name 'Tstop4' matches net/port name [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:736]
-WARNING: [Synth 8-2254] instance name 'Tstop5' matches net/port name [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:737]
-WARNING: [Synth 8-2254] instance name 'Tstop6' matches net/port name [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:738]
-WARNING: [Synth 8-2254] instance name 'Tstop7' matches net/port name [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:739]
-WARNING: [Synth 8-2254] instance name 'Tstop8' matches net/port name [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:740]
-WARNING: [Synth 8-2611] redeclaration of ansi port set_zero is not allowed [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:831]
+INFO: Helper process launched with PID 3648 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 389.246 ; gain = 182.117
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 385.828 ; gain = 178.734
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'gpsImode_wrapper' [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'gpsImode' [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.v:13]
@@ -198,12 +188,9 @@ INFO: [Synth 8-638] synthesizing module 'myImode_v1_0_S00_AXI' [e:/Lin/vivado_le
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'testedge' [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:829]
-INFO: [Synth 8-256] done synthesizing module 'testedge' (17#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:829]
-WARNING: [Synth 8-5788] Register count_reg in module myImode_v1_0_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:751]
+INFO: [Synth 8-638] synthesizing module 'testedge' [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:812]
+INFO: [Synth 8-256] done synthesizing module 'testedge' (17#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:812]
 INFO: [Synth 8-256] done synthesizing module 'myImode_v1_0_S00_AXI' (18#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v:4]
-WARNING: [Synth 8-350] instance 'myImode_v1_0_S00_AXI_inst' of module 'myImode_v1_0_S00_AXI' requires 56 connections, but only 55 given [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0.v:86]
-WARNING: [Synth 8-3848] Net set_zero in module/entity myImode_v1_0 does not have driver. [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0.v:53]
 INFO: [Synth 8-256] done synthesizing module 'myImode_v1_0' (19#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0.v:4]
 INFO: [Synth 8-256] done synthesizing module 'gpsImode_myImode_0_0' (20#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_myImode_0_0/synth/gpsImode_myImode_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'gpsImode_newGpsIp_0_0' [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_newGpsIp_0_0/synth/gpsImode_newGpsIp_0_0.v:57]
@@ -226,7 +213,7 @@ INFO: [Synth 8-256] done synthesizing module 'GpsConnectToImode' (24#1) [e:/Lin/
 INFO: [Synth 8-256] done synthesizing module 'newGpsIp_v1_0_GPS_AXI' (25#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/newgpsip_v1_0/hdl/newGpsIp_v1_0_GPS_AXI.v:28]
 INFO: [Synth 8-256] done synthesizing module 'newGpsIp_v1_0' (26#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/newgpsip_v1_0/hdl/newGpsIp_v1_0.v:4]
 INFO: [Synth 8-256] done synthesizing module 'gpsImode_newGpsIp_0_0' (27#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_newGpsIp_0_0/synth/gpsImode_newGpsIp_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'gpsImode_processing_system7_0_0' [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/synth/gpsImode_processing_system7_0_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'gpsImode_processing_system7_0_0' [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/synth/gpsImode_processing_system7_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
@@ -291,8 +278,8 @@ INFO: [Synth 8-256] done synthesizing module 'BIBUF' (29#1) [D:/Xilinx/Vivado/20
 INFO: [Synth 8-638] synthesizing module 'PS7' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:33164]
 INFO: [Synth 8-256] done synthesizing module 'PS7' (30#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:33164]
 INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (31#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
-WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/synth/gpsImode_processing_system7_0_0.v:321]
-INFO: [Synth 8-256] done synthesizing module 'gpsImode_processing_system7_0_0' (32#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/synth/gpsImode_processing_system7_0_0.v:59]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/synth/gpsImode_processing_system7_0_0.v:319]
+INFO: [Synth 8-256] done synthesizing module 'gpsImode_processing_system7_0_0' (32#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/synth/gpsImode_processing_system7_0_0.v:57]
 WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'gpsImode_processing_system7_0_0' requires 69 connections, but only 64 given [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.v:429]
 INFO: [Synth 8-638] synthesizing module 'gpsImode_processing_system7_0_axi_periph_0' [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.v:608]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_5HTBW9' [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.v:1327]
@@ -1040,7 +1027,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_9_b2s'
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_9_axi_protocol_converter' (51#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
 INFO: [Synth 8-256] done synthesizing module 'gpsImode_auto_pc_0' (52#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_auto_pc_0/synth/gpsImode_auto_pc_0.v:58]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1T6UJ3V' (53#1) [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.v:1751]
-INFO: [Synth 8-638] synthesizing module 'gpsImode_xbar_0' [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_xbar_0/synth/gpsImode_xbar_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'gpsImode_xbar_0' [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_xbar_0/synth/gpsImode_xbar_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_axi_crossbar' [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v:54]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
@@ -1253,7 +1240,7 @@ INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__para
 INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (60#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
 INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_crossbar_sasd' (61#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar_sasd.v:79]
 INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_axi_crossbar' (62#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v:54]
-INFO: [Synth 8-256] done synthesizing module 'gpsImode_xbar_0' (63#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_xbar_0/synth/gpsImode_xbar_0.v:59]
+INFO: [Synth 8-256] done synthesizing module 'gpsImode_xbar_0' (63#1) [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_xbar_0/synth/gpsImode_xbar_0.v:57]
 WARNING: [Synth 8-689] width (6) of port connection 'm_axi_arprot' does not match port width (9) of module 'gpsImode_xbar_0' [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.v:1288]
 WARNING: [Synth 8-689] width (6) of port connection 'm_axi_awprot' does not match port width (9) of module 'gpsImode_xbar_0' [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.v:1292]
 INFO: [Synth 8-256] done synthesizing module 'gpsImode_processing_system7_0_axi_periph_0' (64#1) [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.v:608]
@@ -1440,7 +1427,7 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_10_axi_crossbar has unconnected
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi__parameterized0 has unconnected port m_axi_bid[0]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 520.613 ; gain = 313.484
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 520.648 ; gain = 313.555
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1450,7 +1437,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 520.613 ; gain = 313.484
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 520.648 ; gain = 313.555
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1490,16 +1477,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 18 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 767.961 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 768.039 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 767.961 ; gain = 560.832
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 768.039 ; gain = 560.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 767.961 ; gain = 560.832
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 768.039 ; gain = 560.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1517,7 +1504,7 @@ Applied set_property DONT_TOUCH = true for gpsImode_i/processing_system7_0_axi_p
 Applied set_property DONT_TOUCH = true for gpsImode_i/processing_system7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for gpsImode_i/rst_processing_system7_0_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 767.961 ; gain = 560.832
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 768.039 ; gain = 560.945
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "EN_16x_Baud" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fifo_full_p1" won't be mapped to RAM because it is too sparse
@@ -1542,7 +1529,7 @@ INFO: [Synth 8-5544] ROM "p_0_in2" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5544] ROM "p_0_in1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd:222]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:01:06 . Memory (MB): peak = 767.961 ; gain = 560.832
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 768.039 ; gain = 560.945
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1598,7 +1585,7 @@ Detailed RTL Component Info :
 	   2 Input     14 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 4     
 	   2 Input      9 Bit        Muxes := 4     
-	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 4     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 4     
 	   2 Input      4 Bit        Muxes := 20    
@@ -1711,7 +1698,7 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 21    
 	  27 Input     32 Bit        Muxes := 21    
 	   2 Input     28 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 5     
 Module counter 
 Detailed RTL Component Info : 
@@ -1976,7 +1963,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:47 ; elapsed = 00:01:07 . Memory (MB): peak = 767.961 ; gain = 560.832
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 768.039 ; gain = 560.945
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -1986,9 +1973,9 @@ INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:318]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:318]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 767.961 ; gain = 560.832
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 768.039 ; gain = 560.945
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 767.961 ; gain = 560.832
+Finished Parallel Reinference  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 768.039 ; gain = 560.945
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -2117,9 +2104,9 @@ INFO: [Synth 8-3886] merging instance 'gpsImode_i/processing_system7_0_axi_perip
 INFO: [Synth 8-3886] merging instance 'gpsImode_i/rst_processing_system7_0_100M/U0/SEQ/pr_dec_reg[1]' (FD) to 'gpsImode_i/rst_processing_system7_0_100M/U0/SEQ/bsr_dec_reg[1]'
 INFO: [Synth 8-3886] merging instance 'gpsImode_i/rst_processing_system7_0_100M/U0/SEQ/bsr_dec_reg[1]' (FD) to 'gpsImode_i/rst_processing_system7_0_100M/U0/SEQ/core_dec_reg[1]'
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:14 . Memory (MB): peak = 767.961 ; gain = 560.832
+Finished Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 768.039 ; gain = 560.945
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:54 ; elapsed = 00:01:14 . Memory (MB): peak = 767.961 ; gain = 560.832
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 768.039 ; gain = 560.945
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -2133,10 +2120,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:25 . Memory (MB): peak = 904.965 ; gain = 697.836
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 905.164 ; gain = 698.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:28 . Memory (MB): peak = 949.758 ; gain = 742.629
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 949.676 ; gain = 742.582
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2148,16 +2135,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:31 . Memory (MB): peak = 955.965 ; gain = 748.836
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 955.367 ; gain = 748.273
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:09 ; elapsed = 00:01:31 . Memory (MB): peak = 955.965 ; gain = 748.836
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 955.367 ; gain = 748.273
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:09 ; elapsed = 00:01:31 . Memory (MB): peak = 955.965 ; gain = 748.836
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 955.367 ; gain = 748.273
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -2191,7 +2178,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:33 . Memory (MB): peak = 955.965 ; gain = 748.836
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 955.367 ; gain = 748.273
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2204,7 +2191,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:33 . Memory (MB): peak = 955.965 ; gain = 748.836
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 955.367 ; gain = 748.273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2216,25 +2203,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:33 . Memory (MB): peak = 955.965 ; gain = 748.836
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 955.367 ; gain = 748.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:33 . Memory (MB): peak = 955.965 ; gain = 748.836
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 955.367 ; gain = 748.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:33 . Memory (MB): peak = 955.965 ; gain = 748.836
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 955.367 ; gain = 748.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:33 . Memory (MB): peak = 955.965 ; gain = 748.836
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 955.367 ; gain = 748.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2285,7 +2272,7 @@ Report Cell Usage:
 |2     |BUFG    |     1|
 |3     |CARRY4  |   106|
 |4     |LUT1    |   474|
-|5     |LUT2    |   133|
+|5     |LUT2    |   125|
 |6     |LUT3    |   344|
 |7     |LUT4    |   216|
 |8     |LUT5    |   494|
@@ -2297,9 +2284,9 @@ Report Cell Usage:
 |14    |SRL16E  |    40|
 |15    |SRLC32E |    47|
 |16    |FDCE    |   130|
-|17    |FDPE    |     2|
+|17    |FDPE    |    10|
 |18    |FDR     |    12|
-|19    |FDRE    |  2033|
+|19    |FDRE    |  2025|
 |20    |FDSE    |    71|
 |21    |IBUF    |    15|
 |22    |IOBUF   |    28|
@@ -2310,8 +2297,8 @@ Report Instance Areas:
 +------+------------------------------------------------------------------------------+--------------------------------------------------------------+------+
 |      |Instance                                                                      |Module                                                        |Cells |
 +------+------------------------------------------------------------------------------+--------------------------------------------------------------+------+
-|1     |top                                                                           |                                                              |  4986|
-|2     |  gpsImode_i                                                                  |gpsImode                                                      |  4947|
+|1     |top                                                                           |                                                              |  4978|
+|2     |  gpsImode_i                                                                  |gpsImode                                                      |  4939|
 |3     |    axi_uartlite_0                                                            |gpsImode_axi_uartlite_0_0                                     |   227|
 |4     |      U0                                                                      |axi_uartlite                                                  |   227|
 |5     |        AXI_LITE_IPIF_I                                                       |axi_lite_ipif                                                 |    65|
@@ -2334,18 +2321,18 @@ Report Instance Areas:
 |22    |              I_SRL_FIFO_RBU_F                                                |srl_fifo_rbu_f                                                |    32|
 |23    |                CNTR_INCR_DECR_ADDN_F_I                                       |cntr_incr_decr_addn_f                                         |    18|
 |24    |                DYNSHREG_F_I                                                  |dynshreg_f                                                    |    13|
-|25    |    myImode_0                                                                 |gpsImode_myImode_0_0                                          |  1389|
-|26    |      inst                                                                    |myImode_v1_0                                                  |  1361|
-|27    |        myImode_v1_0_S00_AXI_inst                                             |myImode_v1_0_S00_AXI                                          |  1354|
-|28    |          Tstart__0                                                           |testedge                                                      |    55|
-|29    |          Tstop1__0                                                           |testedge_12                                                   |     4|
-|30    |          Tstop2__0                                                           |testedge_13                                                   |     4|
-|31    |          Tstop3__0                                                           |testedge_14                                                   |     4|
-|32    |          Tstop4__0                                                           |testedge_15                                                   |     4|
-|33    |          Tstop5__0                                                           |testedge_16                                                   |     4|
-|34    |          Tstop6__0                                                           |testedge_17                                                   |     4|
-|35    |          Tstop7__0                                                           |testedge_18                                                   |     4|
-|36    |          Tstop8__0                                                           |testedge_19                                                   |     4|
+|25    |    myImode_0                                                                 |gpsImode_myImode_0_0                                          |  1381|
+|26    |      inst                                                                    |myImode_v1_0                                                  |  1353|
+|27    |        myImode_v1_0_S00_AXI_inst                                             |myImode_v1_0_S00_AXI                                          |  1346|
+|28    |          TstartEdgeGet                                                       |testedge                                                      |    47|
+|29    |          TstopEdgeGet1                                                       |testedge_12                                                   |     4|
+|30    |          TstopEdgeGet2                                                       |testedge_13                                                   |     4|
+|31    |          TstopEdgeGet3                                                       |testedge_14                                                   |     4|
+|32    |          TstopEdgeGet4                                                       |testedge_15                                                   |     4|
+|33    |          TstopEdgeGet5                                                       |testedge_16                                                   |     4|
+|34    |          TstopEdgeGet6                                                       |testedge_17                                                   |     4|
+|35    |          TstopEdgeGet7                                                       |testedge_18                                                   |     4|
+|36    |          TstopEdgeGet8                                                       |testedge_19                                                   |     4|
 |37    |    newGpsIp_0                                                                |gpsImode_newGpsIp_0_0                                         |  1527|
 |38    |      inst                                                                    |newGpsIp_v1_0                                                 |  1527|
 |39    |        newGpsIp_v1_0_GPS_AXI_inst                                            |newGpsIp_v1_0_GPS_AXI                                         |  1527|
@@ -2406,11 +2393,11 @@ Report Instance Areas:
 |94    |          SEQ_COUNTER                                                         |upcnt_n                                                       |    13|
 +------+------------------------------------------------------------------------------+--------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:33 . Memory (MB): peak = 955.965 ; gain = 748.836
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 955.367 ; gain = 748.273
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 165 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:01:07 . Memory (MB): peak = 955.965 ; gain = 404.473
-Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:34 . Memory (MB): peak = 955.965 ; gain = 748.836
+Synthesis finished with 0 errors, 0 critical warnings and 164 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 955.367 ; gain = 403.793
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 955.367 ; gain = 748.273
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2423,8 +2410,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-413 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+413 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:28 . Memory (MB): peak = 955.977 ; gain = 651.832
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.212 . Memory (MB): peak = 955.977 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 02 10:08:59 2016...
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 956.066 ; gain = 651.883
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 956.066 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 02 14:40:26 2016...

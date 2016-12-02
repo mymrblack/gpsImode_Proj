@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Dec 02 10:13:15 2016
-# Process ID: 8972
+# Start of session at: Fri Dec 02 14:40:32 2016
+# Process ID: 6732
 # Current directory: E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/impl_1
 # Command line: vivado.exe -log gpsImode_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source gpsImode_wrapper.tcl -notrace
 # Log file: E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/impl_1/gpsImode_wrapper.vdi

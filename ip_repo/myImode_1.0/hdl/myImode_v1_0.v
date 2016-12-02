@@ -118,6 +118,7 @@
            .Tstop6(Tstop6),
            .Tstop7(Tstop7),
            .Tstop8(Tstop8),
+           .set_zero(set_zero),
 //           .ext_trig(ext_trig),   
 		.S_AXI_ACLK(s00_axi_aclk),
 		.S_AXI_ARESETN(s00_axi_aresetn),
