@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=E:/Software/Xilinx/SDK/2016.2/bin;E:/Software/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;E:/Software/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:E:/Software/Xilinx/Vivado/2016.2/bin
+  PATH=D:/Xilinx/SDK/2016.2/bin;D:/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2016.2/bin
 else
-  PATH=E:/Software/Xilinx/SDK/2016.2/bin;E:/Software/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;E:/Software/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:E:/Software/Xilinx/Vivado/2016.2/bin:$PATH
+  PATH=D:/Xilinx/SDK/2016.2/bin;D:/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2016.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/lynn.zheng/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/impl_1'
+HD_PWD='E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log gpsImode_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source gpsImode_wrapper.tcl -notrace
 
 

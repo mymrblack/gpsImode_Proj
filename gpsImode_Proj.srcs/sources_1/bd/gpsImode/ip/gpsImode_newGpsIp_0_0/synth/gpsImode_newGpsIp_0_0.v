@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:newGpsIp:1.0
-// IP Revision: 21
+// IP Revision: 22
 
 (* X_CORE_INFO = "newGpsIp_v1_0,Vivado 2016.2" *)
 (* CHECK_LICENSE_TYPE = "gpsImode_newGpsIp_0_0,newGpsIp_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "gpsImode_newGpsIp_0_0,newGpsIp_v1_0,{x_ipProduct=Vivado 2016.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=newGpsIp,x_ipVersion=1.0,x_ipCoreRevision=21,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_GPS_AXI_DATA_WIDTH=32,C_GPS_AXI_ADDR_WIDTH=6}" *)
+(* CORE_GENERATION_INFO = "gpsImode_newGpsIp_0_0,newGpsIp_v1_0,{x_ipProduct=Vivado 2016.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=newGpsIp,x_ipVersion=1.0,x_ipCoreRevision=22,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_GPS_AXI_DATA_WIDTH=32,C_GPS_AXI_ADDR_WIDTH=6}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module gpsImode_newGpsIp_0_0 (
   PPS_IN,

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:newGpsIp:1.0
-// IP Revision: 21
+// IP Revision: 22
 
 `timescale 1ns/1ps
 

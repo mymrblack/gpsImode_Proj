@@ -514,7 +514,7 @@ GPS gps_module(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .wr(`WR),
 			   .day_out(day_out), .month_out(month_out), .year_out(year_out));
 
 
-
+/*
   reg secondTemp1;
   reg secondTemp2;
   wire secondPlus;
@@ -528,10 +528,10 @@ GPS gps_module(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .wr(`WR),
       secondTemp2 <= secondTemp1;
     end
   end
-  assign secondPlus =  secondTemp1 & (~secondTemp2);	 
+  assign secondPlus =  secondTemp1 & (~secondTemp2);	 */
     
     
-GpsConnectToImode GpsAndImode(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .trigger(secondPlus),
+GpsConnectToImode GpsAndImode(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .trigger(tstartCome),
                               .yearData(year_out[`YEAR_WIDTH-1:0]), 
 							  .monthData(month_out[`MONTH_WIDTH-1:0]), 
 							  .dayData(day_out[`DAY_WIDTH-1:0]), 

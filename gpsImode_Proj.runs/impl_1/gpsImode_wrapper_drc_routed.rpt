@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Wed Nov 30 17:35:41 2016
-| Host         : DESKTOP-BGEPG26 running 64-bit major release  (build 9200)
+| Date         : Fri Dec 02 10:10:25 2016
+| Host         : DESKTOP-G26N4G8 running 64-bit major release  (build 9200)
 | Command      : report_drc -file gpsImode_wrapper_drc_routed.rpt -pb gpsImode_wrapper_drc_routed.pb
 | Design       : gpsImode_wrapper
 | Device       : xc7z020clg484-1
@@ -23,15 +23,10 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 2
+             Violations found: 1
 
 2. REPORT DETAILS
 -----------------
-IOSR-1#1 Warning
-IOB set reset sharing  
-IO PPS_IN connects to flops which have these gpsImode_i/newGpsIp_0/inst/newGpsIp_v1_0_GPS_AXI_inst/gps_module/day_count/secondTemp1_reg, gpsImode_i/newGpsIp_0/inst/newGpsIp_v1_0_GPS_AXI_inst/GpsAndImode/SR[0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
-Related violations: <none>
-
 PLIO-7#1 Warning
 Placement Constraints Check for IO constraints  
 An IO Bus FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (FIXED_IO_mio[53], FIXED_IO_mio[52], FIXED_IO_mio[51], FIXED_IO_mio[50], FIXED_IO_mio[49], FIXED_IO_mio[48], FIXED_IO_mio[47], FIXED_IO_mio[46], FIXED_IO_mio[45], FIXED_IO_mio[44], FIXED_IO_mio[43], FIXED_IO_mio[42], FIXED_IO_mio[41], FIXED_IO_mio[40], FIXED_IO_mio[39] (the first 15 of 38 listed)); LVCMOS33 (FIXED_IO_mio[15], FIXED_IO_mio[14], FIXED_IO_mio[13], FIXED_IO_mio[12], FIXED_IO_mio[11], FIXED_IO_mio[10], FIXED_IO_mio[9], FIXED_IO_mio[8], FIXED_IO_mio[7], FIXED_IO_mio[6], FIXED_IO_mio[5], FIXED_IO_mio[4], FIXED_IO_mio[3], FIXED_IO_mio[2], FIXED_IO_mio[1] (the first 15 of 16 listed)); 

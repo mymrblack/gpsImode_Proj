@@ -1,6 +1,6 @@
-set_property SRC_FILE_INFO {cfile:f:/lynn.zheng/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc rfile:../../../gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:gpsImode_i/processing_system7_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:F:/lynn.zheng/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc rfile:../../../gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc id:2} [current_design]
-set_property SRC_FILE_INFO {cfile:F:/lynn.zheng/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc rfile:../../../gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc id:3} [current_design]
+set_property SRC_FILE_INFO {cfile:e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc rfile:../../../gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:gpsImode_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc rfile:../../../gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc rfile:../../../gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc id:3} [current_design]
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3
 set_property src_info {type:SCOPED_XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]

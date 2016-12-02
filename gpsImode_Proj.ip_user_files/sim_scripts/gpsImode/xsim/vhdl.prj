@@ -1,4 +1,4 @@
-vhdl xpm "E:/Software/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_VCOMP.vhd" 
+vhdl xpm "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_VCOMP.vhd" 
 vhdl axi_lite_ipif_v3_0_4 "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/ipif_pkg.vhd" 
 vhdl axi_lite_ipif_v3_0_4 "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd" 
 vhdl axi_lite_ipif_v3_0_4 "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/address_decoder.vhd" 

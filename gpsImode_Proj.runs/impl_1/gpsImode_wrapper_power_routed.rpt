@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Wed Nov 30 17:35:44 2016
-| Host             : DESKTOP-BGEPG26 running 64-bit major release  (build 9200)
+| Date             : Fri Dec 02 10:10:27 2016
+| Host             : DESKTOP-G26N4G8 running 64-bit major release  (build 9200)
 | Command          : report_power -file gpsImode_wrapper_power_routed.rpt -pb gpsImode_wrapper_power_summary_routed.pb -rpx gpsImode_wrapper_power_routed.rpx
 | Design           : gpsImode_wrapper
 | Device           : xc7z020clg484-1
@@ -50,14 +50,14 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.008 |        3 |       --- |             --- |
-| Slice Logic             |     0.002 |     4406 |       --- |             --- |
-|   LUT as Logic          |     0.002 |     1499 |     53200 |            2.82 |
-|   Register              |    <0.001 |     2157 |    106400 |            2.03 |
+| Slice Logic             |     0.002 |     4319 |       --- |             --- |
+|   LUT as Logic          |     0.002 |     1475 |     53200 |            2.77 |
+|   Register              |    <0.001 |     2097 |    106400 |            1.97 |
 |   CARRY4                |    <0.001 |      100 |     13300 |            0.75 |
 |   F7/F8 Muxes           |    <0.001 |      100 |     53200 |            0.19 |
 |   LUT as Shift Register |    <0.001 |       78 |     17400 |            0.45 |
 |   Others                |     0.000 |      241 |       --- |             --- |
-| Signals                 |     0.004 |     3612 |       --- |             --- |
+| Signals                 |     0.004 |     3527 |       --- |             --- |
 | I/O                     |     0.025 |       67 |       200 |           33.50 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.158 |          |           |                 |

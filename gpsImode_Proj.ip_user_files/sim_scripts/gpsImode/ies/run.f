@@ -1,8 +1,8 @@
 -makelib ies/xil_defaultlib -sv \
-  "E:/Software/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 -endlib
 -makelib ies/xpm \
-  "E:/Software/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_VCOMP.vhd" \
+  "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies/processing_system7_bfm_v2_0_5 \
   "../../../ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_wr.v" \
