@@ -45,7 +45,7 @@ int FfsSdPolledExample(int *pchandata, Time_Data *timeData)
 	u32 FileSize = (10*1024*1024);
 	TCHAR *Path = "0:/";
 	unsigned int i=0,j=0;
-	unsigned int count_per_page = FileSize / 72;
+	unsigned int count_per_page = FileSize / 100;
 	unsigned int count_page = 0;
 	Res = f_mount(&fatfs, Path, 0);
 
@@ -80,7 +80,13 @@ int FfsSdPolledExample(int *pchandata, Time_Data *timeData)
 				i++;
 				continue;
 			}
-		sprintf(SourceAddress + count_page * 72, "%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\n",
+   		GPS_timeDataDecode(timeData+i);
+ //  		GPS_printTime(timeData+i);
+		sprintf(SourceAddress + count_page * 100,
+				"%4d/%2d/%2d\t%2d:%2d:%2d:%3d:%3d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\n",
+				(timeData+i)->year,(timeData+i)->month,(timeData+i)->day,
+				(timeData+i)->hour,(timeData+i)->minute,(timeData+i)->second,
+				(timeData+i)->millisec,(timeData+i)->microsec,
 				*(pchandata+8*i+0),*(pchandata+8*i+1),*(pchandata+8*i+2),*(pchandata+8*i+3),
 				*(pchandata+8*i+4),*(pchandata+8*i+5),*(pchandata+8*i+6),*(pchandata+8*i+7));
 		i++;

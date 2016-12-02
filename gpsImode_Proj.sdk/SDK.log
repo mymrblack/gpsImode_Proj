@@ -641,3 +641,229 @@ Design is not opened in the current session.
 14:57:48 INFO  : ps7_init is completed.
 14:57:48 INFO  : ps7_post_config is completed.
 14:57:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:06:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:06:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:06:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:06:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+15:06:37 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+15:06:44 INFO  : ps7_init is completed.
+15:06:44 INFO  : ps7_post_config is completed.
+15:06:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:09:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:11:27 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+15:11:27 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 64"
+15:11:27 ERROR : Disconnect target failed.
+15:16:56 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:16:57 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+15:17:10 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:17:10 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+15:17:17 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+15:17:17 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+15:17:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+15:17:32 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+15:17:38 ERROR : Checking FPGA configuration failed..Lost communication with jtag cable. Run "xdisconnect -cable"
+                           and start over again
+
+
+15:17:38 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Lost communication with jtag cable. Run "xdisconnect -cable"
+                           and start over again
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:17:38 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+15:17:46 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+15:17:46 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:329)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:308)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:212)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:58)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:955)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:323)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:144)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
+	at java.lang.Thread.run(Thread.java:745)
+15:17:46 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:17:57 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+15:17:58 INFO  : XSDB server has started successfully.
+15:18:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:18:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+15:18:18 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+15:18:44 INFO  : ps7_init is completed.
+15:18:44 INFO  : ps7_post_config is completed.
+15:18:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:19:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:19:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:26:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:31:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:33:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:33:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:39:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:39:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:46:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:47:34 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:48:38 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+15:48:38 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:48:49 INFO  : ps7_init is completed.
+15:48:49 INFO  : ps7_post_config is completed.
+15:48:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:49:58 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:50:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:50:03 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:50:17 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:51:00 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+15:51:01 INFO  : XSDB server has started successfully.
+15:56:19 INFO  : ps7_init is completed.
+15:56:19 INFO  : ps7_post_config is completed.
+15:56:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:56:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:56:38 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot perform the Debug Command
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:56:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:56:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+15:56:50 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+15:56:53 INFO  : ps7_init is completed.
+15:56:54 INFO  : ps7_post_config is completed.
+15:56:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:58:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:58:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:03:20 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+16:03:20 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:03:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:03:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+16:03:51 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+16:03:58 INFO  : ps7_init is completed.
+16:03:58 INFO  : ps7_post_config is completed.
+16:03:58 INFO  : Processor reset is completed for ps7_cortexa9_0

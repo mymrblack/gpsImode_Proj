@@ -1,61 +1,8 @@
-15:00:28 **** Auto Build of configuration Debug for project ImodeGps_Proj ****
+16:03:57 **** Incremental Build of configuration Debug for project ImodeGps_Proj ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/imodeAndGps_proj.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imodeAndGps_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/imodeAndGps_proj.d" -MT"src/imodeAndGps_proj.o" -o "src/imodeAndGps_proj.o" "../src/imodeAndGps_proj.c"
-../src/imodeAndGps_proj.c: In function 'main':
-../src/imodeAndGps_proj.c:75:17: warning: initialization from incompatible pointer type
-  int *pchandata=chandata;
-                 ^
-In file included from ../src/tdc.h:7:0,
-                 from ../src/imodeAndGps_proj.c:45:
-../src/imodeAndGps_proj.c: At top level:
-../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
- static FIL fil;  /* File object */
-            ^
-../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
- static FATFS fatfs;
-              ^
-../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
- static char FileName[32] = "data.bin";
-             ^
-../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
- static char *SD_File;
-              ^
-'Finished building: ../src/imodeAndGps_proj.c'
-' '
-'Building file: ../src/tdc.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tdc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ImodeGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tdc.d" -MT"src/tdc.o" -o "src/tdc.o" "../src/tdc.c"
-In file included from ../src/tdc.h:7:0,
-                 from ../src/tdc.c:18:
-../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
- static FIL fil;  /* File object */
-            ^
-../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
- static FATFS fatfs;
-              ^
-../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
- static char FileName[32] = "data.bin";
-             ^
-../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
- static char *SD_File;
-              ^
-'Finished building: ../src/tdc.c'
-' '
-'Building target: ImodeGps_Proj.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ImodeGps_bsp/ps7_cortexa9_0/lib -o "ImodeGps_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: ImodeGps_Proj.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size ImodeGps_Proj.elf  |tee "ImodeGps_Proj.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 162336	   2812	21959744	22124892	151995c	ImodeGps_Proj.elf
-'Finished building: ImodeGps_Proj.elf.size'
-' '
+make: Nothing to be done for `main-build'.
 
-15:00:29 Build Finished (took 782ms)
+16:03:57 Build Finished (took 136ms)
 

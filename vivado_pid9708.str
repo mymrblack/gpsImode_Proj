@@ -918,3 +918,5 @@ dismissDialog("Export Hardware"); // af:x (cv:JFrame)
 // [GUI Memory]: 155 MB (+6855kb) [00:09:54]
 // HMemoryUtils.trashcanNow. Engine heap size: 1,710 MB. GUI used memory: 102 MB. Current time: 12/2/16 2:49:08 PM CST
 // [Engine Memory]: 1,710 MB (+17222kb) [00:15:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,710 MB. GUI used memory: 100 MB. Current time: 12/2/16 3:19:08 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,710 MB. GUI used memory: 96 MB. Current time: 12/2/16 3:49:09 PM CST
