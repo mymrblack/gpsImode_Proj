@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Fri Dec 02 14:41:28 2016
+| Date             : Tue Dec 06 15:01:03 2016
 | Host             : DESKTOP-G26N4G8 running 64-bit major release  (build 9200)
 | Command          : report_power -file gpsImode_wrapper_power_routed.rpt -pb gpsImode_wrapper_power_summary_routed.pb -rpx gpsImode_wrapper_power_routed.rpx
 | Design           : gpsImode_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.727 |
-| Dynamic (W)              | 1.569 |
+| Total On-Chip Power (W)  | 1.722 |
+| Dynamic (W)              | 1.564 |
 | Device Static (W)        | 0.158 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 65.1  |
@@ -50,18 +50,18 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.008 |        3 |       --- |             --- |
-| Slice Logic             |     0.002 |     4395 |       --- |             --- |
-|   LUT as Logic          |     0.002 |     1491 |     53200 |            2.80 |
-|   Register              |    <0.001 |     2155 |    106400 |            2.03 |
+| Slice Logic             |     0.002 |     4549 |       --- |             --- |
+|   LUT as Logic          |     0.002 |     1524 |     53200 |            2.86 |
+|   Register              |    <0.001 |     2226 |    106400 |            2.09 |
 |   CARRY4                |    <0.001 |      100 |     13300 |            0.75 |
 |   F7/F8 Muxes           |    <0.001 |      100 |     53200 |            0.19 |
 |   LUT as Shift Register |    <0.001 |       78 |     17400 |            0.45 |
-|   Others                |     0.000 |      241 |       --- |             --- |
-| Signals                 |     0.004 |     3602 |       --- |             --- |
-| I/O                     |     0.025 |       67 |       200 |           33.50 |
+|   Others                |     0.000 |      253 |       --- |             --- |
+| Signals                 |     0.004 |     3678 |       --- |             --- |
+| I/O                     |     0.021 |       67 |       200 |           33.50 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.158 |          |           |                 |
-| Total                   |     1.727 |          |           |                 |
+| Total                   |     1.722 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.030 |       0.015 |      0.015 |
+| Vccint    |       1.000 |     0.029 |       0.014 |      0.015 |
 | Vccaux    |       1.800 |     0.021 |       0.001 |      0.021 |
-| Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |
+| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
 | Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
@@ -84,7 +84,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.749 |       0.718 |      0.031 |
+| Vccpint   |       1.000 |     0.748 |       0.718 |      0.030 |
 | Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
@@ -147,8 +147,8 @@ Table of Contents
 +-----------------------------------------------------------------------------+-----------+
 | Name                                                                        | Power (W) |
 +-----------------------------------------------------------------------------+-----------+
-| gpsImode_wrapper                                                            |     1.569 |
-|   gpsImode_i                                                                |     1.554 |
+| gpsImode_wrapper                                                            |     1.564 |
+|   gpsImode_i                                                                |     1.548 |
 |     axi_uartlite_0                                                          |    <0.001 |
 |       U0                                                                    |    <0.001 |
 |         AXI_LITE_IPIF_I                                                     |    <0.001 |
@@ -171,7 +171,7 @@ Table of Contents
 |               I_SRL_FIFO_RBU_F                                              |    <0.001 |
 |                 CNTR_INCR_DECR_ADDN_F_I                                     |    <0.001 |
 |                 DYNSHREG_F_I                                                |    <0.001 |
-|     myImode_0                                                               |     0.014 |
+|     myImode_0                                                               |     0.009 |
 |       data_IOBUF[0]_inst                                                    |    <0.001 |
 |       data_IOBUF[10]_inst                                                   |    <0.001 |
 |       data_IOBUF[11]_inst                                                   |    <0.001 |
@@ -202,15 +202,24 @@ Table of Contents
 |       data_IOBUF[9]_inst                                                    |    <0.001 |
 |       inst                                                                  |     0.004 |
 |         myImode_v1_0_S00_AXI_inst                                           |     0.004 |
-|           TstartEdgeGet                                                     |    <0.001 |
-|           TstopEdgeGet1                                                     |    <0.001 |
-|           TstopEdgeGet2                                                     |    <0.001 |
-|           TstopEdgeGet3                                                     |    <0.001 |
-|           TstopEdgeGet4                                                     |    <0.001 |
-|           TstopEdgeGet5                                                     |    <0.001 |
-|           TstopEdgeGet6                                                     |    <0.001 |
-|           TstopEdgeGet7                                                     |    <0.001 |
-|           TstopEdgeGet8                                                     |    <0.001 |
+|           getTstartTrigger                                                  |    <0.001 |
+|           getTstopTrigger1                                                  |    <0.001 |
+|           getTstopTrigger2                                                  |    <0.001 |
+|           getTstopTrigger3                                                  |    <0.001 |
+|           getTstopTrigger4                                                  |    <0.001 |
+|           getTstopTrigger5                                                  |    <0.001 |
+|           getTstopTrigger6                                                  |    <0.001 |
+|           getTstopTrigger7                                                  |    <0.001 |
+|           getTstopTrigger8                                                  |    <0.001 |
+|           shouldCompleteTdcTimingSequenceforRegReadAndWrite                 |     0.001 |
+|             tdcRegRead                                                      |    <0.001 |
+|               getRdTrigger                                                  |    <0.001 |
+|               getTimingFlag                                                 |    <0.001 |
+|               getTimingStep                                                 |    <0.001 |
+|             tdcRegWrite                                                     |    <0.001 |
+|               getTimingFlag                                                 |    <0.001 |
+|               getTimingStep                                                 |    <0.001 |
+|               getWrTrigger                                                  |    <0.001 |
 |     newGpsIp_0                                                              |     0.003 |
 |       inst                                                                  |     0.003 |
 |         newGpsIp_v1_0_GPS_AXI_inst                                          |     0.003 |
@@ -238,10 +247,10 @@ Table of Contents
 |                 cmd_translator_0                                            |    <0.001 |
 |                   incr_cmd_0                                                |    <0.001 |
 |                   wrap_cmd_0                                                |    <0.001 |
-|               RD.r_channel_0                                                |     0.001 |
+|               RD.r_channel_0                                                |    <0.001 |
 |                 rd_data_fifo_0                                              |    <0.001 |
 |                 transaction_fifo_0                                          |    <0.001 |
-|               SI_REG                                                        |     0.002 |
+|               SI_REG                                                        |     0.001 |
 |                 ar_pipe                                                     |    <0.001 |
 |                 aw_pipe                                                     |    <0.001 |
 |                 b_pipe                                                      |    <0.001 |

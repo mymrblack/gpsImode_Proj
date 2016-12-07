@@ -15,43 +15,42 @@
 	)
 	(
 		// Users to add ports here
-                input wire StartTrigger,
-                input wire StopTrigger1,
-                input wire StopTrigger2,
-                input wire StopTrigger3,
-                input wire StopTrigger4,
-                input wire StopTrigger5,
-                input wire StopTrigger6,
-                input wire StopTrigger7,
-                input wire StopTrigger8,                
-                
-                output wire StopDis1,
-                output wire StopDis2,
-                output wire StopDis3,
-                output wire StopDis4,
-                output wire StartDis,
-                output wire[3:0] addr,
-                inout wire [27:0] data,
-                output wire wrn,
-                output wire rdn,
-                output wire csn,
-                output wire oen,
-                output wire AluTrigger,
-                input wire IrFlag,
-                input wire EF1,
-                input wire EF2,
-                input wire ErrFlag,
-                output wire Tstart,
-                output  wire Tstop1,
-                output wire Tstop2,
-                output wire Tstop3,
-                output wire Tstop4,
-                output wire Tstop5,
-                output wire Tstop6,
-                output wire Tstop7,
-                output wire Tstop8,
-                output wire set_zero,
-//                input wire ext_trig,
+		input wire StartTrigger,
+		input wire StopTrigger1,
+		input wire StopTrigger2,
+		input wire StopTrigger3,
+		input wire StopTrigger4,
+		input wire StopTrigger5,
+		input wire StopTrigger6,
+		input wire StopTrigger7,
+		input wire StopTrigger8,                
+
+		output wire StopDis1,
+		output wire StopDis2,
+		output wire StopDis3,
+		output wire StopDis4,
+		output wire StartDis,
+		output wire[3:0] addr,
+		inout wire [27:0] data,
+		output wire wrn,
+		output wire rdn,
+		output wire csn,
+		output wire oen,
+		output wire AluTrigger,
+		input wire IrFlag,
+		input wire EF1,
+		input wire EF2,
+		input wire ErrFlag,
+		output wire Tstart,
+		output  wire Tstop1,
+		output wire Tstop2,
+		output wire Tstop3,
+		output wire Tstop4,
+		output wire Tstop5,
+		output wire Tstop6,
+		output wire Tstop7,
+		output wire Tstop8,
+		output wire set_zero,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -62,35 +61,35 @@
 		// Write address (issued by master, acceped by Slave)
 		input wire [C_S_AXI_ADDR_WIDTH-1 : 0] S_AXI_AWADDR,
 		// Write channel Protection type. This signal indicates the
-    		// privilege and security level of the transaction, and whether
-    		// the transaction is a data access or an instruction access.
+		// privilege and security level of the transaction, and whether
+		// the transaction is a data access or an instruction access.
 		input wire [2 : 0] S_AXI_AWPROT,
 		// Write address valid. This signal indicates that the master signaling
-    		// valid write address and control information.
+		// valid write address and control information.
 		input wire  S_AXI_AWVALID,
 		// Write address ready. This signal indicates that the slave is ready
-    		// to accept an address and associated control signals.
+		// to accept an address and associated control signals.
 		output wire  S_AXI_AWREADY,
 		// Write data (issued by master, acceped by Slave) 
 		input wire [C_S_AXI_DATA_WIDTH-1 : 0] S_AXI_WDATA,
 		// Write strobes. This signal indicates which byte lanes hold
-    		// valid data. There is one write strobe bit for each eight
-    		// bits of the write data bus.    
+		// valid data. There is one write strobe bit for each eight
+		// bits of the write data bus.    
 		input wire [(C_S_AXI_DATA_WIDTH/8)-1 : 0] S_AXI_WSTRB,
 		// Write valid. This signal indicates that valid write
-    		// data and strobes are available.
+		// data and strobes are available.
 		input wire  S_AXI_WVALID,
 		// Write ready. This signal indicates that the slave
-    		// can accept the write data.
+		// can accept the write data.
 		output wire  S_AXI_WREADY,
 		// Write response. This signal indicates the status
-    		// of the write transaction.
+		// of the write transaction.
 		output wire [1 : 0] S_AXI_BRESP,
 		// Write response valid. This signal indicates that the channel
-    		// is signaling a valid write response.
+		// is signaling a valid write response.
 		output wire  S_AXI_BVALID,
 		// Response ready. This signal indicates that the master
-    		// can accept a write response.
+		// can accept a write response.
 		input wire  S_AXI_BREADY,
 		// Read address (issued by master, acceped by Slave)
 		input wire [C_S_AXI_ADDR_WIDTH-1 : 0] S_AXI_ARADDR,
@@ -153,7 +152,7 @@
     reg  m_rdn;
     reg m_oen;
     reg[27:0]  m_data;
-    reg [27:0] data_in;//23153135
+    wire [27:0] data_in;
     reg[3:0]   m_addr;     
     reg  m_AluTrigger;
     reg  m_Tstart;
@@ -165,9 +164,15 @@
     reg m_Tstop6;
     reg m_Tstop7;
     reg m_Tstop8;
-//    reg ext_trig_reg0;
-//    reg ext_trig_reg1;
     reg [7:0] count;//bylk
+    wire stop1_set_zero;
+    wire stop2_set_zero;
+    wire stop3_set_zero;
+    wire stop4_set_zero;
+    wire stop5_set_zero;
+    wire stop6_set_zero;
+    wire stop7_set_zero;
+    wire stop8_set_zero;
 
 	//------------------------------------------------
 	//-- Number of Slave Registers 26
@@ -655,10 +660,7 @@
             5'h01   : reg_data_out <= time_counter;
             5'h02   : reg_data_out <= Tstart_counter;
             5'h03   : reg_data_out <= slv_reg3;
-            5'h04   : if(rdn==0)
-                       reg_data_out <=data_in; // modified by lusong;
-                    else
-                       reg_data_out <=0;
+            5'h04   : reg_data_out <=data_in; // modified by lynn;
             5'h05   : reg_data_out <= EF1;
             5'h06   : reg_data_out <= EF2;
             5'h07   : reg_data_out <= slv_reg7;
@@ -720,24 +722,11 @@
       else begin
          m_oen<=1;
         {m_StartDis,m_StopDis1,m_StopDis2,m_StopDis3,m_StopDis4}<=slv_reg7;
-         m_csn<=slv_reg0;
-         m_wrn<=slv_reg1;
-         m_rdn<=slv_reg2;
-         m_addr<=slv_reg3;
+         {m_csn, m_wrn, m_rdn, m_addr}<=slv_reg0;
          m_data<=slv_reg4;
          m_AluTrigger<=slv_reg9;
          end
      end
-   
-   	 testedge TstartEdgeGet(StartTrigger,S_AXI_ACLK,S_AXI_ARESETN,set_zero);
-     testedge TstopEdgeGet1(StopTrigger1,S_AXI_ACLK,S_AXI_ARESETN,stop1_set_zero);
-     testedge TstopEdgeGet2(StopTrigger2,S_AXI_ACLK,S_AXI_ARESETN,stop2_set_zero);
-     testedge TstopEdgeGet3(StopTrigger3,S_AXI_ACLK,S_AXI_ARESETN,stop3_set_zero);
-     testedge TstopEdgeGet4(StopTrigger4,S_AXI_ACLK,S_AXI_ARESETN,stop4_set_zero);
-     testedge TstopEdgeGet5(StopTrigger5,S_AXI_ACLK,S_AXI_ARESETN,stop5_set_zero);
-     testedge TstopEdgeGet6(StopTrigger6,S_AXI_ACLK,S_AXI_ARESETN,stop6_set_zero);
-     testedge TstopEdgeGet7(StopTrigger7,S_AXI_ACLK,S_AXI_ARESETN,stop7_set_zero);
-     testedge TstopEdgeGet8(StopTrigger8,S_AXI_ACLK,S_AXI_ARESETN,stop8_set_zero);   
      
      always@(posedge S_AXI_ACLK or negedge S_AXI_ARESETN) begin
       if(S_AXI_ARESETN == 1'b0) begin
@@ -768,29 +757,13 @@
       end
     end 
     
- always@(*)
-   begin
-     if(!rdn)begin
-        data_in = data;
-     end
-     else begin
-        data_in = 28'd0;
-     end
-   end
-   //end modify  
+ 
           assign StopDis1=m_StopDis1;
           assign StopDis2=m_StopDis2;
           assign StopDis3=m_StopDis3;
           assign StopDis4=m_StopDis4;
           assign StartDis=m_StartDis;
-          assign csn=m_csn;
-          assign wrn=m_wrn;
-          assign rdn=m_rdn;
-          assign oen=m_oen;
-          assign data=(rdn)?m_data:28'bzzzzzzzzzzzzzzzzzzzzzzzzzzzz;
-
           
-          assign  addr=m_addr;
           assign AluTrigger=m_AluTrigger;
           assign Tstart=StartTrigger;
           assign Tstop1=StopTrigger1;
@@ -803,27 +776,22 @@
           assign Tstop8=StopTrigger8;
                                        //bylk
                      
+   TdcRegReadAndWrite shouldCompleteTdcTimingSequenceforRegReadAndWrite (.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), 
+	   .wr_in(m_wrn), .rd_in(m_rdn), .addr_in(m_addr), .dataFromSoftware(m_data), .tdcDataReg(data),
+	   .dataForSoftware(data_in), .csn_out(csn), .rdn_out(rdn), 
+	   .wrn_out(wrn), .addr_out(addr));
+   GetSyncSignal_Async  getTstartTrigger(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .signal_in(StartTrigger), .signal_out(set_zero)); 
+   GetSyncSignal_Async  getTstopTrigger1(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .signal_in(StopTrigger1), .signal_out(stop1_set_zero)); 
+   GetSyncSignal_Async  getTstopTrigger2(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .signal_in(StopTrigger2), .signal_out(stop2_set_zero)); 
+   GetSyncSignal_Async  getTstopTrigger3(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .signal_in(StopTrigger3), .signal_out(stop3_set_zero)); 
+   GetSyncSignal_Async  getTstopTrigger4(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .signal_in(StopTrigger4), .signal_out(stop4_set_zero)); 
+   GetSyncSignal_Async  getTstopTrigger5(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .signal_in(StopTrigger5), .signal_out(stop5_set_zero)); 
+   GetSyncSignal_Async  getTstopTrigger6(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .signal_in(StopTrigger6), .signal_out(stop6_set_zero)); 
+   GetSyncSignal_Async  getTstopTrigger7(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .signal_in(StopTrigger7), .signal_out(stop7_set_zero)); 
+   GetSyncSignal_Async  getTstopTrigger8(.clk(S_AXI_ACLK), .resetn(S_AXI_ARESETN), .signal_in(StopTrigger8), .signal_out(stop8_set_zero)); 
 
 	// User logic ends
 
 	endmodule
 	
-	
-module testedge(input TTL,input S_AXI_ACLK,input S_AXI_ARESETN,output set_zero);
-    reg temp1,temp2,temp3;
-    
-    always@(posedge S_AXI_ACLK or negedge S_AXI_ARESETN) begin
-    if(S_AXI_ARESETN == 1'b0) begin
-      temp1<=0;
-      temp2<=0;
-      temp3<=0; 
-    end
-    else begin 
-      temp1<=TTL;
-      temp2<=temp1;
-      temp3<=temp2;
-    end
-  end
-  
-  assign set_zero=temp2&(~temp3);
-endmodule
+

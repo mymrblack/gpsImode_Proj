@@ -887,3 +887,311 @@ com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
 16:57:16 INFO  : ps7_init is completed.
 16:57:16 INFO  : ps7_post_config is completed.
 16:57:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:02:58 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:04:38 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+17:04:39 INFO  : XSDB server has started successfully.
+17:05:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+17:05:16 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+17:05:42 INFO  : ps7_init is completed.
+17:05:43 INFO  : ps7_post_config is completed.
+17:05:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:22:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+17:22:29 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+17:22:52 INFO  : ps7_init is completed.
+17:22:52 INFO  : ps7_post_config is completed.
+17:22:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:43:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:43:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:43:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+17:43:49 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+17:44:27 INFO  : ps7_init is completed.
+17:44:28 INFO  : ps7_post_config is completed.
+17:44:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:52:50 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read(BufferedReader.java:182)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:745)
+17:52:50 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+17:57:19 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+17:57:20 INFO  : XSDB server has started successfully.
+18:00:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:00:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+18:00:42 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+18:00:53 ERROR : Unexpected error while issuing command {"command": "xfpga_isconfigured -cable type xilinx_tcf url TCP:127.0.0.1:3121 "} to XMD: java.net.SocketException: Connection reset by peer: socket write error
+18:00:53 ERROR : Checking FPGA configuration failed..
+18:00:53 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+18:01:05 ERROR : Unexpected error while issuing command {"command": "xfpga_isconfigured -cable type xilinx_tcf url TCP:127.0.0.1:3121 "} to XMD: java.net.SocketException: Connection reset by peer: socket write error
+18:01:05 ERROR : Checking FPGA configuration failed..
+18:01:05 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+18:01:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:01:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+18:01:25 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+18:01:30 ERROR : Unexpected error while issuing command {"command": "xfpga_isconfigured -cable type xilinx_tcf url TCP:127.0.0.1:3121 "} to XMD: java.net.SocketException: Connection reset by peer: socket write error
+18:01:30 ERROR : Checking FPGA configuration failed..
+18:01:30 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+18:01:38 ERROR : Unexpected error while issuing command {"command": "xfpga_isconfigured -cable type xilinx_tcf url TCP:127.0.0.1:3121 "} to XMD: java.net.SocketException: Connection reset by peer: socket write error
+18:01:38 ERROR : Checking FPGA configuration failed..
+18:01:38 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+18:01:57 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+18:01:59 INFO  : XSDB server has started successfully.
+18:02:22 INFO  : ps7_init is completed.
+18:02:22 INFO  : ps7_post_config is completed.
+18:02:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:02:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:02:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:20:11 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:47:30 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+09:47:33 INFO  : XSDB server has started successfully.
+14:48:49 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+14:48:51 INFO  : XSDB server has started successfully.
+14:49:08 ERROR : (XSDB Server)R6025
+- pure virtual function call
+
+14:49:11 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+14:49:12 INFO  : XSDB server has started successfully.
+14:51:42 INFO  : Refreshed build settings on project Imode_HW_Proj
+15:07:38 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1481007679946,  Project:1480660903621
+15:07:38 INFO  : Project gpsImode_hw2's source hardware specification located at E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\gpsImode_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+15:07:49 INFO  : Copied contents of E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\gpsImode_wrapper.hdf into \gpsImode_hw2\system.hdf.
+15:07:53 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:07:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: ¾Ü¾ø·ÃÎÊ¡£: "C:/Users/Lin/AppData/Local/Temp\msdtadmin"
+
+15:07:55 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+15:07:55 ERROR : Error updating BSP project MSS files.
+15:07:56 INFO  : Updating hardware inferred compiler options for ImodeGps_Proj.
+15:07:56 INFO  : Updating hardware inferred compiler options for Imode_HW_Proj.
+15:07:57 INFO  : Updating hardware inferred compiler options for KaiImodeAndLynnGps.
+15:07:57 INFO  : Clearing existing target manager status.
+15:07:58 INFO  : Closing and re-opening the MSS file of ther project Imode_HW_bsp
+15:07:59 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:07:59 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+15:12:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+15:12:38 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+15:13:16 INFO  : ps7_init is completed.
+15:13:16 INFO  : ps7_post_config is completed.
+15:13:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:14:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:14:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:16:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:17:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:17:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:18:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:18:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:23:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:23:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+15:23:10 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+15:23:19 INFO  : ps7_init is completed.
+15:23:19 INFO  : ps7_post_config is completed.
+15:23:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:39:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:39:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+15:39:18 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+15:39:32 INFO  : ps7_init is completed.
+15:39:33 INFO  : ps7_post_config is completed.
+15:39:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:42:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:55:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:55:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+15:55:27 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+15:56:02 INFO  : ps7_init is completed.
+15:56:02 INFO  : ps7_post_config is completed.
+15:56:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:57:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:14:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:14:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+16:14:55 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+16:17:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+16:17:12 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+16:17:29 INFO  : ps7_init is completed.
+16:17:29 INFO  : ps7_post_config is completed.
+16:17:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:34:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:34:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+16:34:50 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+16:35:34 INFO  : ps7_init is completed.
+16:35:35 INFO  : ps7_post_config is completed.
+16:35:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:48:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:48:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+16:48:13 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+16:48:31 INFO  : ps7_init is completed.
+16:48:32 INFO  : ps7_post_config is completed.
+16:48:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:07:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:07:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+17:08:00 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+17:09:26 INFO  : ps7_init is completed.
+17:09:26 INFO  : ps7_post_config is completed.
+17:09:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:25:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+17:25:34 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+17:27:10 INFO  : ps7_init is completed.
+17:27:10 INFO  : ps7_post_config is completed.
+17:27:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:28:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:36:02 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:22:39 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+14:22:41 INFO  : XSDB server has started successfully.
+15:58:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+15:58:20 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+15:59:14 INFO  : ps7_init is completed.
+15:59:14 INFO  : ps7_post_config is completed.
+15:59:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:04:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:05:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:40:57 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read(BufferedReader.java:182)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:745)
+16:40:57 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+16:43:51 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+16:43:52 INFO  : XSDB server has started successfully.
+16:43:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+16:44:04 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+16:44:40 ERROR : Unexpected error while issuing command {"command": "xfpga_isconfigured -cable type xilinx_tcf url TCP:127.0.0.1:3121 "} to XMD: java.net.SocketException: Connection reset by peer: socket write error
+16:44:40 ERROR : Checking FPGA configuration failed..
+16:44:40 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:45:48 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+16:45:49 INFO  : XSDB server has started successfully.
+16:46:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:46:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+16:46:08 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+16:46:17 INFO  : ps7_init is completed.
+16:46:17 INFO  : ps7_post_config is completed.
+16:46:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:49:28 INFO  : ps7_init is completed.
+16:49:28 INFO  : ps7_post_config is completed.
+16:49:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:49:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+16:49:41 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+16:49:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:49:45 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '64' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:50:45 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+16:50:45 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 352"
+16:50:56 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:51:07 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+16:51:08 INFO  : XSDB server has started successfully.
+16:51:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+16:51:30 ERROR : Cannot find memory context of target ARM_DAP
+16:51:42 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:534)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:51:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:55:44 INFO  : Launching XSDB server: xsdb.bat -interactive E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+16:55:51 INFO  : XSDB server has started successfully.
+16:56:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686573" && level==0} -index 1' command is executed.
+16:56:04 INFO  : FPGA configured successfully with bitstream "E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.sdk/gpsImode_hw2/gpsImode_wrapper.bit"
+16:57:09 INFO  : ps7_init is completed.
+16:57:09 INFO  : ps7_post_config is completed.
+16:57:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:07:39 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

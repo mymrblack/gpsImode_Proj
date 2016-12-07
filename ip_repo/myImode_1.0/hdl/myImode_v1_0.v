@@ -51,7 +51,6 @@
         output wire Tstop7,
         output wire Tstop8,
         output wire set_zero,
-//        input wire ext_trig,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -119,7 +118,6 @@
            .Tstop7(Tstop7),
            .Tstop8(Tstop8),
            .set_zero(set_zero),
-//           .ext_trig(ext_trig),   
 		.S_AXI_ACLK(s00_axi_aclk),
 		.S_AXI_ARESETN(s00_axi_aresetn),
 		.S_AXI_AWADDR(s00_axi_awaddr),
