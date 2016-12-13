@@ -67,8 +67,7 @@ unsigned int chandata[MyFileSize][8]={{0,0,0,0,0,0,0,0}};
 ******************************************************************************/
 
 
-int main()
-{
+int main(){
 
 	TDC_FlagInfo tdcFlag = {0,0,0,0};
 	int Status;
@@ -76,21 +75,23 @@ int main()
     int firstFlag =0;
     unsigned int triTimes = 0;
     Time_Data  timeData[MyFileSize] = {{0}};
-
+    TCHAR *Path = "0:2012-12-12-00-00-00";
     init_platform();
 
 
     print("Hello World\n\r");
     xil_printf("SD Polled File System Example Test \r\n");
-
-
     Gps_Init();
     Gps_FuncTest();
-    TDC_config();
-    indexFile = 0;
 
-    while(1){
+    Ffs_Init(Path);
+	Ffs_Try(Path);
+//    TDC_config();
+ //   indexFile = 0;
 
+/*    while(1){
+//    	TDC_test();
+ //   	Ffs_Try(Path);
     	firstFlag = 1;
     	do
     	{
@@ -108,7 +109,7 @@ int main()
     		firstFlag = 0;
     	}while(triTimes < MyFileSize);
 
-    	Status = FfsSdPolledExample(pchandata, timeData);//bylk
+    	Status = FfsSdPolledExample(pchandata, timeData, Path);//bylk
     	TdcAndGps_PrintChDatas(chandata, timeData);
     	if (Status != XST_SUCCESS) {
 			xil_printf("SD Polled File System Example Test failed \r\n");
@@ -116,7 +117,7 @@ int main()
 		}
     	xil_printf("Successfully ran SD Polled File System Example Test \r\n");
 		TDC_CheckIfNeedMasterRest();
-    }
+    }*/
     return 0;
 
 }

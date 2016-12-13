@@ -9,6 +9,7 @@
 #define SRC_SD_CARD_H_
 
 #include "GPS.h"
+#include "ffconf.h"
 #define MyFileSize  100000     //  10min*60*5kHz
 
 int indexFile;
@@ -16,7 +17,7 @@ int indexFile;
 /************************** Variable Definitions *****************************/
 static FIL fil;		/* File object */
 static FATFS fatfs;
-static char FileName[32] = "data.bin";
+//static char FileName[32] = "data.bin";
 static char *SD_File;
 u32 Platform;
 
@@ -32,9 +33,10 @@ u8 SourceAddress[10*1024*1024] __attribute__ ((aligned(32)));
 
 
 
-int FfsSdPolledExample(int *pchandata, Time_Data *timeData);
 
+int FfsSdPolledExample(int *pchandata, Time_Data *timeData, TCHAR *Path);
 
+FRESULT Ffs_Init(TCHAR *Path);
 
-
+int Ffs_Try(TCHAR *Path);
 #endif /* SRC_SD_CARD_H_ */

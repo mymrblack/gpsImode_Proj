@@ -52,19 +52,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hdl/gpsImode.v"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_xbar_0/gpsImode_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_processing_system7_0_axi_periph_0/gpsImode_processing_system7_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_myImode_0_0/gpsImode_myImode_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_newGpsIp_0_0/gpsImode_newGpsIp_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hw_handoff/gpsImode.hwh"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hdl/gpsImode.hwdef"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hw_handoff/gpsImode_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="gpsImode_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_auto_pc_0/gpsImode_auto_pc_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/gpsImode/hdl/gpsImode_wrapper.v">
         <FileInfo>

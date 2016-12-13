@@ -147,6 +147,9 @@ void Gps_GetTriggerTimeFromFpga(Time_Data *timeData);
 void GPS_timeDataDecode(Time_Data *timeData);
 
 void GPS_printTime(Time_Data *timeData);
+
+void Gps_GetRealTime(Time_Data *timeData);
+
 #endif /* SRC_GPS_H_ */
 
 

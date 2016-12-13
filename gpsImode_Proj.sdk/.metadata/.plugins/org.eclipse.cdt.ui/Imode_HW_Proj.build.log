@@ -1,8 +1,84 @@
-16:57:04 **** Incremental Build of configuration Debug for project Imode_HW_Proj ****
+21:11:11 **** Auto Build of configuration Debug for project Imode_HW_Proj ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: Nothing to be done for `main-build'.
+'Building file: ../src/SD_Card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SD_Card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Imode_HW_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SD_Card.d" -MT"src/SD_Card.o" -o "src/SD_Card.o" "../src/SD_Card.c"
+../src/SD_Card.c: In function 'FfsSdPolledExample':
+../src/SD_Card.c:87:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(SourceAddress + count_page * 100,
+           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:221:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/SD_Card.c:100:59: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:101:28: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    printf("%d\r\n", strlen(SourceAddress));
+                            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:108:12: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  if(strlen(SourceAddress) != 0)
+            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:110:58: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                          ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c:111:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   printf("%d\r\n", strlen(SourceAddress));
+                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/SD_Card.c: In function 'Ffs_Try':
+../src/SD_Card.c:192:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(SourceAddress,
+           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/SD_Card.c:8:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:221:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/SD_Card.c:161:15: warning: unused variable 'i' [-Wunused-variable]
+  unsigned int i=1,j=0;
+               ^
+'Finished building: ../src/SD_Card.c'
+' '
+'Building target: Imode_HW_Proj.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Imode_HW_bsp/ps7_cortexa9_0/lib -o "Imode_HW_Proj.elf"  ./src/GPS.o ./src/SD_Card.o ./src/imodeAndGps_proj.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Imode_HW_Proj.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Imode_HW_Proj.elf  |tee "Imode_HW_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 227076	   2716	24200256	24430048	174c5e0	Imode_HW_Proj.elf
+'Finished building: Imode_HW_Proj.elf.size'
+' '
 
-16:57:04 Build Finished (took 172ms)
+21:11:12 Build Finished (took 705ms)
 

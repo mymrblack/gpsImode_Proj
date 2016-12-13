@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Local" key="gpsImode_hw2-target"/>
+	<item value="gpsImode_hw2" key="programflash.hwplatform"/>
+	<item value="" key="gpsImode_hw2-imgFile"/>
+	<item value="qspi_single" key="gpsImode_hw2-flashType"/>
+	<item value="false" key="gpsImode_hw2-blankCheck"/>
+	<item value="false" key="gpsImode_hw2-verifyFlash"/>
+	<item value="Auto Detect" key="gpsImode_hw2-device"/>
+	<item value="" key="gpsImode_hw2-offSet"/>
+	<item value="" key="gpsImode_hw2-fsblFile"/>
+</section>

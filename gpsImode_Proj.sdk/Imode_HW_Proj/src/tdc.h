@@ -172,4 +172,6 @@ void TDC_setChData(int channel, int chRecvFlag, int time, unsigned int triTimes,
 void TDC_FlagCheck1(TDC_FlagInfo *tdcFlag);
 
 void TDC_CheckIfNeedPartialRest(void);
+
+void TDC_test(void);
 #endif /* SRC_TDC_H_ */

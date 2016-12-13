@@ -21,6 +21,7 @@ static	int monthOverUsualYear[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 
 void Gps_Init(void){
 
+	xil_printf("Gps Initial...\n");
 	int RecvCount = 0;
 	XUartLite GpsUartLite;		/* Instance of the UartLite Device */
 	u8 	GpsBuffer[GPS_BUFFER_SIZE] = {0};
@@ -32,7 +33,6 @@ void Gps_Init(void){
 	Gps_GetTimeInfo(GpsBuffer, &gps_data, RecvCount);
 	Gps_TimeCorrect(&gps_data);
 	GPS_SetTime(&gps_data);
-
 	return;
 }
 
@@ -140,6 +140,20 @@ void Gps_FuncTest(void){
 			GpsDataFromFpga.millisec,GpsDataFromFpga.microsec);
 	return;
 
+}
+
+void Gps_GetRealTime(Time_Data *timeData){
+
+	timeData->year = GPS_mReadReg(GPS_BASEADDR, YEAR_REG_OFFSET);
+	timeData->month = GPS_mReadReg(GPS_BASEADDR, MONTH_REG_OFFSET);
+	timeData->day = GPS_mReadReg(GPS_BASEADDR, DAY_REG_OFFSET);
+	timeData->hour = GPS_mReadReg(GPS_BASEADDR, HOUR_REG_OFFSET);
+	timeData->minute = GPS_mReadReg(GPS_BASEADDR, MINUTE_REG_OFFSET);
+	timeData->second = GPS_mReadReg(GPS_BASEADDR, SECOND_REG_OFFSET);
+	timeData->millisec = GPS_mReadReg(GPS_BASEADDR, MILLISEC_REG_OFFSET);
+	timeData->microsec = GPS_mReadReg(GPS_BASEADDR, MICROSEC_REG_OFFSET);
+
+	return;
 }
 #define TIME_REG_1	36
 #define TIME_REG_2	40
