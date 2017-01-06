@@ -206,8 +206,319 @@ CONFIG.C_S_AXI_ACLK_FREQ_HZ {100000000} \
 CONFIG.C_S_AXI_ACLK_FREQ_HZ.VALUE_SRC {DEFAULT} \
  ] $axi_uartlite_0
 
+  # Create instance: fifo_generator_0, and set properties
+  set fifo_generator_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_0 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_0
+
+  # Create instance: fifo_generator_1, and set properties
+  set fifo_generator_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_1 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_1
+
+  # Create instance: fifo_generator_2, and set properties
+  set fifo_generator_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_2 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_2
+
+  # Create instance: fifo_generator_3, and set properties
+  set fifo_generator_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_3 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_3
+
+  # Create instance: fifo_generator_4, and set properties
+  set fifo_generator_4 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_4 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_4
+
+  # Create instance: fifo_generator_5, and set properties
+  set fifo_generator_5 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_5 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_5
+
+  # Create instance: fifo_generator_6, and set properties
+  set fifo_generator_6 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_6 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_6
+
+  # Create instance: fifo_generator_7, and set properties
+  set fifo_generator_7 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_7 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_7
+
+  # Create instance: fifo_generator_8, and set properties
+  set fifo_generator_8 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_8 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_8
+
+  # Create instance: fifo_generator_9, and set properties
+  set fifo_generator_9 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_9 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_9
+
+  # Create instance: fifo_generator_10, and set properties
+  set fifo_generator_10 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_10 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_10
+
+  # Create instance: fifo_generator_11, and set properties
+  set fifo_generator_11 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_11 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_11
+
+  # Create instance: fifo_generator_12, and set properties
+  set fifo_generator_12 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_12 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_12
+
+  # Create instance: fifo_generator_13, and set properties
+  set fifo_generator_13 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_13 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_13
+
+  # Create instance: fifo_generator_14, and set properties
+  set fifo_generator_14 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_14 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_14
+
+  # Create instance: fifo_generator_15, and set properties
+  set fifo_generator_15 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_15 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {17} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {17} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_15
+
+  # Create instance: fifo_generator_16, and set properties
+  set fifo_generator_16 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_16 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {32} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {32} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_16
+
+  # Create instance: fifo_generator_17, and set properties
+  set fifo_generator_17 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_17 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {32} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {32} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_17
+
+  # Create instance: fifo_generator_18, and set properties
+  set fifo_generator_18 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_18 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {32} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {32} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_18
+
+  # Create instance: fifo_generator_19, and set properties
+  set fifo_generator_19 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_19 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {32} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {32} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_19
+
+  # Create instance: fifo_generator_20, and set properties
+  set fifo_generator_20 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_20 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {32} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {32} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_20
+
+  # Create instance: fifo_generator_21, and set properties
+  set fifo_generator_21 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.1 fifo_generator_21 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {32} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {32} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_21
+
   # Create instance: myImode_0, and set properties
   set myImode_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:myImode:1.0 myImode_0 ]
+
+  # Create instance: myip_fifo_ctrl_0, and set properties
+  set myip_fifo_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:myip_fifo_ctrl:1.0 myip_fifo_ctrl_0 ]
 
   # Create instance: newGpsIp_0, and set properties
   set newGpsIp_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:newGpsIp:1.0 newGpsIp_0 ]
@@ -1484,7 +1795,7 @@ CONFIG.PCW_WDT_WDT_IO.VALUE_SRC {DEFAULT} \
   # Create instance: processing_system7_0_axi_periph, and set properties
   set processing_system7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 processing_system7_0_axi_periph ]
   set_property -dict [ list \
-CONFIG.NUM_MI {3} \
+CONFIG.NUM_MI {5} \
  ] $processing_system7_0_axi_periph
 
   # Create instance: rst_processing_system7_0_100M, and set properties
@@ -1498,6 +1809,7 @@ CONFIG.NUM_MI {3} \
   connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M00_AXI [get_bd_intf_pins newGpsIp_0/GPS_AXI] [get_bd_intf_pins processing_system7_0_axi_periph/M00_AXI]
   connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M01_AXI [get_bd_intf_pins myImode_0/S00_AXI] [get_bd_intf_pins processing_system7_0_axi_periph/M01_AXI]
   connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M02_AXI [get_bd_intf_pins axi_uartlite_0/S_AXI] [get_bd_intf_pins processing_system7_0_axi_periph/M02_AXI]
+  connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M03_AXI [get_bd_intf_pins myip_fifo_ctrl_0/FIFO_AXI] [get_bd_intf_pins processing_system7_0_axi_periph/M03_AXI]
 
   # Create port connections
   connect_bd_net -net EF1_1 [get_bd_ports EF1] [get_bd_pins myImode_0/EF1]
@@ -1515,7 +1827,32 @@ CONFIG.NUM_MI {3} \
   connect_bd_net -net StopTrigger6_1 [get_bd_ports StopTrigger6] [get_bd_pins myImode_0/StopTrigger6]
   connect_bd_net -net StopTrigger7_1 [get_bd_ports StopTrigger7] [get_bd_pins myImode_0/StopTrigger7]
   connect_bd_net -net StopTrigger8_1 [get_bd_ports StopTrigger8] [get_bd_pins myImode_0/StopTrigger8]
-  connect_bd_net -net axi_uartlite_0_interrupt [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins processing_system7_0/IRQ_F2P]
+  connect_bd_net -net fifo_generator_0_dout [get_bd_pins fifo_generator_0/dout] [get_bd_pins myip_fifo_ctrl_0/ch1_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_0_empty [get_bd_pins fifo_generator_0/empty] [get_bd_pins myip_fifo_ctrl_0/fifo1_empty]
+  connect_bd_net -net fifo_generator_0_full [get_bd_pins fifo_generator_0/full] [get_bd_pins myip_fifo_ctrl_0/fifo1_full]
+  connect_bd_net -net fifo_generator_10_dout [get_bd_pins fifo_generator_10/dout] [get_bd_pins myip_fifo_ctrl_0/ch6_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_11_dout [get_bd_pins fifo_generator_11/dout] [get_bd_pins myip_fifo_ctrl_0/ch6_fifo2_rd_data]
+  connect_bd_net -net fifo_generator_12_dout [get_bd_pins fifo_generator_12/dout] [get_bd_pins myip_fifo_ctrl_0/ch7_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_13_dout [get_bd_pins fifo_generator_13/dout] [get_bd_pins myip_fifo_ctrl_0/ch7_fifo2_rd_data]
+  connect_bd_net -net fifo_generator_14_dout [get_bd_pins fifo_generator_14/dout] [get_bd_pins myip_fifo_ctrl_0/ch8_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_15_dout [get_bd_pins fifo_generator_15/dout] [get_bd_pins myip_fifo_ctrl_0/ch8_fifo2_rd_data]
+  connect_bd_net -net fifo_generator_16_dout [get_bd_pins fifo_generator_16/dout] [get_bd_pins myip_fifo_ctrl_0/gps1_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_17_dout [get_bd_pins fifo_generator_17/dout] [get_bd_pins myip_fifo_ctrl_0/gps1_fifo2_rd_data]
+  connect_bd_net -net fifo_generator_18_dout [get_bd_pins fifo_generator_18/dout] [get_bd_pins myip_fifo_ctrl_0/gps2_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_19_dout [get_bd_pins fifo_generator_19/dout] [get_bd_pins myip_fifo_ctrl_0/gps2_fifo2_rd_data]
+  connect_bd_net -net fifo_generator_1_dout [get_bd_pins fifo_generator_1/dout] [get_bd_pins myip_fifo_ctrl_0/ch1_fifo2_rd_data]
+  connect_bd_net -net fifo_generator_1_empty [get_bd_pins fifo_generator_1/empty] [get_bd_pins myip_fifo_ctrl_0/fifo2_empty]
+  connect_bd_net -net fifo_generator_1_full [get_bd_pins fifo_generator_1/full] [get_bd_pins myip_fifo_ctrl_0/fifo2_full]
+  connect_bd_net -net fifo_generator_20_dout [get_bd_pins fifo_generator_20/dout] [get_bd_pins myip_fifo_ctrl_0/start_tri_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_21_dout [get_bd_pins fifo_generator_21/dout] [get_bd_pins myip_fifo_ctrl_0/start_tri_fifo2_rd_data]
+  connect_bd_net -net fifo_generator_2_dout [get_bd_pins fifo_generator_2/dout] [get_bd_pins myip_fifo_ctrl_0/ch2_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_3_dout [get_bd_pins fifo_generator_3/dout] [get_bd_pins myip_fifo_ctrl_0/ch2_fifo2_rd_data]
+  connect_bd_net -net fifo_generator_4_dout [get_bd_pins fifo_generator_4/dout] [get_bd_pins myip_fifo_ctrl_0/ch3_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_5_dout [get_bd_pins fifo_generator_5/dout] [get_bd_pins myip_fifo_ctrl_0/ch3_fifo2_rd_data]
+  connect_bd_net -net fifo_generator_6_dout [get_bd_pins fifo_generator_6/dout] [get_bd_pins myip_fifo_ctrl_0/ch4_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_7_dout [get_bd_pins fifo_generator_7/dout] [get_bd_pins myip_fifo_ctrl_0/ch4_fifo2_rd_data]
+  connect_bd_net -net fifo_generator_8_dout [get_bd_pins fifo_generator_8/dout] [get_bd_pins myip_fifo_ctrl_0/ch5_fifo1_rd_data]
+  connect_bd_net -net fifo_generator_9_dout [get_bd_pins fifo_generator_9/dout] [get_bd_pins myip_fifo_ctrl_0/ch5_fifo2_rd_data]
   connect_bd_net -net myImode_0_AluTrigger [get_bd_ports AluTrigger] [get_bd_pins myImode_0/AluTrigger]
   connect_bd_net -net myImode_0_StartDis [get_bd_ports StartDis] [get_bd_pins myImode_0/StartDis]
   connect_bd_net -net myImode_0_StopDis1 [get_bd_ports StopDis1] [get_bd_pins myImode_0/StopDis1]
@@ -1523,6 +1860,7 @@ CONFIG.NUM_MI {3} \
   connect_bd_net -net myImode_0_StopDis3 [get_bd_ports StopDis3] [get_bd_pins myImode_0/StopDis3]
   connect_bd_net -net myImode_0_StopDis4 [get_bd_ports StopDis4] [get_bd_pins myImode_0/StopDis4]
   connect_bd_net -net myImode_0_Tstart [get_bd_ports Tstart] [get_bd_pins myImode_0/Tstart]
+  connect_bd_net -net myImode_0_Tstart_counter [get_bd_pins myImode_0/Tstart_counter] [get_bd_pins myip_fifo_ctrl_0/start_tri_data_to_be_wr]
   connect_bd_net -net myImode_0_Tstop1 [get_bd_ports Tstop1] [get_bd_pins myImode_0/Tstop1]
   connect_bd_net -net myImode_0_Tstop2 [get_bd_ports Tstop2] [get_bd_pins myImode_0/Tstop2]
   connect_bd_net -net myImode_0_Tstop3 [get_bd_ports Tstop3] [get_bd_pins myImode_0/Tstop3]
@@ -1532,119 +1870,481 @@ CONFIG.NUM_MI {3} \
   connect_bd_net -net myImode_0_Tstop7 [get_bd_ports Tstop7] [get_bd_pins myImode_0/Tstop7]
   connect_bd_net -net myImode_0_Tstop8 [get_bd_ports Tstop8] [get_bd_pins myImode_0/Tstop8]
   connect_bd_net -net myImode_0_addr [get_bd_ports addr] [get_bd_pins myImode_0/addr]
+  connect_bd_net -net myImode_0_ch1_data [get_bd_pins myImode_0/ch1_data] [get_bd_pins myip_fifo_ctrl_0/ch1_data_to_be_wr]
+  connect_bd_net -net myImode_0_ch2_data [get_bd_pins myImode_0/ch2_data] [get_bd_pins myip_fifo_ctrl_0/ch2_data_to_be_wr]
+  connect_bd_net -net myImode_0_ch3_data [get_bd_pins myImode_0/ch3_data] [get_bd_pins myip_fifo_ctrl_0/ch3_data_to_be_wr]
+  connect_bd_net -net myImode_0_ch4_data [get_bd_pins myImode_0/ch4_data] [get_bd_pins myip_fifo_ctrl_0/ch4_data_to_be_wr]
+  connect_bd_net -net myImode_0_ch5_data [get_bd_pins myImode_0/ch5_data] [get_bd_pins myip_fifo_ctrl_0/ch5_data_to_be_wr]
+  connect_bd_net -net myImode_0_ch6_data [get_bd_pins myImode_0/ch6_data] [get_bd_pins myip_fifo_ctrl_0/ch6_data_to_be_wr]
+  connect_bd_net -net myImode_0_ch7_data [get_bd_pins myImode_0/ch7_data] [get_bd_pins myip_fifo_ctrl_0/ch7_data_to_be_wr]
+  connect_bd_net -net myImode_0_ch8_data [get_bd_pins myImode_0/ch8_data] [get_bd_pins myip_fifo_ctrl_0/ch8_data_to_be_wr]
   connect_bd_net -net myImode_0_csn [get_bd_ports csn] [get_bd_pins myImode_0/csn]
   connect_bd_net -net myImode_0_oen [get_bd_ports oen] [get_bd_pins myImode_0/oen]
   connect_bd_net -net myImode_0_rdn [get_bd_ports rdn] [get_bd_pins myImode_0/rdn]
   connect_bd_net -net myImode_0_set_zero [get_bd_pins myImode_0/set_zero] [get_bd_pins newGpsIp_0/tstartCome]
+  connect_bd_net -net myImode_0_timeDataWrEn [get_bd_pins myImode_0/timeDataWrEn] [get_bd_pins myip_fifo_ctrl_0/data_in_flag]
   connect_bd_net -net myImode_0_wrn [get_bd_ports wrn] [get_bd_pins myImode_0/wrn]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins myImode_0/s00_axi_aclk] [get_bd_pins newGpsIp_0/gps_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0_axi_periph/ACLK] [get_bd_pins processing_system7_0_axi_periph/M00_ACLK] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0_axi_periph/M02_ACLK] [get_bd_pins processing_system7_0_axi_periph/S00_ACLK] [get_bd_pins rst_processing_system7_0_100M/slowest_sync_clk]
+  connect_bd_net -net myip_fifo_ctrl_0_ch1_fifo1_rd [get_bd_pins fifo_generator_0/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch1_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch1_fifo1_wr [get_bd_pins fifo_generator_0/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch1_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch1_fifo2_rd [get_bd_pins fifo_generator_1/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch1_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch1_fifo2_wr [get_bd_pins fifo_generator_1/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch1_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch1_fifo_wr_data [get_bd_pins fifo_generator_0/din] [get_bd_pins fifo_generator_1/din] [get_bd_pins myip_fifo_ctrl_0/ch1_fifo_wr_data]
+  connect_bd_net -net myip_fifo_ctrl_0_ch2_fifo1_rd [get_bd_pins fifo_generator_2/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch2_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch2_fifo1_wr [get_bd_pins fifo_generator_2/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch2_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch2_fifo2_rd [get_bd_pins fifo_generator_3/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch2_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch2_fifo2_wr [get_bd_pins fifo_generator_3/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch2_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch2_fifo_wr_data [get_bd_pins fifo_generator_2/din] [get_bd_pins fifo_generator_3/din] [get_bd_pins myip_fifo_ctrl_0/ch2_fifo_wr_data]
+  connect_bd_net -net myip_fifo_ctrl_0_ch3_fifo1_rd [get_bd_pins fifo_generator_4/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch3_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch3_fifo1_wr [get_bd_pins fifo_generator_4/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch3_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch3_fifo2_rd [get_bd_pins fifo_generator_5/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch3_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch3_fifo2_wr [get_bd_pins fifo_generator_5/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch3_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch3_fifo_wr_data [get_bd_pins fifo_generator_4/din] [get_bd_pins fifo_generator_5/din] [get_bd_pins myip_fifo_ctrl_0/ch3_fifo_wr_data]
+  connect_bd_net -net myip_fifo_ctrl_0_ch4_fifo1_rd [get_bd_pins fifo_generator_6/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch4_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch4_fifo1_wr [get_bd_pins fifo_generator_6/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch4_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch4_fifo2_rd [get_bd_pins fifo_generator_7/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch4_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch4_fifo2_wr [get_bd_pins fifo_generator_7/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch4_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch4_fifo_wr_data [get_bd_pins fifo_generator_6/din] [get_bd_pins fifo_generator_7/din] [get_bd_pins myip_fifo_ctrl_0/ch4_fifo_wr_data]
+  connect_bd_net -net myip_fifo_ctrl_0_ch5_fifo1_rd [get_bd_pins fifo_generator_8/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch5_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch5_fifo1_wr [get_bd_pins fifo_generator_8/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch5_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch5_fifo2_rd [get_bd_pins fifo_generator_9/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch5_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch5_fifo2_wr [get_bd_pins fifo_generator_9/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch5_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch5_fifo_wr_data [get_bd_pins fifo_generator_8/din] [get_bd_pins fifo_generator_9/din] [get_bd_pins myip_fifo_ctrl_0/ch5_fifo_wr_data]
+  connect_bd_net -net myip_fifo_ctrl_0_ch6_fifo1_rd [get_bd_pins fifo_generator_10/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch6_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch6_fifo1_wr [get_bd_pins fifo_generator_10/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch6_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch6_fifo2_rd [get_bd_pins fifo_generator_11/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch6_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch6_fifo2_wr [get_bd_pins fifo_generator_11/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch6_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch6_fifo_wr_data [get_bd_pins fifo_generator_10/din] [get_bd_pins fifo_generator_11/din] [get_bd_pins myip_fifo_ctrl_0/ch6_fifo_wr_data]
+  connect_bd_net -net myip_fifo_ctrl_0_ch7_fifo1_rd [get_bd_pins fifo_generator_12/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch7_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch7_fifo1_wr [get_bd_pins fifo_generator_12/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch7_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch7_fifo2_rd [get_bd_pins fifo_generator_13/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch7_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch7_fifo2_wr [get_bd_pins fifo_generator_13/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch7_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch7_fifo_wr_data [get_bd_pins fifo_generator_12/din] [get_bd_pins fifo_generator_13/din] [get_bd_pins myip_fifo_ctrl_0/ch7_fifo_wr_data]
+  connect_bd_net -net myip_fifo_ctrl_0_ch8_fifo1_rd [get_bd_pins fifo_generator_14/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch8_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch8_fifo1_wr [get_bd_pins fifo_generator_14/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch8_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch8_fifo2_rd [get_bd_pins fifo_generator_15/rd_en] [get_bd_pins myip_fifo_ctrl_0/ch8_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_ch8_fifo2_wr [get_bd_pins fifo_generator_15/wr_en] [get_bd_pins myip_fifo_ctrl_0/ch8_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_ch8_fifo_wr_data [get_bd_pins fifo_generator_14/din] [get_bd_pins fifo_generator_15/din] [get_bd_pins myip_fifo_ctrl_0/ch8_fifo_wr_data]
+  connect_bd_net -net myip_fifo_ctrl_0_fifo_rst [get_bd_pins fifo_generator_0/srst] [get_bd_pins fifo_generator_1/srst] [get_bd_pins fifo_generator_10/srst] [get_bd_pins fifo_generator_11/srst] [get_bd_pins fifo_generator_12/srst] [get_bd_pins fifo_generator_13/srst] [get_bd_pins fifo_generator_14/srst] [get_bd_pins fifo_generator_15/srst] [get_bd_pins fifo_generator_16/srst] [get_bd_pins fifo_generator_17/srst] [get_bd_pins fifo_generator_18/srst] [get_bd_pins fifo_generator_19/srst] [get_bd_pins fifo_generator_2/srst] [get_bd_pins fifo_generator_20/srst] [get_bd_pins fifo_generator_21/srst] [get_bd_pins fifo_generator_3/srst] [get_bd_pins fifo_generator_4/srst] [get_bd_pins fifo_generator_5/srst] [get_bd_pins fifo_generator_6/srst] [get_bd_pins fifo_generator_7/srst] [get_bd_pins fifo_generator_8/srst] [get_bd_pins fifo_generator_9/srst] [get_bd_pins myip_fifo_ctrl_0/fifo_rst]
+  connect_bd_net -net myip_fifo_ctrl_0_gps1_fifo1_rd [get_bd_pins fifo_generator_16/rd_en] [get_bd_pins myip_fifo_ctrl_0/gps1_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_gps1_fifo1_wr [get_bd_pins fifo_generator_16/wr_en] [get_bd_pins myip_fifo_ctrl_0/gps1_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_gps1_fifo2_rd [get_bd_pins fifo_generator_17/rd_en] [get_bd_pins myip_fifo_ctrl_0/gps1_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_gps1_fifo2_wr [get_bd_pins fifo_generator_17/wr_en] [get_bd_pins myip_fifo_ctrl_0/gps1_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_gps1_fifo_wr_data [get_bd_pins fifo_generator_16/din] [get_bd_pins fifo_generator_17/din] [get_bd_pins myip_fifo_ctrl_0/gps1_fifo_wr_data]
+  connect_bd_net -net myip_fifo_ctrl_0_gps2_fifo1_rd [get_bd_pins fifo_generator_18/rd_en] [get_bd_pins myip_fifo_ctrl_0/gps2_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_gps2_fifo1_wr [get_bd_pins fifo_generator_18/wr_en] [get_bd_pins myip_fifo_ctrl_0/gps2_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_gps2_fifo2_rd [get_bd_pins fifo_generator_19/rd_en] [get_bd_pins myip_fifo_ctrl_0/gps2_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_gps2_fifo2_wr [get_bd_pins fifo_generator_19/wr_en] [get_bd_pins myip_fifo_ctrl_0/gps2_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_gps2_fifo_wr_data [get_bd_pins fifo_generator_18/din] [get_bd_pins fifo_generator_19/din] [get_bd_pins myip_fifo_ctrl_0/gps2_fifo_wr_data]
+  connect_bd_net -net myip_fifo_ctrl_0_start_tri_fifo1_rd [get_bd_pins fifo_generator_20/rd_en] [get_bd_pins myip_fifo_ctrl_0/start_tri_fifo1_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_start_tri_fifo1_wr [get_bd_pins fifo_generator_20/wr_en] [get_bd_pins myip_fifo_ctrl_0/start_tri_fifo1_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_start_tri_fifo2_rd [get_bd_pins fifo_generator_21/rd_en] [get_bd_pins myip_fifo_ctrl_0/start_tri_fifo2_rd]
+  connect_bd_net -net myip_fifo_ctrl_0_start_tri_fifo2_wr [get_bd_pins fifo_generator_21/wr_en] [get_bd_pins myip_fifo_ctrl_0/start_tri_fifo2_wr]
+  connect_bd_net -net myip_fifo_ctrl_0_start_tri_fifo_wr_data [get_bd_pins fifo_generator_20/din] [get_bd_pins fifo_generator_21/din] [get_bd_pins myip_fifo_ctrl_0/start_tri_fifo_wr_data]
+  connect_bd_net -net newGpsIp_0_triggerTime_out1 [get_bd_pins myip_fifo_ctrl_0/gps1_data_to_be_wr] [get_bd_pins newGpsIp_0/triggerTime_out1]
+  connect_bd_net -net newGpsIp_0_triggerTime_out2 [get_bd_pins myip_fifo_ctrl_0/gps2_data_to_be_wr] [get_bd_pins newGpsIp_0/triggerTime_out2]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins fifo_generator_0/clk] [get_bd_pins fifo_generator_1/clk] [get_bd_pins fifo_generator_10/clk] [get_bd_pins fifo_generator_11/clk] [get_bd_pins fifo_generator_12/clk] [get_bd_pins fifo_generator_13/clk] [get_bd_pins fifo_generator_14/clk] [get_bd_pins fifo_generator_15/clk] [get_bd_pins fifo_generator_16/clk] [get_bd_pins fifo_generator_17/clk] [get_bd_pins fifo_generator_18/clk] [get_bd_pins fifo_generator_19/clk] [get_bd_pins fifo_generator_2/clk] [get_bd_pins fifo_generator_20/clk] [get_bd_pins fifo_generator_21/clk] [get_bd_pins fifo_generator_3/clk] [get_bd_pins fifo_generator_4/clk] [get_bd_pins fifo_generator_5/clk] [get_bd_pins fifo_generator_6/clk] [get_bd_pins fifo_generator_7/clk] [get_bd_pins fifo_generator_8/clk] [get_bd_pins fifo_generator_9/clk] [get_bd_pins myImode_0/s00_axi_aclk] [get_bd_pins myip_fifo_ctrl_0/fifo_axi_aclk] [get_bd_pins newGpsIp_0/gps_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0_axi_periph/ACLK] [get_bd_pins processing_system7_0_axi_periph/M00_ACLK] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0_axi_periph/M02_ACLK] [get_bd_pins processing_system7_0_axi_periph/M03_ACLK] [get_bd_pins processing_system7_0_axi_periph/M04_ACLK] [get_bd_pins processing_system7_0_axi_periph/S00_ACLK] [get_bd_pins rst_processing_system7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_processing_system7_0_100M/ext_reset_in]
   connect_bd_net -net rst_processing_system7_0_100M_interconnect_aresetn [get_bd_pins processing_system7_0_axi_periph/ARESETN] [get_bd_pins rst_processing_system7_0_100M/interconnect_aresetn]
-  connect_bd_net -net rst_processing_system7_0_100M_peripheral_aresetn [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins myImode_0/s00_axi_aresetn] [get_bd_pins newGpsIp_0/gps_axi_aresetn] [get_bd_pins processing_system7_0_axi_periph/M00_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M02_ARESETN] [get_bd_pins processing_system7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn]
+  connect_bd_net -net rst_processing_system7_0_100M_peripheral_aresetn [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins myImode_0/s00_axi_aresetn] [get_bd_pins myip_fifo_ctrl_0/fifo_axi_aresetn] [get_bd_pins newGpsIp_0/gps_axi_aresetn] [get_bd_pins processing_system7_0_axi_periph/M00_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M02_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M03_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M04_ARESETN] [get_bd_pins processing_system7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn]
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x42C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_uartlite_0/S_AXI/Reg] SEG_axi_uartlite_0_Reg
   create_bd_addr_seg -range 0x00010000 -offset 0x43C10000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs myImode_0/S00_AXI/S00_AXI_reg] SEG_myImode_0_S00_AXI_reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x43C20000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs myip_fifo_ctrl_0/FIFO_AXI/FIFO_AXI_reg] SEG_myip_fifo_ctrl_0_FIFO_AXI_reg
   create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs newGpsIp_0/GPS_AXI/GPS_AXI_reg] SEG_newGpsIp_0_GPS_AXI_reg
 
   # Perform GUI Layout
   regenerate_bd_layout -layout_string {
+   comment_0: "ch1_fifo1",
+   comment_1: "ch2_fifo1",
+   comment_10: "start_tri_fifo1",
+   comment_11: "ch1_fifo2",
+   comment_12: "ch2_fifo2",
+   comment_13: "ch3_fifo2",
+   comment_14: "ch4_fifo2",
+   comment_15: "ch5_fifo2",
+   comment_16: "ch6_fifo2",
+   comment_17: "ch7_fifo2",
+   comment_18: "ch8_fifo2",
+   comment_19: "gps1_fifo2",
+   comment_2: "ch3_fifo1",
+   comment_20: "gps2_fifo2",
+   comment_21: "start_tri_fifo2",
+   comment_3: "ch4_fifo1",
+   comment_4: "ch5_fifo1",
+   comment_5: "ch6_fifo1",
+   comment_6: "ch7_fifo1",
+   comment_7: "ch8_fifo1",
+   comment_8: "gps1_fifo1",
+   comment_9: "gps2_fifo1",
+   commentid: "comment_0|comment_1|comment_2|comment_3|comment_4|comment_5|comment_6|comment_7|comment_8|comment_9|comment_10|comment_11|comment_12|comment_13|comment_14|comment_15|comment_16|comment_17|comment_18|comment_19|comment_20|comment_21|",
+   fillcolor_comment_0: "",
+   fillcolor_comment_1: "",
+   fillcolor_comment_10: "",
+   fillcolor_comment_11: "",
+   fillcolor_comment_12: "",
+   fillcolor_comment_13: "",
+   fillcolor_comment_14: "",
+   fillcolor_comment_15: "",
+   fillcolor_comment_16: "",
+   fillcolor_comment_17: "",
+   fillcolor_comment_18: "",
+   fillcolor_comment_19: "",
+   fillcolor_comment_2: "",
+   fillcolor_comment_20: "",
+   fillcolor_comment_21: "",
+   fillcolor_comment_3: "",
+   fillcolor_comment_4: "",
+   fillcolor_comment_5: "",
+   fillcolor_comment_6: "",
+   fillcolor_comment_7: "",
+   fillcolor_comment_8: "",
+   fillcolor_comment_9: "",
+   font_comment_0: "9",
+   font_comment_1: "15",
+   font_comment_10: "14",
+   font_comment_11: "14",
+   font_comment_12: "9",
+   font_comment_13: "9",
+   font_comment_14: "14",
+   font_comment_15: "9",
+   font_comment_16: "10",
+   font_comment_17: "9",
+   font_comment_18: "9",
+   font_comment_19: "9",
+   font_comment_2: "15",
+   font_comment_20: "6",
+   font_comment_21: "9",
+   font_comment_3: "15",
+   font_comment_4: "14",
+   font_comment_5: "14",
+   font_comment_6: "14",
+   font_comment_7: "14",
+   font_comment_8: "14",
+   font_comment_9: "14",
    guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port ErrFlag -pg 1 -y -280 -defaultsOSRD
-preplace port IrFlag -pg 1 -y -340 -defaultsOSRD
-preplace port StopTrigger5 -pg 1 -y -420 -defaultsOSRD
-preplace port PPS_IN -pg 1 -y -650 -defaultsOSRD
-preplace port DDR -pg 1 -y -660 -defaultsOSRD
-preplace port StopTrigger6 -pg 1 -y -400 -defaultsOSRD
-preplace port oen -pg 1 -y -440 -defaultsOSRD
-preplace port StopTrigger7 -pg 1 -y -380 -defaultsOSRD
-preplace port UART -pg 1 -y -330 -defaultsOSRD
-preplace port StopTrigger8 -pg 1 -y -360 -defaultsOSRD
-preplace port Tstop1 -pg 1 -y -380 -defaultsOSRD
-preplace port Tstart -pg 1 -y -400 -defaultsOSRD
-preplace port StartTrigger -pg 1 -y -520 -defaultsOSRD
-preplace port Tstop2 -pg 1 -y -360 -defaultsOSRD
-preplace port StartDis -pg 1 -y -560 -defaultsOSRD
-preplace port Tstop3 -pg 1 -y -310 -defaultsOSRD
-preplace port AluTrigger -pg 1 -y -420 -defaultsOSRD
-preplace port Tstop4 -pg 1 -y -180 -defaultsOSRD
-preplace port Tstop5 -pg 1 -y -280 -defaultsOSRD
-preplace port csn -pg 1 -y -460 -defaultsOSRD
-preplace port StopDis1 -pg 1 -y -640 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y -260 -defaultsOSRD
-preplace port StopTrigger1 -pg 1 -y -500 -defaultsOSRD
-preplace port Tstop6 -pg 1 -y -240 -defaultsOSRD
-preplace port StopDis2 -pg 1 -y -620 -defaultsOSRD
-preplace port StopTrigger2 -pg 1 -y -480 -defaultsOSRD
-preplace port Tstop7 -pg 1 -y -220 -defaultsOSRD
-preplace port rdn -pg 1 -y -480 -defaultsOSRD
-preplace port StopDis3 -pg 1 -y -600 -defaultsOSRD
-preplace port EF1 -pg 1 -y -320 -defaultsOSRD
-preplace port StopTrigger3 -pg 1 -y -460 -defaultsOSRD
-preplace port Tstop8 -pg 1 -y -200 -defaultsOSRD
-preplace port StopDis4 -pg 1 -y -580 -defaultsOSRD
-preplace port EF2 -pg 1 -y -300 -defaultsOSRD
-preplace port StopTrigger4 -pg 1 -y -440 -defaultsOSRD
-preplace port wrn -pg 1 -y -500 -defaultsOSRD
-preplace portBus data -pg 1 -y -520 -defaultsOSRD
-preplace portBus addr -pg 1 -y -540 -defaultsOSRD
-preplace inst rst_processing_system7_0_100M -pg 1 -lvl 3 -y -40 -defaultsOSRD
-preplace inst newGpsIp_0 -pg 1 -lvl 4 -y -380 -defaultsOSRD
-preplace inst myImode_0 -pg 1 -lvl 1 -y -390 -defaultsOSRD
-preplace inst axi_uartlite_0 -pg 1 -lvl 3 -y -320 -defaultsOSRD
-preplace inst processing_system7_0_axi_periph -pg 1 -lvl 4 -y 20 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 2 -y -160 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 2 7 810 -660 NJ -660 NJ -660 NJ -660 NJ -660 NJ -660 NJ
-preplace netloc myImode_0_csn 1 1 8 NJ -490 NJ -490 NJ -490 NJ -490 NJ -490 NJ -490 NJ -490 NJ
-preplace netloc ErrFlag_1 1 0 1 N
-preplace netloc StopTrigger2_1 1 0 1 N
-preplace netloc myImode_0_Tstart 1 1 8 NJ -430 NJ -430 NJ -270 NJ -400 NJ -400 NJ -400 NJ -400 NJ
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 3 2 1300 -200 NJ
-preplace netloc axi_uartlite_0_interrupt 1 1 3 460 -450 NJ -450 1220
-preplace netloc PPS_IN_1 1 0 4 NJ -670 NJ -670 NJ -670 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 N -180 NJ
-preplace netloc StopTrigger1_1 1 0 1 N
-preplace netloc myImode_0_Tstop1 1 1 8 NJ -540 NJ -540 NJ -540 NJ -540 NJ -540 NJ -540 NJ -540 NJ
-preplace netloc myImode_0_wrn 1 1 8 NJ -460 NJ -460 NJ -500 NJ -500 NJ -500 NJ -500 NJ -500 NJ
-preplace netloc myImode_0_StartDis 1 1 8 NJ -610 NJ -610 NJ -610 NJ -610 NJ -610 NJ -610 NJ -610 NJ
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 820
-preplace netloc StopTrigger5_1 1 0 1 N
-preplace netloc StartTrigger_1 1 0 1 N
-preplace netloc myImode_0_Tstop2 1 1 8 NJ -530 NJ -530 NJ -530 NJ -530 NJ -530 NJ -530 NJ -530 1910
-preplace netloc myImode_0_oen 1 1 8 NJ -480 NJ -480 NJ -480 NJ -480 NJ -480 NJ -480 NJ -480 NJ
-preplace netloc myImode_0_rdn 1 1 8 NJ -440 NJ -470 NJ -470 NJ -470 NJ -470 NJ -470 NJ -470 1960
-preplace netloc myImode_0_StopDis1 1 1 8 NJ -600 NJ -600 NJ -600 NJ -600 NJ -600 NJ -600 NJ -600 NJ
-preplace netloc StopTrigger8_1 1 0 1 N
-preplace netloc StopTrigger3_1 1 0 1 N
-preplace netloc myImode_0_Tstop3 1 1 8 NJ -570 NJ -570 NJ -570 NJ -570 NJ -570 NJ -570 NJ -570 1940
-preplace netloc myImode_0_StopDis2 1 1 8 NJ -630 NJ -630 NJ -630 NJ -630 NJ -630 NJ -630 NJ -630 NJ
-preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 3 870 -220 NJ -220 1590
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 4 30 -660 NJ -410 NJ -410 1230
-preplace netloc EF2_1 1 0 1 N
-preplace netloc StopTrigger4_1 1 0 1 N
-preplace netloc myImode_0_Tstop4 1 1 8 NJ -520 NJ -520 NJ -520 NJ -520 NJ -520 NJ -520 NJ -520 1890
-preplace netloc myImode_0_StopDis3 1 1 8 NJ -590 NJ -590 NJ -590 NJ -590 NJ -590 NJ -590 NJ -590 NJ
-preplace netloc IrFlag_1 1 0 1 N
-preplace netloc myImode_0_Tstop5 1 1 8 NJ -420 NJ -420 NJ -260 NJ -280 NJ -280 NJ -280 NJ -280 N
-preplace netloc myImode_0_AluTrigger 1 1 8 NJ -390 NJ -390 NJ -280 NJ -420 NJ -420 NJ -420 NJ -420 N
-preplace netloc myImode_0_StopDis4 1 1 8 NJ -580 NJ -580 NJ -580 NJ -580 NJ -580 NJ -580 NJ -580 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 2 7 820 -210 NJ -210 NJ -260 NJ -260 NJ -260 NJ -260 NJ
-preplace netloc myImode_0_Tstop6 1 1 8 NJ -290 NJ -250 NJ -250 NJ -250 NJ -250 NJ -250 NJ -250 1880
-preplace netloc myImode_0_set_zero 1 1 3 420 -400 NJ -400 NJ
-preplace netloc axi_uartlite_0_UART 1 3 6 NJ -290 NJ -330 NJ -330 NJ -330 NJ -330 NJ
-preplace netloc EF1_1 1 0 1 N
-preplace netloc myImode_0_Tstop7 1 1 8 NJ -300 NJ -240 NJ -240 NJ -240 NJ -240 NJ -240 NJ -240 1870
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 3 1 1260
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 40 -130 360 -30 850 -200 1290
-preplace netloc myImode_0_Tstop8 1 1 8 NJ -310 NJ -230 NJ -230 NJ -230 NJ -230 NJ -230 NJ -230 1860
-preplace netloc Net 1 1 8 NJ -550 NJ -550 NJ -550 NJ -550 NJ -550 NJ -550 NJ -550 NJ
-preplace netloc myImode_0_addr 1 1 8 NJ -510 NJ -510 NJ -510 NJ -560 NJ -560 NJ -560 NJ -560 NJ
-preplace netloc processing_system7_0_axi_periph_M01_AXI 1 0 5 40 -650 NJ -650 NJ -650 NJ -650 1600
-preplace netloc StopTrigger7_1 1 0 1 N
-preplace netloc StopTrigger6_1 1 0 1 N
-levelinfo -pg 1 0 150 640 1060 1440 1690 1740 1790 1840 1990 -top -680 -bot 300
+preplace port ErrFlag -pg 1 -y 4160 -defaultsOSRD
+preplace port IrFlag -pg 1 -y 4100 -defaultsOSRD
+preplace port StopTrigger5 -pg 1 -y 4020 -defaultsOSRD
+preplace port PPS_IN -pg 1 -y 3560 -defaultsOSRD
+preplace port DDR -pg 1 -y 3610 -defaultsOSRD
+preplace port oen -pg 1 -y 3940 -defaultsOSRD
+preplace port StopTrigger6 -pg 1 -y 4040 -defaultsOSRD
+preplace port StopTrigger7 -pg 1 -y 4060 -defaultsOSRD
+preplace port UART -pg 1 -y 3420 -defaultsOSRD
+preplace port StopTrigger8 -pg 1 -y 4080 -defaultsOSRD
+preplace port Tstop1 -pg 1 -y 4000 -defaultsOSRD
+preplace port Tstart -pg 1 -y 3980 -defaultsOSRD
+preplace port Tstop2 -pg 1 -y 4020 -defaultsOSRD
+preplace port StartDis -pg 1 -y 3780 -defaultsOSRD
+preplace port StartTrigger -pg 1 -y 3920 -defaultsOSRD
+preplace port Tstop3 -pg 1 -y 4040 -defaultsOSRD
+preplace port AluTrigger -pg 1 -y 3960 -defaultsOSRD
+preplace port Tstop4 -pg 1 -y 4060 -defaultsOSRD
+preplace port Tstop5 -pg 1 -y 4080 -defaultsOSRD
+preplace port csn -pg 1 -y 3920 -defaultsOSRD
+preplace port StopDis1 -pg 1 -y 3800 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 3630 -defaultsOSRD
+preplace port Tstop6 -pg 1 -y 4100 -defaultsOSRD
+preplace port StopDis2 -pg 1 -y 3760 -defaultsOSRD
+preplace port StopTrigger1 -pg 1 -y 3940 -defaultsOSRD
+preplace port Tstop7 -pg 1 -y 4120 -defaultsOSRD
+preplace port rdn -pg 1 -y 3900 -defaultsOSRD
+preplace port StopDis3 -pg 1 -y 3740 -defaultsOSRD
+preplace port StopTrigger2 -pg 1 -y 3960 -defaultsOSRD
+preplace port Tstop8 -pg 1 -y 4140 -defaultsOSRD
+preplace port StopDis4 -pg 1 -y 3820 -defaultsOSRD
+preplace port EF1 -pg 1 -y 4120 -defaultsOSRD
+preplace port StopTrigger3 -pg 1 -y 3980 -defaultsOSRD
+preplace port EF2 -pg 1 -y 4140 -defaultsOSRD
+preplace port wrn -pg 1 -y 3880 -defaultsOSRD
+preplace port StopTrigger4 -pg 1 -y 4000 -defaultsOSRD
+preplace portBus data -pg 1 -y 3860 -defaultsOSRD
+preplace portBus addr -pg 1 -y 3840 -defaultsOSRD
+preplace inst fifo_generator_10 -pg 1 -lvl 4 -y 430 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_3 -pg 1 -lvl 4 -y 260 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_11 -pg 1 -lvl 4 -y 600 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_4 -pg 1 -lvl 4 -y 1110 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_12 -pg 1 -lvl 4 -y 770 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_5 -pg 1 -lvl 4 -y 1620 -defaultsOSRD -resize 162 146
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 3460 -defaultsOSRD
+preplace inst newGpsIp_0 -pg 1 -lvl 3 -y 3270 -defaultsOSRD
+preplace inst myip_fifo_ctrl_0 -pg 1 -lvl 3 -y 2360 -defaultsOSRD
+preplace inst fifo_generator_13 -pg 1 -lvl 4 -y 940 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_6 -pg 1 -lvl 4 -y 1790 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_14 -pg 1 -lvl 4 -y 1450 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_7 -pg 1 -lvl 4 -y 1960 -defaultsOSRD -resize 162 146
+preplace inst myImode_0 -pg 1 -lvl 3 -y 4050 -defaultsOSRD
+preplace inst fifo_generator_15 -pg 1 -lvl 4 -y 2130 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_8 -pg 1 -lvl 4 -y 3510 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_16 -pg 1 -lvl 4 -y 2300 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_9 -pg 1 -lvl 4 -y 3720 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_17 -pg 1 -lvl 4 -y 2810 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_18 -pg 1 -lvl 4 -y 2470 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_19 -pg 1 -lvl 4 -y 2980 -defaultsOSRD -resize 162 146
+preplace inst axi_uartlite_0 -pg 1 -lvl 3 -y 3430 -defaultsOSRD
+preplace inst fifo_generator_0 -pg 1 -lvl 4 -y 1280 -defaultsOSRD -resize 159 144
+preplace inst fifo_generator_20 -pg 1 -lvl 4 -y 2640 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_1 -pg 1 -lvl 4 -y 3320 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_21 -pg 1 -lvl 4 -y 3150 -defaultsOSRD -resize 162 146
+preplace inst fifo_generator_2 -pg 1 -lvl 4 -y 90 -defaultsOSRD -resize 162 146
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 3390 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 3690 -defaultsOSRD
+preplace netloc EF2_1 1 0 3 NJ 4140 NJ 4140 NJ
+preplace netloc myImode_0_csn 1 3 2 NJ 3920 NJ
+preplace netloc fifo_generator_2_dout 1 2 2 750 90 NJ
+preplace netloc myip_fifo_ctrl_0_ch7_fifo2_wr 1 3 1 1820
+preplace netloc myImode_0_Tstart 1 3 2 NJ 3980 NJ
+preplace netloc myip_fifo_ctrl_0_gps2_fifo1_wr 1 3 1 1990
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 3630 NJ 3630 NJ 3630 NJ
+preplace netloc myip_fifo_ctrl_0_ch1_fifo2_rd 1 3 1 1730
+preplace netloc fifo_generator_18_dout 1 2 2 970 2980 NJ
+preplace netloc newGpsIp_0_triggerTime_out1 1 2 2 920 1670 1510
+preplace netloc myip_fifo_ctrl_0_ch8_fifo1_rd 1 3 1 1730
+preplace netloc newGpsIp_0_triggerTime_out2 1 2 2 840 3020 1490
+preplace netloc myImode_0_ch7_data 1 2 2 900 1640 1590
+preplace netloc myip_fifo_ctrl_0_ch2_fifo2_rd 1 3 1 1850
+preplace netloc fifo_generator_3_dout 1 2 2 720 260 NJ
+preplace netloc fifo_generator_14_dout 1 2 2 800 1450 NJ
+preplace netloc fifo_generator_0_empty 1 2 2 940 1280 NJ
+preplace netloc myImode_0_wrn 1 3 2 NJ 3890 NJ
+preplace netloc fifo_generator_1_dout 1 2 2 870 3090 NJ
+preplace netloc fifo_generator_6_dout 1 2 2 870 1690 NJ
+preplace netloc StopTrigger8_1 1 0 3 NJ 4080 NJ 4080 NJ
+preplace netloc myip_fifo_ctrl_0_start_tri_fifo1_rd 1 3 1 1820
+preplace netloc myip_fifo_ctrl_0_ch3_fifo2_wr 1 3 1 1920
+preplace netloc myip_fifo_ctrl_0_ch6_fifo2_wr 1 3 1 1750
+preplace netloc myip_fifo_ctrl_0_ch2_fifo_wr_data 1 3 1 1610
+preplace netloc myip_fifo_ctrl_0_ch1_fifo_wr_data 1 3 1 1770
+preplace netloc PPS_IN_1 1 0 3 NJ 3160 NJ 3160 NJ
+preplace netloc myip_fifo_ctrl_0_gps2_fifo1_rd 1 3 1 1750
+preplace netloc fifo_generator_1_empty 1 2 2 820 3100 NJ
+preplace netloc StopTrigger7_1 1 0 3 NJ 4060 NJ 4060 NJ
+preplace netloc processing_system7_0_DDR 1 1 4 NJ 3610 NJ 3610 NJ 3610 NJ
+preplace netloc myip_fifo_ctrl_0_ch4_fifo1_rd 1 3 1 1780
+preplace netloc myip_fifo_ctrl_0_start_tri_fifo1_wr 1 3 1 1970
+preplace netloc fifo_generator_13_dout 1 2 2 730 940 NJ
+preplace netloc myip_fifo_ctrl_0_ch5_fifo2_rd 1 3 1 1670
+preplace netloc fifo_generator_20_dout 1 2 2 960 3000 NJ
+preplace netloc myip_fifo_ctrl_0_ch2_fifo1_rd 1 3 1 1700
+preplace netloc fifo_generator_0_dout 1 2 2 850 1290 NJ
+preplace netloc myImode_0_StopDis1 1 3 2 NJ 3830 NJ
+preplace netloc myip_fifo_ctrl_0_gps2_fifo2_rd 1 3 1 1790
+preplace netloc myip_fifo_ctrl_0_gps1_fifo2_wr 1 3 1 1950
+preplace netloc myImode_0_set_zero 1 2 2 1000 3360 1490
+preplace netloc myip_fifo_ctrl_0_ch1_fifo2_wr 1 3 1 1830
+preplace netloc myip_fifo_ctrl_0_ch4_fifo_wr_data 1 3 1 2080
+preplace netloc myImode_0_StopDis2 1 3 2 NJ 3840 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 10 3370 370
+preplace netloc fifo_generator_9_dout 1 2 2 850 3650 NJ
+preplace netloc myip_fifo_ctrl_0_ch7_fifo1_rd 1 3 1 1890
+preplace netloc myip_fifo_ctrl_0_start_tri_fifo_wr_data 1 3 1 1960
+preplace netloc myImode_0_StopDis3 1 3 2 NJ 3870 NJ
+preplace netloc myip_fifo_ctrl_0_ch2_fifo2_wr 1 3 1 1650
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 1 700
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 1 710
+preplace netloc myImode_0_ch8_data 1 2 2 910 1650 1580
+preplace netloc myip_fifo_ctrl_0_ch5_fifo1_rd 1 3 1 1700
+preplace netloc myImode_0_StopDis4 1 3 2 NJ 3850 NJ
+preplace netloc axi_uartlite_0_UART 1 3 2 NJ 3420 NJ
+preplace netloc myip_fifo_ctrl_0_ch7_fifo2_rd 1 3 1 1980
+preplace netloc myip_fifo_ctrl_0_ch6_fifo2_rd 1 3 1 1940
+preplace netloc myImode_0_rdn 1 3 2 NJ 3900 NJ
+preplace netloc myImode_0_StartDis 1 3 2 NJ 3820 NJ
+preplace netloc myip_fifo_ctrl_0_ch6_fifo1_rd 1 3 1 1810
+preplace netloc myip_fifo_ctrl_0_start_tri_fifo2_wr 1 3 1 1860
+preplace netloc fifo_generator_7_dout 1 2 2 880 1760 NJ
+preplace netloc myip_fifo_ctrl_0_gps2_fifo_wr_data 1 3 1 2000
+preplace netloc myip_fifo_ctrl_0_gps1_fifo2_rd 1 3 1 1950
+preplace netloc myip_fifo_ctrl_0_ch3_fifo1_rd 1 3 1 1910
+preplace netloc fifo_generator_16_dout 1 2 2 980 2960 1880
+preplace netloc fifo_generator_10_dout 1 2 2 740 430 NJ
+preplace netloc myip_fifo_ctrl_0_fifo_rst 1 3 1 2020
+preplace netloc myip_fifo_ctrl_0_ch8_fifo_wr_data 1 3 1 2070
+preplace netloc myip_fifo_ctrl_0_ch6_fifo_wr_data 1 3 1 1630
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 720
+preplace netloc myip_fifo_ctrl_0_gps1_fifo1_rd 1 3 1 2050
+preplace netloc myip_fifo_ctrl_0_ch8_fifo2_wr 1 3 1 2030
+preplace netloc myip_fifo_ctrl_0_ch4_fifo1_wr 1 3 1 1900
+preplace netloc myImode_0_AluTrigger 1 3 2 NJ 3960 NJ
+preplace netloc IrFlag_1 1 0 3 NJ 4100 NJ 4100 NJ
+preplace netloc StartTrigger_1 1 0 3 NJ 3920 NJ 3920 NJ
+preplace netloc ErrFlag_1 1 0 3 NJ 4160 NJ 4160 NJ
+preplace netloc myip_fifo_ctrl_0_ch5_fifo2_wr 1 3 1 1740
+preplace netloc Net 1 3 2 NJ 3860 NJ
+preplace netloc myip_fifo_ctrl_0_gps1_fifo_wr_data 1 3 1 1790
+preplace netloc myip_fifo_ctrl_0_ch2_fifo1_wr 1 3 1 1620
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 3550 390 3190 730 3030 2010
+preplace netloc myImode_0_oen 1 3 2 NJ 3940 NJ
+preplace netloc StopTrigger2_1 1 0 3 NJ 3960 NJ 3960 NJ
+preplace netloc fifo_generator_8_dout 1 2 2 810 3510 NJ
+preplace netloc myip_fifo_ctrl_0_ch1_fifo1_wr 1 3 1 1800
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 410
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 710
+preplace netloc myImode_0_timeDataWrEn 1 2 2 950 1660 1570
+preplace netloc myImode_0_ch1_data 1 2 2 960 1710 1560
+preplace netloc fifo_generator_12_dout 1 2 2 760 770 NJ
+preplace netloc fifo_generator_0_full 1 2 2 930 1230 NJ
+preplace netloc myip_fifo_ctrl_0_gps2_fifo2_wr 1 3 1 1900
+preplace netloc EF1_1 1 0 3 NJ 4120 NJ 4120 NJ
+preplace netloc myImode_0_ch5_data 1 2 2 1000 1750 1520
+preplace netloc fifo_generator_15_dout 1 2 2 830 1700 NJ
+preplace netloc fifo_generator_4_dout 1 2 2 790 1110 NJ
+preplace netloc myImode_0_Tstop1 1 3 2 NJ 4000 NJ
+preplace netloc fifo_generator_19_dout 1 2 2 990 2990 NJ
+preplace netloc fifo_generator_1_full 1 2 2 780 3110 NJ
+preplace netloc StopTrigger6_1 1 0 3 NJ 4040 NJ 4040 NJ
+preplace netloc myip_fifo_ctrl_0_ch8_fifo1_wr 1 3 1 1880
+preplace netloc myImode_0_Tstop2 1 3 2 NJ 4020 NJ
+preplace netloc fifo_generator_17_dout 1 2 2 1000 2970 NJ
+preplace netloc myip_fifo_ctrl_0_ch8_fifo2_rd 1 3 1 1800
+preplace netloc fifo_generator_11_dout 1 2 2 710 600 NJ
+preplace netloc myip_fifo_ctrl_0_ch4_fifo2_wr 1 3 1 1670
+preplace netloc myip_fifo_ctrl_0_ch7_fifo_wr_data 1 3 1 1640
+preplace netloc myImode_0_Tstop3 1 3 2 NJ 4040 NJ
+preplace netloc StopTrigger5_1 1 0 3 NJ 4020 NJ 4020 NJ
+preplace netloc myip_fifo_ctrl_0_ch5_fifo1_wr 1 3 1 1840
+preplace netloc myip_fifo_ctrl_0_ch1_fifo1_rd 1 3 1 1930
+preplace netloc myImode_0_Tstop4 1 3 2 NJ 4060 NJ
+preplace netloc myImode_0_addr 1 3 2 NJ 3880 NJ
+preplace netloc myip_fifo_ctrl_0_ch7_fifo1_wr 1 3 1 1740
+preplace netloc myImode_0_Tstop5 1 3 2 NJ 4080 NJ
+preplace netloc myip_fifo_ctrl_0_ch6_fifo1_wr 1 3 1 1660
+preplace netloc myImode_0_Tstop6 1 3 2 NJ 4100 NJ
+preplace netloc myip_fifo_ctrl_0_ch3_fifo1_wr 1 3 1 1760
+preplace netloc myip_fifo_ctrl_0_ch3_fifo_wr_data 1 3 1 1670
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 400
+preplace netloc myImode_0_ch2_data 1 2 2 970 1720 1550
+preplace netloc myImode_0_Tstop7 1 3 2 NJ 4120 NJ
+preplace netloc StopTrigger3_1 1 0 3 NJ 3980 NJ 3980 NJ
+preplace netloc StopTrigger1_1 1 0 3 NJ 3940 NJ 3940 NJ
+preplace netloc myImode_0_Tstart_counter 1 2 2 860 3010 1500
+preplace netloc myip_fifo_ctrl_0_start_tri_fifo2_rd 1 3 1 1750
+preplace netloc myip_fifo_ctrl_0_ch3_fifo2_rd 1 3 1 2040
+preplace netloc myImode_0_Tstop8 1 3 2 NJ 4140 NJ
+preplace netloc myImode_0_ch4_data 1 2 2 990 1740 1530
+preplace netloc myip_fifo_ctrl_0_gps1_fifo1_wr 1 3 1 1660
+preplace netloc myImode_0_ch6_data 1 2 2 890 1630 1600
+preplace netloc myImode_0_ch3_data 1 2 2 980 1730 1540
+preplace netloc myip_fifo_ctrl_0_ch4_fifo2_rd 1 3 1 2060
+preplace netloc fifo_generator_5_dout 1 2 2 770 1620 NJ
+preplace netloc StopTrigger4_1 1 0 3 NJ 4000 NJ 4000 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 2 380 3170 750
+preplace netloc fifo_generator_21_dout 1 2 2 950 3150 NJ
+preplace netloc myip_fifo_ctrl_0_ch5_fifo_wr_data 1 3 1 1870
+preplace cgraphic comment_10 place abs 2223 2604 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_21 place abs 2228 3105 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_20 place abs 2238 2943 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_3 place abs 2205 1745 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_18 place abs 2241 2105 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_2 place abs 2227 1065 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_17 place abs 2236 890 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_1 place abs 2237 59 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_16 place abs 2226 559 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_0 place abs 2245 1231 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_15 place abs 2202 3680 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_7 place abs 2229 1394 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_14 place abs 2227 1909 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_6 place abs 2194 722 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_13 place abs 2248 1574 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_5 place abs 2198 394 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_12 place abs 2237 218 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_4 place abs 2238 3461 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_11 place abs 2245 3281 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_9 place abs 2212 2423 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_8 place abs 2196 2259 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_19 place abs 2228 2760 textcolor 4 linecolor 3 linewidth 2
+levelinfo -pg 1 -20 200 560 1280 2240 2430 -top 0 -bot 4490
 ",
+   linecolor_comment_0: "",
+   linecolor_comment_1: "",
+   linecolor_comment_10: "",
+   linecolor_comment_11: "",
+   linecolor_comment_12: "",
+   linecolor_comment_13: "",
+   linecolor_comment_14: "",
+   linecolor_comment_15: "",
+   linecolor_comment_16: "",
+   linecolor_comment_17: "",
+   linecolor_comment_18: "",
+   linecolor_comment_19: "",
+   linecolor_comment_2: "",
+   linecolor_comment_20: "",
+   linecolor_comment_21: "",
+   linecolor_comment_3: "",
+   linecolor_comment_4: "",
+   linecolor_comment_5: "",
+   linecolor_comment_6: "",
+   linecolor_comment_7: "",
+   linecolor_comment_8: "",
+   linecolor_comment_9: "",
+   linktoobj_comment_0: "/fifo_generator_0",
+   linktoobj_comment_1: "/fifo_generator_2",
+   linktoobj_comment_10: "/fifo_generator_20",
+   linktoobj_comment_11: "/fifo_generator_1",
+   linktoobj_comment_12: "/fifo_generator_3",
+   linktoobj_comment_13: "/fifo_generator_5",
+   linktoobj_comment_14: "/fifo_generator_7",
+   linktoobj_comment_15: "/fifo_generator_9",
+   linktoobj_comment_16: "/fifo_generator_11",
+   linktoobj_comment_17: "/fifo_generator_13",
+   linktoobj_comment_18: "/fifo_generator_15",
+   linktoobj_comment_19: "/fifo_generator_17",
+   linktoobj_comment_2: "/fifo_generator_4",
+   linktoobj_comment_20: "/fifo_generator_19",
+   linktoobj_comment_21: "/fifo_generator_21",
+   linktoobj_comment_3: "/fifo_generator_6",
+   linktoobj_comment_4: "/fifo_generator_8",
+   linktoobj_comment_5: "/fifo_generator_10",
+   linktoobj_comment_6: "/fifo_generator_12/din",
+   linktoobj_comment_7: "/fifo_generator_14",
+   linktoobj_comment_8: "/fifo_generator_16",
+   linktoobj_comment_9: "/fifo_generator_18/FIFO_READ",
+   linktotype_comment_0: "bd_cell",
+   linktotype_comment_1: "bd_cell",
+   linktotype_comment_10: "bd_cell",
+   linktotype_comment_11: "bd_cell",
+   linktotype_comment_12: "bd_cell",
+   linktotype_comment_13: "bd_cell",
+   linktotype_comment_14: "bd_cell",
+   linktotype_comment_15: "bd_cell",
+   linktotype_comment_16: "bd_cell",
+   linktotype_comment_17: "bd_cell",
+   linktotype_comment_18: "bd_cell",
+   linktotype_comment_19: "bd_cell",
+   linktotype_comment_2: "bd_cell",
+   linktotype_comment_20: "bd_cell",
+   linktotype_comment_21: "bd_cell",
+   linktotype_comment_3: "bd_cell",
+   linktotype_comment_4: "bd_cell",
+   linktotype_comment_5: "bd_cell",
+   linktotype_comment_6: "bd_pin",
+   linktotype_comment_7: "bd_cell",
+   linktotype_comment_8: "bd_cell",
+   linktotype_comment_9: "bd_intf_pin",
+   textcolor_comment_0: "",
+   textcolor_comment_1: "",
+   textcolor_comment_10: "",
+   textcolor_comment_11: "",
+   textcolor_comment_12: "",
+   textcolor_comment_13: "",
+   textcolor_comment_14: "",
+   textcolor_comment_15: "",
+   textcolor_comment_16: "",
+   textcolor_comment_17: "",
+   textcolor_comment_18: "",
+   textcolor_comment_19: "",
+   textcolor_comment_2: "",
+   textcolor_comment_20: "",
+   textcolor_comment_21: "",
+   textcolor_comment_3: "",
+   textcolor_comment_4: "",
+   textcolor_comment_5: "",
+   textcolor_comment_6: "",
+   textcolor_comment_7: "",
+   textcolor_comment_8: "",
+   textcolor_comment_9: "",
 }
 
   # Restore current instance

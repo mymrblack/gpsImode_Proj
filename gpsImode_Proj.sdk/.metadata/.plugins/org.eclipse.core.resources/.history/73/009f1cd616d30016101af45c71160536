@@ -1,0 +1,8 @@
+
+#define IMODE 1
+#define FIFO_SIZE           8192
+
+
+
+
+Lidar_Data imodeData[FIFO_SIZE] = {{0}};

@@ -1,0 +1,8 @@
+18:31:09 **** Auto Build of configuration Debug for project tdc_data_handled_proj ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+18:31:09 Build Finished (took 218ms)
+

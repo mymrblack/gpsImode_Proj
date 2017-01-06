@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1481007519">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1483683884">
   <File Type="RDS-PROPCONSTRS" Name="gpsImode_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="gpsImode_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="gpsImode_wrapper.vds"/>
@@ -34,7 +34,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/new/gps.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ImodeAndGps/ImodeAndGps.srcs/constrs_1/imports/new/gps.xdc"/>
+        <Attr Name="ImportPath" Val="E:/Lin/vivado_learing/ImodeAndGps/ImodeAndGps.srcs/constrs_1/imports/new/gps.xdc"/>
         <Attr Name="ImportTime" Val="1479799211"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -42,7 +42,7 @@
     </File>
     <File Path="$PSRCDIR/constrs_1/imports/new/imode.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ImodeAndGps/ImodeAndGps.srcs/constrs_1/imports/new/imode.xdc"/>
+        <Attr Name="ImportPath" Val="E:/Lin/vivado_learing/ImodeAndGps/ImodeAndGps.srcs/constrs_1/imports/new/imode.xdc"/>
         <Attr Name="ImportTime" Val="1478241384"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

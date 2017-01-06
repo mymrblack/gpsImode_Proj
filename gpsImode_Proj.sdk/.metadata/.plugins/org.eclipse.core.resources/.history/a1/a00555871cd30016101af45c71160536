@@ -1,0 +1,407 @@
+/*
+ * fifo.h
+ *
+ *  Created on: 2016Äê12ÔÂ29ÈÕ
+ *      Author: Lin
+ */
+/****************** Include Files ********************/
+
+#include "xil_assert.h"
+#include "xil_types.h"
+#include "xstatus.h"
+#include "xuartlite.h"
+#include "lidar_sys.h"
+
+/**************************** Type Definitions *****************************/
+/**
+ *
+ * Write a value to a MYIMODE register. A 32 bit write is performed.
+ * If the component is implemented in a smaller width, only the least
+ * significant data is written.
+ *
+ * @param   BaseAddress is the base address of the MYIMODEdevice.
+ * @param   RegOffset is the register offset from the base to write to.
+ * @param   Data is the data written to the register.
+ *
+ * @return  None.
+ *
+ * @note
+ * C-style signature:
+ * 	void MYIMODE_mWriteReg(u32 BaseAddress, unsigned RegOffset, u32 Data)
+ *
+ */
+#define FIFO_mWriteReg(BaseAddress, RegOffset, Data) \
+  	Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+
+/**
+ *
+ * Read a value from a MYIMODE register. A 32 bit read is performed.
+ * If the component is implemented in a smaller width, only the least
+ * significant data is read from the register. The most significant data
+ * will be read as 0.
+ *
+ * @param   BaseAddress is the base address of the MYIMODE device.
+ * @param   RegOffset is the register offset from the base to write to.
+ *
+ * @return  Data is the data from the register.
+ *
+ * @note
+ * C-style signature:
+ * 	u32 MYIMODE_mReadReg(u32 BaseAddress, unsigned RegOffset)
+ *
+ */
+#define FIFO_mReadReg(BaseAddress, RegOffset) \
+    Xil_In32((BaseAddress) + (RegOffset))
+
+
+#define FIFO_BASEADDR 	XPAR_MYIP_FIFO_CTRL_0_FIFO_AXI_BASEADDR
+#define FIFO_CTRL_REG_OFFSET   0
+#define FIFO_FLAG_REG_OFFSET   0
+#define FIFO1_CH1_DATA_REG     4
+#define FIFO1_CH2_DATA_REG     8
+#define FIFO1_CH3_DATA_REG     12
+#define FIFO1_CH4_DATA_REG     16
+#define FIFO1_CH5_DATA_REG     20
+#define FIFO1_CH6_DATA_REG     24
+#define FIFO1_CH7_DATA_REG     28
+#define FIFO1_CH8_DATA_REG     32
+#define FIFO1_GPS1_DATA_REG     36
+#define FIFO1_GPS2_DATA_REG     40
+#define FIFO1_START_TRI_DATA_REG     44
+
+
+#define FIFO2_CH1_DATA_REG    88
+#define FIFO2_CH2_DATA_REG     92
+#define FIFO2_CH3_DATA_REG     96
+#define FIFO2_CH4_DATA_REG     100
+#define FIFO2_CH5_DATA_REG     104
+#define FIFO2_CH6_DATA_REG     108
+#define FIFO2_CH7_DATA_REG     112
+#define FIFO2_CH8_DATA_REG     116
+#define FIFO2_GPS1_DATA_REG     120
+#define FIFO2_GPS2_DATA_REG     124
+#define FIFO2_START_TRI_DATA_REG     128
+
+#define FIFO_RST        1
+#define FIFO1_RD        2
+#define FIFO2_RD        4
+#define FIFO_CTRL_CLEAR 0
+
+
+#ifdef IMODE
+typedef	struct{
+	int ch1;
+	int ch2;
+	int ch3;
+	int ch4;
+	int ch5;
+	int ch6;
+	int ch7;
+	int ch8;
+	unsigned int gps1;
+	unsigned int gps2;
+	unsigned int triTimes;
+}Lidar_Data;
+#else
+typedef	struct{
+	int ch1;
+	int ch2;
+	unsigned int gps1;
+	unsigned int gps2;
+	unsigned int triTimes;
+} Lidar_Data;
+#endif
+
+Lidar_Data lidarData[FIFO_SIZE] = {{0}};
+
+/************************** Function Prototypes ****************************/
+/**
+ *
+ * Run a self-test on the driver/device. Note this may be a destructive test if
+ * resets of the device are performed.
+ *
+ * If the hardware system is not built correctly, this function may never
+ * return to the caller.
+ *
+ * @param   baseaddr_p is the base address of the MYIMODE instance to be worked on.
+ *
+ * @return
+ *
+ *    - XST_SUCCESS   if all self-test code passed
+ *    - XST_FAILURE   if any self-test code failed
+ *
+ * @note    Caching must be turned off for this function to work.
+ * @note    Self test may fail if data memory and device are not on the same bus.
+ *
+ */
+XStatus FIFO_Reg_SelfTest(void * baseaddr_p);
+void FIFO_getData(Lidar_Data *data, int fifoNum);
+void FIFO_rst(void);
+int FIFO_checkFifoStatus(void);
+void TdcTimeDataAllocate_test(void);
+void FIFO_test(void);
+void FIFO_printData(int range, int step);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Copyright (c) 2009-2012 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+/*
+ * helloworld.c: simple test application
+ *
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+
+#include <stdio.h>
+#include "platform.h"
+#include "myImode.h"
+#include "sleep.h"
+#include "xparameters.h"	/* SDK generated parameters */
+#include "xsdps.h"		/* SD device driver */
+#include "xil_printf.h"
+#include "ff.h"
+#include "xil_cache.h"
+#include "xplatform_info.h"
+
+#include "tdc.h"
+#include "SD_Card.h"
+#include "GPS.h"
+#include "fifo.h"
+#include "lidar_sys.h"
+
+
+/*****************************************************************************/
+/**
+*
+* Main function to call the SD example.
+*
+* @param	None
+*
+* @return	XST_SUCCESS if successful, otherwise XST_FAILURE.
+*
+* @note		None
+*
+******************************************************************************/
+
+
+int main()
+{
+	int Status;
+    
+    init_platform();
+    print("Hello World\n\r");
+    xil_printf("SD Polled File System Example Test \r\n");
+    Gps_Init();
+    Gps_FuncTest();
+    TDC_config();
+    indexFile = 0;
+    while(1){
+    	FIFO_test();
+    	if (Status != XST_SUCCESS) {
+			xil_printf("SD Polled File System Example Test failed \r\n");
+			return XST_FAILURE;
+		}
+    	xil_printf("Successfully ran SD Polled File System Example Test \r\n");
+    }
+    return 0;
+}
+
+#include "fifo.h"
+#include <stdio.h>
+#include "platform.h"
+#include "sleep.h"
+#include "xparameters.h"	/* SDK generated parameters */
+#include "xsdps.h"		/* SD device driver */
+#include "xil_printf.h"
+#include "ff.h"
+#include "xil_cache.h"
+#include "xplatform_info.h"
+
+#include "tdc.h"
+
+void FIFO_rst(void){
+    FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO_RST);
+    FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO_CTRL_CLEAR);
+}
+
+unsigned int chandata[FIFO_SIZE][11]={{0,0,0,0,0,0,0,0,0}};
+void TdcTimeDataAllocate_test(void){
+    int i;
+    int status = 0;
+
+    FIFO_rst();
+
+    xil_printf("Tstart status :%d\r\n", FIFO_mReadReg(TDC_BASEADDR, 8));
+    while(1){
+
+        for(i = 0; i < FIFO_SIZE; i++){
+            while(1){
+            	status = FIFO_mReadReg(TDC_BASEADDR, 0);//check stopDis, if it became 1, then the data can be read.
+                if(status != 0){
+                    usleep(11);
+                    break;
+                }
+                usleep(1);
+            }
+                 chandata[i][0] = FIFO_mReadReg(TDC_BASEADDR, 36);
+                 chandata[i][1] = FIFO_mReadReg(TDC_BASEADDR, 40);
+                 chandata[i][2] = FIFO_mReadReg(TDC_BASEADDR, 44);
+                 chandata[i][3] = FIFO_mReadReg(TDC_BASEADDR, 48);
+                 chandata[i][4] = FIFO_mReadReg(TDC_BASEADDR, 52);
+                 chandata[i][5] = FIFO_mReadReg(TDC_BASEADDR, 56);
+                 chandata[i][6] = FIFO_mReadReg(TDC_BASEADDR, 60);
+                 chandata[i][7] = FIFO_mReadReg(TDC_BASEADDR, 64);
+                 chandata[i][8] = FIFO_mReadReg(TDC_BASEADDR, 8);//tstart_counter
+                 while(1){
+                 	status = FIFO_mReadReg(TDC_BASEADDR, 0);//check stopDis, if it became 1, then the data can be read.
+                     if(status == 0){
+                         break;
+                     }
+                     usleep(1);
+                 }
+         }
+
+        	for(i = 0; i<FIFO_SIZE; i+= 20){
+        		xil_printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\r\n",
+        				chandata[i][0], chandata[i][1], chandata[i][2], chandata[i][3],
+						chandata[i][4], chandata[i][5], chandata[i][6], chandata[i][7],chandata[i][8]);
+        	}
+
+    }
+}
+
+int FIFO_checkFifoStatus(void){
+    int res = 0;
+    int status;
+    status = FIFO_mReadReg(FIFO_BASEADDR, FIFO_FLAG_REG_OFFSET);
+    if((status & 0x8) >> 3 == 1){
+        res = 2;
+    }
+    else if((status & 0x2) >> 1 == 1){
+        res = 1;
+    }
+    else{
+        res = 0;
+    }
+    return res;
+}
+
+void FIFO_getData(Lidar_Data *data, int fifoNum){
+    if(fifoNum == 1){
+        FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO1_RD);
+        data->ch1 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH1_DATA_REG);
+        data->ch2 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH2_DATA_REG);
+        #ifdef IMODE
+        data->ch3 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH3_DATA_REG);
+        data->ch4 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH4_DATA_REG);
+        data->ch5 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH5_DATA_REG);
+        data->ch6 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH6_DATA_REG);
+        data->ch7 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH7_DATA_REG);
+        data->ch8 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH8_DATA_REG);
+        #endif
+        data->gps1 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_GPS1_DATA_REG);
+        data->gps2 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_GPS2_DATA_REG);
+        data->triTimes = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_START_TRI_DATA_REG);
+        FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO_CTRL_CLEAR);
+    }
+    else if(fifoNum == 2){
+        FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO2_RD);
+        data->ch1 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH1_DATA_REG);
+        data->ch2 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH2_DATA_REG);
+        #ifdef IMODE
+        data->ch3 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH3_DATA_REG);
+        data->ch4 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH4_DATA_REG);
+        data->ch5 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH5_DATA_REG);
+        data->ch6 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH6_DATA_REG);
+        data->ch7 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH7_DATA_REG);
+        data->ch8 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH8_DATA_REG);
+        #endif
+        data->gps1 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_GPS1_DATA_REG);
+        data->gps2 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_GPS2_DATA_REG);
+        data->triTimes = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_START_TRI_DATA_REG);
+        FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO_CTRL_CLEAR);
+    }
+    else{
+        xil_printf("Wrong Fifo Number!\r\n");
+    }
+}
+void FIFO_test(void){
+    int i;
+    int fifoNum;
+
+    FIFO_rst();
+
+    while(1){
+        while(1){
+            fifoNum = FIFO_checkFifoStatus();
+            if(fifoNum != 0){
+                break;
+            }
+            usleep(1);
+        }
+
+        for(i = 0; i < FIFO_SIZE; i++){
+            FIFO_getData(&lidarData[i], fifoNum);
+        }
+        xil_printf("%d\r\n", fifoNum);
+        FIFO_printData(FIFO_SIZE, 300);
+    }
+}
+
+void FIFO_printData(int range, int step){
+    int i;
+    #ifdef IMODE
+    for(i = 0; i < range; i+= step){
+        xil_printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\r\n",
+                lidarData[i].triTimes, lidarData[i].gps1, lidarData[i].gps2,
+                lidarData[i].ch1, lidarData[i].ch2, lidarData[i].ch3,
+                lidarData[i].ch4, lidarData[i].ch5, lidarData[i].ch6,
+                lidarData[i].ch7, lidarData[i].ch8);
+    }
+    #else
+    for(i = 0; i < range; i+= step){
+        xil_printf("%d\t%d\t%d\t%d\t%d\r\n",
+                lidarData[i].triTimes, lidarData[i].gps1, lidarData[i].gps2,
+                lidarData[i].ch1, lidarData[i].ch2);
+    }
+    #endif
+}

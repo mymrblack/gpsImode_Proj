@@ -1,0 +1,31 @@
+16:14:02 **** Auto Build of configuration Debug for project Imode_with_double_fifo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/imode_Gps_Fifo_proj.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imode_Gps_Fifo_proj.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Imode_with_double_fifo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/imode_Gps_Fifo_proj.d" -MT"src/imode_Gps_Fifo_proj.o" -o "src/imode_Gps_Fifo_proj.o" "../src/imode_Gps_Fifo_proj.c"
+In file included from ../src/tdc.h:7:0,
+                 from ../src/imode_Gps_Fifo_proj.c:43:
+../src/SD_Card.h:17:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_Card.h:18:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+../src/SD_Card.h:19:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "data.bin";
+             ^
+../src/SD_Card.h:20:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+ static char *SD_File;
+              ^
+../src/imode_Gps_Fifo_proj.c: In function 'main':
+../src/imode_Gps_Fifo_proj.c:77:9: warning: 'Status' is used uninitialized in this function [-Wuninitialized]
+      if (Status != XST_SUCCESS) {
+         ^
+'Finished building: ../src/imode_Gps_Fifo_proj.c'
+' '
+make: *** 没有规则可以创建“Imode_with_double_fifo.elf”需要的目标“fifo.o”。 停止。
+
+16:14:03 Build Finished (took 343ms)
+

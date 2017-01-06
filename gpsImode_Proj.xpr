@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.xpr">
+<Project Version="7" Minor="14" Path="C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="7ec4f6dd8d644c90ace99681c57a4216"/>
@@ -19,10 +19,10 @@
     <Option Name="BoardPart" Val="em.avnet.com:zed:part0:1.3"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/newGpsIp_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/ip_repo"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="XPMLibraries" Val="XPM_CDC"/>
+    <Option Name="XPMLibraries" Val="XPM_MEMORY"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
     <Option Name="IPUserFilesDir" Val="$PPRDIR/gpsImode_Proj.ip_user_files"/>
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/gpsImode_Proj.ip_user_files/ipstatic"/>
@@ -35,13 +35,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="20"/>
-    <Option Name="WTModelSimExportSim" Val="20"/>
-    <Option Name="WTQuestaExportSim" Val="20"/>
-    <Option Name="WTIesExportSim" Val="20"/>
-    <Option Name="WTVcsExportSim" Val="20"/>
-    <Option Name="WTRivieraExportSim" Val="20"/>
-    <Option Name="WTActivehdlExportSim" Val="20"/>
+    <Option Name="WTXSimExportSim" Val="35"/>
+    <Option Name="WTModelSimExportSim" Val="35"/>
+    <Option Name="WTQuestaExportSim" Val="35"/>
+    <Option Name="WTIesExportSim" Val="35"/>
+    <Option Name="WTVcsExportSim" Val="35"/>
+    <Option Name="WTRivieraExportSim" Val="35"/>
+    <Option Name="WTActivehdlExportSim" Val="35"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
@@ -52,19 +52,42 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_myip_fifo_ctrl_0_0/gpsImode_myip_fifo_ctrl_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_myImode_0_1/gpsImode_myImode_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hdl/gpsImode.v"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_xbar_0/gpsImode_xbar_0.xci"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_processing_system7_0_axi_periph_0/gpsImode_processing_system7_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_myImode_0_0/gpsImode_myImode_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_newGpsIp_0_0/gpsImode_newGpsIp_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hw_handoff/gpsImode.hwh"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0.xci"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_auto_pc_0/gpsImode_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hdl/gpsImode.hwdef"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hw_handoff/gpsImode_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="hw_handoff/gpsImode.hwh"/>
         <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="gpsImode_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="gpsImode.bd" FileRelPathName="ip/gpsImode_auto_pc_0/gpsImode_auto_pc_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/gpsImode/hdl/gpsImode_wrapper.v">
         <FileInfo>
@@ -83,7 +106,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/new/gps.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ImodeAndGps/ImodeAndGps.srcs/constrs_1/imports/new/gps.xdc"/>
+          <Attr Name="ImportPath" Val="E:/Lin/vivado_learing/ImodeAndGps/ImodeAndGps.srcs/constrs_1/imports/new/gps.xdc"/>
           <Attr Name="ImportTime" Val="1479799211"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -91,7 +114,7 @@
       </File>
       <File Path="$PSRCDIR/constrs_1/imports/new/imode.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ImodeAndGps/ImodeAndGps.srcs/constrs_1/imports/new/imode.xdc"/>
+          <Attr Name="ImportPath" Val="E:/Lin/vivado_learing/ImodeAndGps/ImodeAndGps.srcs/constrs_1/imports/new/imode.xdc"/>
           <Attr Name="ImportTime" Val="1478241384"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

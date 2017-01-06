@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/impl_1'
+HD_PWD='C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,0 +1,124 @@
+#include "fifo.h"
+#include <stdio.h>
+#include "platform.h"
+#include "sleep.h"
+#include "xparameters.h"	/* SDK generated parameters */
+#include "xsdps.h"		/* SD device driver */
+#include "xil_printf.h"
+#include "ff.h"
+#include "xil_cache.h"
+#include "xplatform_info.h"
+
+
+#include "tdc.h"
+#include "SD_Card.h"
+
+void FIFO_rst(void){
+    FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO_RST);
+    FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO_CTRL_CLEAR);
+}
+
+void FIFO_getData(int fifoNum){
+    if(fifoNum == 1){
+        FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO1_RD);
+        data->triTimes = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_START_TRI_DATA_REG);
+        data->ch1 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH1_DATA_REG);
+        data->ch2 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH2_DATA_REG);
+        data->ch3 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH3_DATA_REG);
+        data->ch4 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH4_DATA_REG);
+        data->ch5 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH5_DATA_REG);
+        data->ch6 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH6_DATA_REG);
+        data->ch7 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH7_DATA_REG);
+        data->ch8 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_CH8_DATA_REG);
+        data->gps1 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_GPS1_DATA_REG);
+        data->gps2 = FIFO_mReadReg(FIFO_BASEADDR, FIFO1_GPS2_DATA_REG);
+        FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO_CTRL_CLEAR);
+    }
+    else if(fifoNum == 2){
+        FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO2_RD);
+        data->triTimes = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_START_TRI_DATA_REG);
+        data->ch1 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH1_DATA_REG);
+        data->ch2 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH2_DATA_REG);
+        data->ch3 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH3_DATA_REG);
+        data->ch4 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH4_DATA_REG);
+        data->ch5 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH5_DATA_REG);
+        data->ch6 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH6_DATA_REG);
+        data->ch7 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH7_DATA_REG);
+        data->ch8 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_CH8_DATA_REG);
+        data->gps1 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_GPS1_DATA_REG);
+        data->gps2 = FIFO_mReadReg(FIFO_BASEADDR, FIFO2_GPS2_DATA_REG);
+        FIFO_mWriteReg(FIFO_BASEADDR, FIFO_CTRL_REG_OFFSET, FIFO_CTRL_CLEAR);
+    }
+    else{
+        xil_printf("Wrong Fifo Number!\r\n");
+    }
+}
+
+void FIFO_gpsDataDecode(LidarDataStruct *timeData){
+	timeData->year = ((timeData->gps1) >>19)&0xfff;
+	timeData->month = ((timeData->gps1) >> 15)& 0xf;
+	timeData->day = ((timeData->gps1) >> 10)& 0x1f;
+	timeData->hour = ((timeData->gps2)>> 22 )& 0x1f;
+	timeData->minute = ((timeData->gps2) >> 16 )& 0x3f;
+	timeData->second = ((timeData->gps2) >> 10 )& 0x3F;
+	timeData->millisec = (timeData->gps1) & 0x3ff;
+	timeData->microsec = (timeData->gps2) & 0x3ff;
+	return;
+}
+
+
+void FIFO_test(void){
+    int fifoNum;
+    int i;
+    int status = 0;
+    int waitTime = 0;
+    int sdWrTime = 0;
+
+    Ffs_Init(dirPath);
+    TCHAR dirPath[_MAX_LFN] = "0";
+    TCHAR filePath[_MAX_LFN] = "0";
+	Ffs_CreateNewFile(indexFile, dirPath, filePath);
+
+    FIFO_rst();
+    while(1){
+        while(1){
+            fifoNum = FIFO_checkFifoStatus();
+            if(fifoNum != 0){
+                sdWrTime ++; 
+                break;
+            }
+            waitTime ++;
+            usleep(1);
+        }
+        xil_printf("sdWrTime: %d\r\n fifoNum : %d\r\n waitTime: %d\r\n", fifoNum, waitTime);
+
+        for(i = 0; i < FIFO_SIZE; i++){
+            FIFO_getData(fifoNum);
+            FIFO_gpsDataDecode();
+        }
+
+       	Status = FfsSdPolledExample(pchandata, timeData);//bylk
+        	if (Status != XST_SUCCESS) {
+    			xil_printf("SD Polled File System Example Test failed \r\n");
+    			return XST_FAILURE;
+    		}
+        	xil_printf("Successfully ran SD Polled File System Example Test \r\n");
+
+    }
+}
+
+int FIFO_checkFifoStatus(void){
+    int res = 0;
+    int status;
+    status = FIFO_mReadReg(FIFO_BASEADDR, FIFO_FLAG_REG_OFFSET);
+    if((status & 0x8) >> 3 == 1){
+        res = 2;
+    }
+    else if((status & 0x2) >> 1 == 1){
+        res = 1;
+    }
+    else{
+        res = 0;
+    }
+    return res;
+}

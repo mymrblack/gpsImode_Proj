@@ -11,31 +11,75 @@
 source gpsImode_wrapper.tcl -notrace
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Netlist 29-17] Analyzing 149 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 501 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2016.2
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc] for cell 'gpsImode_i/processing_system7_0/inst'
-Finished Parsing XDC File [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc] for cell 'gpsImode_i/processing_system7_0/inst'
-Parsing XDC File [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_board.xdc] for cell 'gpsImode_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_board.xdc] for cell 'gpsImode_i/axi_uartlite_0/U0'
-Parsing XDC File [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xdc] for cell 'gpsImode_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xdc] for cell 'gpsImode_i/axi_uartlite_0/U0'
-Parsing XDC File [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_board.xdc] for cell 'gpsImode_i/rst_processing_system7_0_100M/U0'
-Finished Parsing XDC File [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_board.xdc] for cell 'gpsImode_i/rst_processing_system7_0_100M/U0'
-Parsing XDC File [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xdc] for cell 'gpsImode_i/rst_processing_system7_0_100M/U0'
-Finished Parsing XDC File [e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xdc] for cell 'gpsImode_i/rst_processing_system7_0_100M/U0'
-Parsing XDC File [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc]
-Finished Parsing XDC File [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc]
-Parsing XDC File [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc]
-Finished Parsing XDC File [E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc]
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc] for cell 'gpsImode_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc] for cell 'gpsImode_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_board.xdc] for cell 'gpsImode_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_board.xdc] for cell 'gpsImode_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xdc] for cell 'gpsImode_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xdc] for cell 'gpsImode_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_board.xdc] for cell 'gpsImode_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_board.xdc] for cell 'gpsImode_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xdc] for cell 'gpsImode_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xdc] for cell 'gpsImode_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4.xdc] for cell 'gpsImode_i/fifo_generator_0/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4.xdc] for cell 'gpsImode_i/fifo_generator_0/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5.xdc] for cell 'gpsImode_i/fifo_generator_1/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5.xdc] for cell 'gpsImode_i/fifo_generator_1/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1.xdc] for cell 'gpsImode_i/fifo_generator_2/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1.xdc] for cell 'gpsImode_i/fifo_generator_2/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2.xdc] for cell 'gpsImode_i/fifo_generator_3/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2.xdc] for cell 'gpsImode_i/fifo_generator_3/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2.xdc] for cell 'gpsImode_i/fifo_generator_4/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2.xdc] for cell 'gpsImode_i/fifo_generator_4/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1.xdc] for cell 'gpsImode_i/fifo_generator_5/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1.xdc] for cell 'gpsImode_i/fifo_generator_5/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1.xdc] for cell 'gpsImode_i/fifo_generator_6/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1.xdc] for cell 'gpsImode_i/fifo_generator_6/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1.xdc] for cell 'gpsImode_i/fifo_generator_7/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1.xdc] for cell 'gpsImode_i/fifo_generator_7/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1.xdc] for cell 'gpsImode_i/fifo_generator_8/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1.xdc] for cell 'gpsImode_i/fifo_generator_8/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1.xdc] for cell 'gpsImode_i/fifo_generator_9/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1.xdc] for cell 'gpsImode_i/fifo_generator_9/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2.xdc] for cell 'gpsImode_i/fifo_generator_10/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2.xdc] for cell 'gpsImode_i/fifo_generator_10/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2.xdc] for cell 'gpsImode_i/fifo_generator_11/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2.xdc] for cell 'gpsImode_i/fifo_generator_11/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3.xdc] for cell 'gpsImode_i/fifo_generator_12/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3.xdc] for cell 'gpsImode_i/fifo_generator_12/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0.xdc] for cell 'gpsImode_i/fifo_generator_13/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0.xdc] for cell 'gpsImode_i/fifo_generator_13/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1.xdc] for cell 'gpsImode_i/fifo_generator_14/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1.xdc] for cell 'gpsImode_i/fifo_generator_14/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1.xdc] for cell 'gpsImode_i/fifo_generator_15/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1.xdc] for cell 'gpsImode_i/fifo_generator_15/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2.xdc] for cell 'gpsImode_i/fifo_generator_16/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2.xdc] for cell 'gpsImode_i/fifo_generator_16/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0.xdc] for cell 'gpsImode_i/fifo_generator_17/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0.xdc] for cell 'gpsImode_i/fifo_generator_17/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1.xdc] for cell 'gpsImode_i/fifo_generator_18/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1.xdc] for cell 'gpsImode_i/fifo_generator_18/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0.xdc] for cell 'gpsImode_i/fifo_generator_19/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0.xdc] for cell 'gpsImode_i/fifo_generator_19/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1.xdc] for cell 'gpsImode_i/fifo_generator_20/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1.xdc] for cell 'gpsImode_i/fifo_generator_20/U0'
+Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0.xdc] for cell 'gpsImode_i/fifo_generator_21/U0'
+Finished Parsing XDC File [c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0.xdc] for cell 'gpsImode_i/fifo_generator_21/U0'
+Parsing XDC File [C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc]
+Finished Parsing XDC File [C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc]
+Parsing XDC File [C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc]
+Finished Parsing XDC File [C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 28 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 28 instances
 
-link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 593.688 ; gain = 362.641
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 624.273 ; gain = 393.242
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -46,56 +90,71 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 597.309 ; gain = 3.621
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.187 . Memory (MB): peak = 625.633 ; gain = 1.359
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
-Implement Debug Cores | Checksum: fa9275ba
+Implement Debug Cores | Checksum: 1a2e9d08b
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 5 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1754b34e2
+Phase 1 Retarget | Checksum: 7370b035
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.360 . Memory (MB): peak = 1034.691 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1065.176 ; gain = 0.000
 
 Phase 2 Constant Propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-10] Eliminated 42 cells.
-Phase 2 Constant Propagation | Checksum: 11d7b578f
+INFO: [Opt 31-10] Eliminated 81 cells.
+Phase 2 Constant Propagation | Checksum: 12e70f0ef
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.625 . Memory (MB): peak = 1034.691 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1065.176 ; gain = 0.000
 
 Phase 3 Sweep
-INFO: [Opt 31-12] Eliminated 436 unconnected nets.
-INFO: [Opt 31-11] Eliminated 255 unconnected cells.
-Phase 3 Sweep | Checksum: 12a25474c
+INFO: [Opt 31-12] Eliminated 1697 unconnected nets.
+INFO: [Opt 31-11] Eliminated 364 unconnected cells.
+Phase 3 Sweep | Checksum: 11279ed1f
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1034.691 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1065.176 ; gain = 0.000
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.691 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 12a25474c
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1065.176 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 11279ed1f
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1034.691 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1065.176 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 12a25474c
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.691 ; gain = 0.000
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 112 BRAM(s) out of a total of 112 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 112 newly gated: 0 Total Ports: 224
+Ending PowerOpt Patch Enables Task | Checksum: 7b1c5246
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.141 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 7b1c5246
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1325.148 ; gain = 259.973
 INFO: [Common 17-83] Releasing license: Implementation
-20 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1034.691 ; gain = 441.004
+opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 1325.148 ; gain = 700.875
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1034.691 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1325.148 ; gain = 0.000
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/impl_1/gpsImode_wrapper_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.runs/impl_1/gpsImode_wrapper_drc_opted.rpt.
 INFO: [Chipscope 16-241] No debug cores found in the current design.
 Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
 or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
@@ -114,8 +173,10 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.691 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.691 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1325.148 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
 
@@ -124,12 +185,12 @@ Phase 1.1.1 ParallelPlaceIOClockAndInitTop
 Phase 1.1.1.1 Pre-Place Cells
 Phase 1.1.1.1 Pre-Place Cells | Checksum: 02921f15
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1034.691 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 1.1.1.2 Constructing HAPIClkRuleMgr
 Phase 1.1.1.2 Constructing HAPIClkRuleMgr | Checksum: 02921f15
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.500 . Memory (MB): peak = 1034.691 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1325.148 ; gain = 0.000
 WARNING: [Place 30-879] Found overlapping PBlocks. The use of overlapping PBlocks is not recommended as it may lead to legalization errors or unplaced instances.
 WARNING: [Place 30-12] An IO Bus FIXED_IO_mio with more than one IO standard is found. Components associated with this bus are: 
 	FIXED_IO_mio[53] of IOStandard LVCMOS18
@@ -193,114 +254,114 @@ Phase 1.1.1.3 IO and Clk Clean Up
 Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr
 Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr | Checksum: 02921f15
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.148 ; gain = 0.000
 Phase 1.1.1.3 IO and Clk Clean Up | Checksum: 02921f15
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 1.1.1.4 Implementation Feasibility check On IDelay
 Phase 1.1.1.4 Implementation Feasibility check On IDelay | Checksum: 02921f15
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 1.1.1.5 Commit IO Placement
 Phase 1.1.1.5 Commit IO Placement | Checksum: f61a8ab4
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.148 ; gain = 0.000
 Phase 1.1.1 ParallelPlaceIOClockAndInitTop | Checksum: f61a8ab4
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1054.852 ; gain = 20.160
-Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1bd03b346
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 13d6dab5a
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 1.2 Build Placer Netlist Model
 
 Phase 1.2.1 Place Init Design
 
 Phase 1.2.1.1 Make Others
-Phase 1.2.1.1 Make Others | Checksum: 113fdeecc
+Phase 1.2.1.1 Make Others | Checksum: 204dc529e
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 1.2.1.2 Init Lut Pin Assignment
-Phase 1.2.1.2 Init Lut Pin Assignment | Checksum: 113fdeecc
+Phase 1.2.1.2 Init Lut Pin Assignment | Checksum: 204dc529e
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1054.852 ; gain = 20.160
-Phase 1.2.1 Place Init Design | Checksum: 1c86906c0
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Phase 1.2.1 Place Init Design | Checksum: 1638b8afb
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1054.852 ; gain = 20.160
-Phase 1.2 Build Placer Netlist Model | Checksum: 1c86906c0
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Phase 1.2 Build Placer Netlist Model | Checksum: 1638b8afb
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 1.3 Constrain Clocks/Macros
-Phase 1.3 Constrain Clocks/Macros | Checksum: 1c86906c0
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1638b8afb
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1054.852 ; gain = 20.160
-Phase 1 Placer Initialization | Checksum: 1c86906c0
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1638b8afb
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 14f072ca2
+Phase 2 Global Placement | Checksum: 148df5219
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 14f072ca2
+Phase 3.1 Commit Multi Column Macros | Checksum: 148df5219
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 11667ed66
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1729665ae
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 11c7e96f4
+Phase 3.3 Area Swap Optimization | Checksum: 13741843f
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3.4 updateClock Trees: DP
-Phase 3.4 updateClock Trees: DP | Checksum: 11c7e96f4
+Phase 3.4 updateClock Trees: DP | Checksum: 13741843f
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: fba06a7c
+Phase 3.5 Timing Path Optimizer | Checksum: ce34d985
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: fba06a7c
+Phase 3.6 Fast Optimization | Checksum: ce34d985
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3.7 Small Shape Detail Placement
-Phase 3.7 Small Shape Detail Placement | Checksum: 13867d8e3
+Phase 3.7 Small Shape Detail Placement | Checksum: 1793c38c1
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: 15bfca942
+Phase 3.8 Re-assign LUT pins | Checksum: f64fef10
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3.9 Pipeline Register Optimization
-Phase 3.9 Pipeline Register Optimization | Checksum: 15bfca942
+Phase 3.9 Pipeline Register Optimization | Checksum: f64fef10
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3.10 Fast Optimization
-Phase 3.10 Fast Optimization | Checksum: 15bfca942
+Phase 3.10 Fast Optimization | Checksum: f64fef10
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.852 ; gain = 20.160
-Phase 3 Detail Placement | Checksum: 15bfca942
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: f64fef10
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -308,190 +369,191 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 updateClock Trees: PCOPT
-Phase 4.1.1 updateClock Trees: PCOPT | Checksum: 1022e8016
+Phase 4.1.1 updateClock Trees: PCOPT | Checksum: b736f4ea
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 4.1.2 Post Placement Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=3.690. For the most accurate timing information please run report_timing.
-Phase 4.1.2 Post Placement Optimization | Checksum: a7f06ec5
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.552. For the most accurate timing information please run report_timing.
+Phase 4.1.2 Post Placement Optimization | Checksum: 924fa886
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.852 ; gain = 20.160
-Phase 4.1 Post Commit Optimization | Checksum: a7f06ec5
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 924fa886
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 4.2 Sweep Clock Roots: Post-Placement
-Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: a7f06ec5
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 924fa886
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 4.3 Uram Pipeline Register Optimization
-Phase 4.3 Uram Pipeline Register Optimization | Checksum: a7f06ec5
+Phase 4.3 Uram Pipeline Register Optimization | Checksum: 924fa886
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 4.4 Post Placement Cleanup
-Phase 4.4 Post Placement Cleanup | Checksum: a7f06ec5
+Phase 4.4 Post Placement Cleanup | Checksum: 924fa886
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 4.5 Placer Reporting
-Phase 4.5 Placer Reporting | Checksum: a7f06ec5
+Phase 4.5 Placer Reporting | Checksum: 924fa886
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 4.6 Final Placement Cleanup
-Phase 4.6 Final Placement Cleanup | Checksum: af1fb09d
+Phase 4.6 Final Placement Cleanup | Checksum: 9e7b20d1
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.852 ; gain = 20.160
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: af1fb09d
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 9e7b20d1
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.852 ; gain = 20.160
-Ending Placer Task | Checksum: 9c5d2b6b
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Ending Placer Task | Checksum: 93517699
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.852 ; gain = 20.160
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.148 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-35 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.852 ; gain = 20.160
+place_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 1325.148 ; gain = 0.000
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.438 . Memory (MB): peak = 1054.852 ; gain = 0.000
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1054.852 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1054.852 ; gain = 0.000
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1054.852 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.890 . Memory (MB): peak = 1325.148 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1325.148 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1325.148 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1325.148 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 Running DRC as a precondition to command route_design
 INFO: [DRC 23-27] Running DRC with 2 threads
-WARNING: [DRC 23-20] Rule violation (PLIO-7) Placement Constraints Check for IO constraints - An IO Bus FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS33 (FIXED_IO_mio[15], FIXED_IO_mio[14], FIXED_IO_mio[13], FIXED_IO_mio[12], FIXED_IO_mio[11], FIXED_IO_mio[10], FIXED_IO_mio[9], FIXED_IO_mio[8], FIXED_IO_mio[7], FIXED_IO_mio[6], FIXED_IO_mio[5], FIXED_IO_mio[4], FIXED_IO_mio[3], FIXED_IO_mio[2], FIXED_IO_mio[1] (the first 15 of 16 listed)); LVCMOS18 (FIXED_IO_mio[53], FIXED_IO_mio[52], FIXED_IO_mio[51], FIXED_IO_mio[50], FIXED_IO_mio[49], FIXED_IO_mio[48], FIXED_IO_mio[47], FIXED_IO_mio[46], FIXED_IO_mio[45], FIXED_IO_mio[44], FIXED_IO_mio[43], FIXED_IO_mio[42], FIXED_IO_mio[41], FIXED_IO_mio[40], FIXED_IO_mio[39] (the first 15 of 38 listed)); 
+WARNING: [DRC 23-20] Rule violation (PLIO-7) Placement Constraints Check for IO constraints - An IO Bus FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (FIXED_IO_mio[53], FIXED_IO_mio[52], FIXED_IO_mio[51], FIXED_IO_mio[50], FIXED_IO_mio[49], FIXED_IO_mio[48], FIXED_IO_mio[47], FIXED_IO_mio[46], FIXED_IO_mio[45], FIXED_IO_mio[44], FIXED_IO_mio[43], FIXED_IO_mio[42], FIXED_IO_mio[41], FIXED_IO_mio[40], FIXED_IO_mio[39] (the first 15 of 38 listed)); LVCMOS33 (FIXED_IO_mio[15], FIXED_IO_mio[14], FIXED_IO_mio[13], FIXED_IO_mio[12], FIXED_IO_mio[11], FIXED_IO_mio[10], FIXED_IO_mio[9], FIXED_IO_mio[8], FIXED_IO_mio[7], FIXED_IO_mio[6], FIXED_IO_mio[5], FIXED_IO_mio[4], FIXED_IO_mio[3], FIXED_IO_mio[2], FIXED_IO_mio[1] (the first 15 of 16 listed)); 
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 855104ea ConstDB: 0 ShapeSum: 170c2681 RouteDB: 0
+Checksum: PlaceDB: 153b1015 ConstDB: 0 ShapeSum: 7e166684 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 83ba5b6d
+Phase 1 Build RT Design | Checksum: 13e0031d5
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 83ba5b6d
+Phase 2.1 Create Timer | Checksum: 13e0031d5
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:23 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 83ba5b6d
+Phase 2.2 Fix Topology Constraints | Checksum: 13e0031d5
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 83ba5b6d
+Phase 2.3 Pre Route Cleanup | Checksum: 13e0031d5
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1325.148 ; gain = 0.000
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 13c133d04
+Phase 2.4 Update Timing | Checksum: 19228a95f
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1194.121 ; gain = 139.270
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.808  | TNS=0.000  | WHS=-0.142 | THS=-26.502|
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 1325.148 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.783  | TNS=0.000  | WHS=-0.359 | THS=-154.804|
 
-Phase 2 Router Initialization | Checksum: 16fdb0756
+Phase 2 Router Initialization | Checksum: 13eb9016f
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 17454733a
+Phase 3 Initial Routing | Checksum: 1d4a1f472
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 287
- Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 533
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: fbafe37b
+Phase 4.1.1 Update Timing | Checksum: 13d694d8b
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 1194.121 ; gain = 139.270
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.691  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:41 . Memory (MB): peak = 1325.148 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.527  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: f85850c7
+Phase 4.1 Global Iteration 0 | Checksum: 1b8996db5
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:41 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 4.2 Global Iteration 1
  Number of Nodes with overlaps = 0
 
 Phase 4.2.1 Update Timing
-Phase 4.2.1 Update Timing | Checksum: 897f47cd
+Phase 4.2.1 Update Timing | Checksum: 120ab45bf
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 1194.121 ; gain = 139.270
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.691  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:41 . Memory (MB): peak = 1325.148 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.527  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: e4d0be12
+Phase 4.2 Global Iteration 1 | Checksum: 1c73d433e
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 1194.121 ; gain = 139.270
-Phase 4 Rip-up And Reroute | Checksum: e4d0be12
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:42 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 1c73d433e
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:42 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: b1114e08
+Phase 5.1.1 Update Timing | Checksum: 1a85e09bd
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 1194.121 ; gain = 139.270
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.709  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:42 . Memory (MB): peak = 1325.148 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.527  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: b1114e08
+Phase 5.1 Delay CleanUp | Checksum: 1a85e09bd
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:42 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: b1114e08
+Phase 5.2 Clock Skew Optimization | Checksum: 1a85e09bd
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 1194.121 ; gain = 139.270
-Phase 5 Delay and Skew Optimization | Checksum: b1114e08
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:42 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 1a85e09bd
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:42 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 44861144
+Phase 6.1.1 Update Timing | Checksum: 154ad7c22
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 1194.121 ; gain = 139.270
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.709  | TNS=0.000  | WHS=0.025  | THS=0.000  |
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 1325.148 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.527  | TNS=0.000  | WHS=0.056  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 786d024f
+Phase 6.1 Hold Fix Iter | Checksum: 10a4ee359
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 1194.121 ; gain = 139.270
-Phase 6 Post Hold Fix | Checksum: 786d024f
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 1325.148 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 10a4ee359
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.687118 %
-  Global Horizontal Routing Utilization  = 0.943543 %
+  Global Vertical Routing Utilization    = 3.12872 %
+  Global Horizontal Routing Utilization  = 3.65855 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -500,45 +562,45 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: f26b1f24
+Phase 7 Route finalize | Checksum: 103cf738f
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: f26b1f24
+Phase 8 Verifying routed nets | Checksum: 103cf738f
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 18db636c8
+Phase 9 Depositing Routes | Checksum: 3802bad9
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:43 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=2.709  | TNS=0.000  | WHS=0.025  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.527  | TNS=0.000  | WHS=0.056  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 18db636c8
+Phase 10 Post Router Timing | Checksum: 3802bad9
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:43 . Memory (MB): peak = 1325.148 ; gain = 0.000
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 1194.121 ; gain = 139.270
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:43 . Memory (MB): peak = 1325.148 ; gain = 0.000
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-49 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+56 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 1194.121 ; gain = 139.270
+route_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:44 . Memory (MB): peak = 1325.148 ; gain = 0.000
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.469 . Memory (MB): peak = 1194.121 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1325.148 ; gain = 0.000
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/impl_1/gpsImode_wrapper_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.runs/impl_1/gpsImode_wrapper_drc_routed.rpt.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 Running Vector-less Activity Propagation...
@@ -548,7 +610,35 @@ Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 Running DRC as a precondition to command write_bitstream
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado 12-3199] DRC finished with 0 Errors
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[0] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[10] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[11] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[12] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[13] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[14] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[15] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[16] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[17] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[18] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[19] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[1] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[20] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[21] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[22] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[23] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[24] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[25] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[26] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[27] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[2] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[3] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[4] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[5] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[6] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[7] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[8] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO data[9] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 28 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -560,5 +650,5 @@ Creating bitstream...
 Writing bitstream ./gpsImode_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Common 17-83] Releasing license: Implementation
-write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1541.242 ; gain = 346.297
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 06 15:01:19 2016...
+write_bitstream: Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.598 ; gain = 313.449
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 06 14:33:24 2017...

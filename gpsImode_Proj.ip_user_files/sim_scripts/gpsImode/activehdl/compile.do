@@ -37,6 +37,13 @@ vmap axi_protocol_converter_v2_1_9 activehdl/axi_protocol_converter_v2_1_9
 
 vlog -work xil_defaultlib -v2k5 -sv "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/processing_system7_bfm_v2_0/hdl" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/processing_system7_bfm_v2_0/hdl" \
 "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" \
+"D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" \
+"D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" \
+"D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" \
+"D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" \
+"D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" \
+"D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" \
 
 vcom -work xpm -93 \
 "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_VCOMP.vhd" \
@@ -71,9 +78,6 @@ vlog -work xil_defaultlib -v2k5 "+incdir+../../../ipstatic/axi_infrastructure_v1
 "../../../bd/gpsImode/ipshared/xilinx.com/newgpsip_v1_0/hdl/newGpsIp_v1_0_GPS_AXI.v" \
 "../../../bd/gpsImode/ipshared/xilinx.com/newgpsip_v1_0/hdl/newGpsIp_v1_0.v" \
 "../../../bd/gpsImode/ip/gpsImode_newGpsIp_0_0/sim/gpsImode_newGpsIp_0_0.v" \
-"../../../bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v" \
-"../../../bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0.v" \
-"../../../bd/gpsImode/ip/gpsImode_myImode_0_0/sim/gpsImode_myImode_0_0.v" \
 
 vcom -work axi_lite_ipif_v3_0_4 -93 \
 "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/ipif_pkg.vhd" \
@@ -176,6 +180,34 @@ vlog -work axi_crossbar_v2_1_10 -v2k5 "+incdir+../../../ipstatic/axi_infrastruct
 vlog -work xil_defaultlib -v2k5 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/processing_system7_bfm_v2_0/hdl" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/processing_system7_bfm_v2_0/hdl" \
 "../../../bd/gpsImode/ip/gpsImode_xbar_0/sim/gpsImode_xbar_0.v" \
 "../../../bd/gpsImode/hdl/gpsImode.v" \
+"../../../bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0_S00_AXI.v" \
+"../../../bd/gpsImode/ipshared/xilinx.com/myimode_v1_0/hdl/myImode_v1_0.v" \
+"../../../bd/gpsImode/ip/gpsImode_myImode_0_1/sim/gpsImode_myImode_0_1.v" \
+"../../../bd/gpsImode/ipshared/xilinx.com/myip_fifo_ctrl_v1_0/hdl/myip_fifo_ctrl_v1_0_FIFO_AXI.v" \
+"../../../bd/gpsImode/ipshared/xilinx.com/myip_fifo_ctrl_v1_0/hdl/myip_fifo_ctrl_v1_0.v" \
+"../../../bd/gpsImode/ip/gpsImode_myip_fifo_ctrl_0_0/sim/gpsImode_myip_fifo_ctrl_0_0.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_0_4/sim/gpsImode_fifo_generator_0_4.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_0_5/sim/gpsImode_fifo_generator_0_5.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_1_1/sim/gpsImode_fifo_generator_1_1.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_1_2/sim/gpsImode_fifo_generator_1_2.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_2_2/sim/gpsImode_fifo_generator_2_2.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_3_1/sim/gpsImode_fifo_generator_3_1.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_4_1/sim/gpsImode_fifo_generator_4_1.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_5_1/sim/gpsImode_fifo_generator_5_1.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_6_1/sim/gpsImode_fifo_generator_6_1.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_7_1/sim/gpsImode_fifo_generator_7_1.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_8_2/sim/gpsImode_fifo_generator_8_2.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_10_2/sim/gpsImode_fifo_generator_10_2.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_10_3/sim/gpsImode_fifo_generator_10_3.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_12_0/sim/gpsImode_fifo_generator_12_0.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_12_1/sim/gpsImode_fifo_generator_12_1.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_14_1/sim/gpsImode_fifo_generator_14_1.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_14_2/sim/gpsImode_fifo_generator_14_2.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_16_0/sim/gpsImode_fifo_generator_16_0.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_16_1/sim/gpsImode_fifo_generator_16_1.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_18_0/sim/gpsImode_fifo_generator_18_0.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_18_1/sim/gpsImode_fifo_generator_18_1.v" \
+"../../../bd/gpsImode/ip/gpsImode_fifo_generator_19_0/sim/gpsImode_fifo_generator_19_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_9 -v2k5 "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/processing_system7_bfm_v2_0/hdl" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/processing_system7_bfm_v2_0/hdl" \
 "../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v" \

@@ -1,4 +1,4 @@
-`define RESET      4'b0xxx
+/*`define RESET      4'b0xxx
 `define READ_STEP1 4'b1100
 `define READ_STEP2 4'b1101
 `define READ_STEP3 4'b1110
@@ -203,3 +203,4 @@ module GetSyncSignal_Async(input clk, input resetn, input signal_in, output sign
 
     assign signal_out = signal_temp2 &(~signal_temp3);
 endmodule
+*/

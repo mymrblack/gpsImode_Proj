@@ -10,38 +10,79 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.cache/wt [current_project]
-set_property parent.project_path E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
+set_property webtalk.parent_dir C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.cache/wt [current_project]
+set_property parent.project_path C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
-set_property ip_repo_paths {
-  e:/Lin/vivado_learing/ip_repo/newGpsIp_1.0
-  e:/Lin/vivado_learing/gpsImode_Proj/ip_repo
-} [current_project]
-add_files E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd
-set_property used_in_implementation false [get_files -all e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_xbar_0/gpsImode_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_auto_pc_0/gpsImode_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode_ooc.xdc]
-set_property is_locked true [get_files E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd]
+set_property ip_repo_paths c:/Users/Lin/Desktop/sd/gpsImode_Proj/ip_repo [current_project]
+add_files C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_xbar_0/gpsImode_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_auto_pc_0/gpsImode_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode_ooc.xdc]
+set_property is_locked true [get_files C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd]
 
-read_verilog -library xil_defaultlib E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode_wrapper.v
+read_verilog -library xil_defaultlib C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode_wrapper.v
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc
-set_property used_in_implementation false [get_files E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc]
+read_xdc C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc
+set_property used_in_implementation false [get_files C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc]
 
-read_xdc E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc
-set_property used_in_implementation false [get_files E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc]
+read_xdc C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc
+set_property used_in_implementation false [get_files C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

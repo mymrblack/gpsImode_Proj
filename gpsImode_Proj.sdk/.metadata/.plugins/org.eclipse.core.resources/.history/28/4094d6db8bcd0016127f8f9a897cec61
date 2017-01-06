@@ -1,0 +1,35 @@
+/*
+ * fifo.h
+ *
+ *  Created on: 2016Äê12ÔÂ29ÈÕ
+ *      Author: Lin
+ */
+
+
+#define FIFO_BASEADDR XPAR_MYIP_FIFO_CTRL_0_FIFO_AXI_BASEADDR
+#define FIFO_CTRL_REG_OFFSET   0
+#define FIFO_FLAG_REG_OFFSET   0
+#define FIFO1_CH1_DATA_REG     4
+#define FIFO1_CH2_DATA_REG     8
+#define FIFO1_CH3_DATA_REG     12
+#define FIFO1_CH4_DATA_REG     16
+#define FIFO1_CH5_DATA_REG     20
+#define FIFO1_CH6_DATA_REG     24
+#define FIFO1_CH7_DATA_REG     28
+#define FIFO1_CH8_DATA_REG     32
+#define FIFO1_GPS1_DATA_REG     36
+#define FIFO1_GPS2_DATA_REG     40
+#define FIFO1_START_TRI_DATA_REG     44
+
+
+#define FIFO2_CH1_DATA_REG    88 
+#define FIFO2_CH2_DATA_REG     92
+#define FIFO2_CH3_DATA_REG     96
+#define FIFO2_CH4_DATA_REG     100
+#define FIFO2_CH5_DATA_REG     104
+#define FIFO2_CH6_DATA_REG     108
+#define FIFO2_CH7_DATA_REG     112
+#define FIFO2_CH8_DATA_REG     116
+#define FIFO2_GPS1_DATA_REG     120
+#define FIFO2_GPS2_DATA_REG     124
+#define FIFO2_START_TRI_DATA_REG     128

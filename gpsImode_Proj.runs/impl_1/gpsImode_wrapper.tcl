@@ -52,28 +52,71 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.cache/wt [current_project]
-  set_property parent.project_path E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.xpr [current_project]
   set_property ip_repo_paths {
-  e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.cache/ip
-  E:/Lin/vivado_learing/ip_repo/newGpsIp_1.0
-  E:/Lin/vivado_learing/gpsImode_Proj/ip_repo
+  c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.cache/ip
+  C:/Users/Lin/Desktop/sd/gpsImode_Proj/ip_repo
 } [current_project]
-  set_property ip_output_repo e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.cache/ip [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.runs/synth_1/gpsImode_wrapper.dcp
-  read_xdc -ref gpsImode_processing_system7_0_0 -cells inst e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc
-  set_property processing_order EARLY [get_files e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref gpsImode_axi_uartlite_0_0 -cells U0 e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_board.xdc
-  set_property processing_order EARLY [get_files e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_board.xdc]
-  read_xdc -ref gpsImode_axi_uartlite_0_0 -cells U0 e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xdc
-  set_property processing_order EARLY [get_files e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref gpsImode_rst_processing_system7_0_100M_0 -cells U0 e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_board.xdc
-  set_property processing_order EARLY [get_files e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_board.xdc]
-  read_xdc -ref gpsImode_rst_processing_system7_0_100M_0 -cells U0 e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xdc
-  set_property processing_order EARLY [get_files e:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xdc]
-  read_xdc E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc
-  read_xdc E:/Lin/vivado_learing/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc
+  set_property ip_output_repo c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.cache/ip [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  add_files -quiet C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.runs/synth_1/gpsImode_wrapper.dcp
+  read_xdc -ref gpsImode_processing_system7_0_0 -cells inst c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_processing_system7_0_0/gpsImode_processing_system7_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref gpsImode_axi_uartlite_0_0 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_board.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0_board.xdc]
+  read_xdc -ref gpsImode_axi_uartlite_0_0 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_axi_uartlite_0_0/gpsImode_axi_uartlite_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref gpsImode_rst_processing_system7_0_100M_0 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_board.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0_board.xdc]
+  read_xdc -ref gpsImode_rst_processing_system7_0_100M_0 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_rst_processing_system7_0_100M_0/gpsImode_rst_processing_system7_0_100M_0.xdc]
+  read_xdc -ref gpsImode_fifo_generator_0_4 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4/gpsImode_fifo_generator_0_4.xdc]
+  read_xdc -ref gpsImode_fifo_generator_0_5 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5/gpsImode_fifo_generator_0_5.xdc]
+  read_xdc -ref gpsImode_fifo_generator_1_1 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1/gpsImode_fifo_generator_1_1.xdc]
+  read_xdc -ref gpsImode_fifo_generator_1_2 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2/gpsImode_fifo_generator_1_2.xdc]
+  read_xdc -ref gpsImode_fifo_generator_2_2 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2/gpsImode_fifo_generator_2_2.xdc]
+  read_xdc -ref gpsImode_fifo_generator_3_1 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1/gpsImode_fifo_generator_3_1.xdc]
+  read_xdc -ref gpsImode_fifo_generator_4_1 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1/gpsImode_fifo_generator_4_1.xdc]
+  read_xdc -ref gpsImode_fifo_generator_5_1 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1/gpsImode_fifo_generator_5_1.xdc]
+  read_xdc -ref gpsImode_fifo_generator_6_1 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1/gpsImode_fifo_generator_6_1.xdc]
+  read_xdc -ref gpsImode_fifo_generator_7_1 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1/gpsImode_fifo_generator_7_1.xdc]
+  read_xdc -ref gpsImode_fifo_generator_8_2 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2/gpsImode_fifo_generator_8_2.xdc]
+  read_xdc -ref gpsImode_fifo_generator_10_2 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2/gpsImode_fifo_generator_10_2.xdc]
+  read_xdc -ref gpsImode_fifo_generator_10_3 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3/gpsImode_fifo_generator_10_3.xdc]
+  read_xdc -ref gpsImode_fifo_generator_12_0 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0/gpsImode_fifo_generator_12_0.xdc]
+  read_xdc -ref gpsImode_fifo_generator_12_1 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1/gpsImode_fifo_generator_12_1.xdc]
+  read_xdc -ref gpsImode_fifo_generator_14_1 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1/gpsImode_fifo_generator_14_1.xdc]
+  read_xdc -ref gpsImode_fifo_generator_14_2 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2/gpsImode_fifo_generator_14_2.xdc]
+  read_xdc -ref gpsImode_fifo_generator_16_0 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0/gpsImode_fifo_generator_16_0.xdc]
+  read_xdc -ref gpsImode_fifo_generator_16_1 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1/gpsImode_fifo_generator_16_1.xdc]
+  read_xdc -ref gpsImode_fifo_generator_18_0 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0/gpsImode_fifo_generator_18_0.xdc]
+  read_xdc -ref gpsImode_fifo_generator_18_1 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1/gpsImode_fifo_generator_18_1.xdc]
+  read_xdc -ref gpsImode_fifo_generator_19_0 -cells U0 c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/sources_1/bd/gpsImode/ip/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0/gpsImode_fifo_generator_19_0.xdc]
+  read_xdc C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/gps.xdc
+  read_xdc C:/Users/Lin/Desktop/sd/gpsImode_Proj/gpsImode_Proj.srcs/constrs_1/imports/new/imode.xdc
   link_design -top gpsImode_wrapper -part xc7z020clg484-1
   write_hwdef -file gpsImode_wrapper.hwdef
   close_msg_db -file init_design.pb

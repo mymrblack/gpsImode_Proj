@@ -1,0 +1,61 @@
+19:29:54 **** Build of configuration Debug for project ggjgh ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPS.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ggjgh_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPS.d" -MT"src/GPS.o" -o "src/GPS.o" "../src/GPS.c"
+../src/GPS.c: In function 'Gps_GetTimeInfo':
+../src/GPS.c:71:2: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+  ^
+../src/GPS.c:71:2: warning: incompatible implicit declaration of built-in function 'sscanf'
+../src/GPS.c:71:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+         ^
+../src/GPS.c:71:9: note: expected 'const char *' but argument is of type 'u8 *'
+../src/GPS.c:74:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer+Index-15,"%2d%2d%2d",
+         ^
+../src/GPS.c:74:9: note: expected 'const char *' but argument is of type 'u8 *'
+'Finished building: ../src/GPS.c'
+' '
+'Building file: ../src/fifo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fifo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ggjgh_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fifo.d" -MT"src/fifo.o" -o "src/fifo.o" "../src/fifo.c"
+'Finished building: ../src/fifo.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ggjgh_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/lidar_sys.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lidar_sys.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ggjgh_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lidar_sys.d" -MT"src/lidar_sys.o" -o "src/lidar_sys.o" "../src/lidar_sys.c"
+'Finished building: ../src/lidar_sys.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ggjgh_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/tdc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tdc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ggjgh_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tdc.d" -MT"src/tdc.o" -o "src/tdc.o" "../src/tdc.c"
+../src/tdc.c: In function 'TDC_DataHandle':
+../src/tdc.c:150:7: warning: variable 'chRecvFlag' set but not used [-Wunused-but-set-variable]
+   int chRecvFlag;
+       ^
+../src/tdc.c:149:7: warning: variable 'time' set but not used [-Wunused-but-set-variable]
+   int time;
+       ^
+../src/tdc.c:148:7: warning: variable 'channel' set but not used [-Wunused-but-set-variable]
+   int channel;
+       ^
+'Finished building: ../src/tdc.c'
+' '
+make: *** 没有规则可以创建“ggjgh.elf”需要的目标“fifo.o”。 停止。
+
+19:29:55 Build Finished (took 1s.94ms)
+

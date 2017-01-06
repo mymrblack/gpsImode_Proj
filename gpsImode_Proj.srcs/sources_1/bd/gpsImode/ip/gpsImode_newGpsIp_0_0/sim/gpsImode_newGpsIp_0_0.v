@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2016 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2017 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:newGpsIp:1.0
-// IP Revision: 22
+// IP Revision: 24
 
 `timescale 1ns/1ps
 
@@ -56,6 +56,8 @@
 module gpsImode_newGpsIp_0_0 (
   PPS_IN,
   tstartCome,
+  triggerTime_out1,
+  triggerTime_out2,
   gps_axi_awaddr,
   gps_axi_awprot,
   gps_axi_awvalid,
@@ -81,6 +83,8 @@ module gpsImode_newGpsIp_0_0 (
 
 input wire PPS_IN;
 input wire tstartCome;
+output wire [31 : 0] triggerTime_out1;
+output wire [31 : 0] triggerTime_out2;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 GPS_AXI AWADDR" *)
 input wire [5 : 0] gps_axi_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 GPS_AXI AWPROT" *)
@@ -130,6 +134,8 @@ input wire gps_axi_aresetn;
   ) inst (
     .PPS_IN(PPS_IN),
     .tstartCome(tstartCome),
+    .triggerTime_out1(triggerTime_out1),
+    .triggerTime_out2(triggerTime_out2),
     .gps_axi_awaddr(gps_axi_awaddr),
     .gps_axi_awprot(gps_axi_awprot),
     .gps_axi_awvalid(gps_axi_awvalid),

@@ -1,0 +1,47 @@
+16:58:32 **** Auto Build of configuration Debug for project double_fifo_project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/SD_Card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SD_Card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../double_fifo_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SD_Card.d" -MT"src/SD_Card.o" -o "src/SD_Card.o" "../src/SD_Card.c"
+'Finished building: ../src/SD_Card.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../double_fifo_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:42:0:
+../src/SD_card.h:19:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_card.h:20:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/lidar_sys.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lidar_sys.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../double_fifo_project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lidar_sys.d" -MT"src/lidar_sys.o" -o "src/lidar_sys.o" "../src/lidar_sys.c"
+In file included from ../src/lidar_sys.c:16:0:
+../src/SD_card.h:19:12: warning: 'fil' defined but not used [-Wunused-variable]
+ static FIL fil;  /* File object */
+            ^
+../src/SD_card.h:20:14: warning: 'fatfs' defined but not used [-Wunused-variable]
+ static FATFS fatfs;
+              ^
+'Finished building: ../src/lidar_sys.c'
+' '
+'Building target: double_fifo_project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../double_fifo_project_bsp/ps7_cortexa9_0/lib -o "double_fifo_project.elf"  ./src/GPS.o ./src/SD_Card.o ./src/fifo.o ./src/helloworld.o ./src/lidar_sys.o ./src/platform.o ./src/tdc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: double_fifo_project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size double_fifo_project.elf  |tee "double_fifo_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 205516	   2716	21360640	21568872	1491d68	double_fifo_project.elf
+'Finished building: double_fifo_project.elf.size'
+' '
+
+16:58:33 Build Finished (took 984ms)
+

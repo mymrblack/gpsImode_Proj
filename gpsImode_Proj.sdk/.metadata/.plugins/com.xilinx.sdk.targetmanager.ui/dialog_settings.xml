@@ -5,15 +5,20 @@
 	<item value="" key="gpsImode_hw-bmmFile"/>
 	<item value="gpsImode_wrapper.bit" key="gpsImode_hw-bitFile"/>
 	<item value="" key="gpsImode_hw1-bmmFile"/>
+	<item value="" key="double_fifo_hw-bmmFile"/>
+	<item value="Local" key="double_fifo_hw-target"/>
 	<item value="false" key="gpsImode_hw-partial_bit"/>
+	<item value="C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\double_fifo_hw\gpsImode_wrapper.bit" key="double_fifo_hw-bitFile"/>
 	<item value="Local" key="gpsImode_hw1-target"/>
 	<item value="gpsImode_wrapper.bit" key="gpsImode_hw1-bitFile"/>
 	<item value="gpsImode_wrapper.bit" key="gpsImode_hw2-bitFile"/>
 	<item value="" key="gpsImode_hw2-bmmFile"/>
-	<item value="gpsImode_hw2" key="programfpga.hwplatform"/>
+	<item value="double_fifo_hw" key="programfpga.hwplatform"/>
+	<item value="false" key="double_fifo_hw-partial_bit"/>
 	<item value="false" key="gpsImode_hw1-partial_bit"/>
 	<item value="Auto Detect" key="gpsImode_hw2-device"/>
 	<item value="Local" key="gpsImode_hw-target"/>
 	<item value="false" key="gpsImode_hw2-partial_bit"/>
 	<item value="Auto Detect" key="gpsImode_hw1-device"/>
+	<item value="Auto Detect" key="double_fifo_hw-device"/>
 </section>

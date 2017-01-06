@@ -1,0 +1,94 @@
+/*
+ * SD_Card.c
+ *
+ *  Created on: 2016Äê11ÔÂ12ÈÕ
+ *      Author: lin.zheng
+ */
+
+#include <stdio.h>
+#include "platform.h"
+#include "sleep.h"
+#include "xparameters.h"	/* SDK generated parameters */
+#include "xsdps.h"		/* SD device driver */
+#include "xil_printf.h"
+#include "ff.h"
+#include "xil_cache.h"
+#include "xplatform_info.h"
+
+
+#include "tdc.h"
+#include "SD_Card.h"
+
+
+/*****************************************************************************/
+/**
+*
+* File system example using SD driver to write to and read from an SD card
+* in polled mode. This example creates a new file on an
+* SD card (which is previously formatted with FATFS), write data to the file
+* and reads the same data back to verify.
+*
+* @param	None
+*
+* @return	XST_SUCCESS if successful, otherwise XST_FAILURE.
+*
+* @note		None
+*
+******************************************************************************/
+
+
+int FfsSdPolledExample(LidarData *timeData)
+{
+	FRESULT Res;
+	UINT NumBytesWritten;
+	u32 BuffCnt;
+	u32 FileSize = (10*1024*1024);
+	TCHAR *Path = "0:/";
+	unsigned int i=0,j=0;
+	unsigned int count_per_page = FileSize / 100;
+	unsigned int count_page = 0;
+	Res = f_mount(&fatfs, Path, 0);
+	if (Res != FR_OK) {
+		return XST_FAILURE;
+	}
+
+	sprintf(FileName, "data%d.xls", indexFile++);
+	SD_File = (char *)FileName;
+
+	Res = f_open(&fil, SD_File, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	Res = f_lseek(&fil, 0);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	for(BuffCnt = 0; BuffCnt < FileSize; BuffCnt++){
+		SourceAddress[BuffCnt] =  0;
+	}
+
+	do{
+		sprintf(SourceAddress + count_page * 100,
+				"%4d/%2d/%2d\t%2d:%2d:%2d:%3d:%3d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\t%8d\n",
+				(timeData+i)->year,(timeData+i)->month,(timeData+i)->day,
+				(timeData+i)->hour,(timeData+i)->minute,(timeData+i)->second,
+				(timeData+i)->millisec,(timeData+i)->microsec,
+				(timeData+i)->ch1,(timeData+i)->ch2,(timeData+i)->ch3,(timeData+i)->ch4,
+				(timeData+i)->ch5,(timeData+i)->ch6,(timeData+i)->ch7,(timeData+i)->ch8);
+		i++;
+		count_page++;
+	}while(i < FIFO_SIZE);
+
+    Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+	Res = f_close(&fil);
+
+	if (Res) {
+		return XST_FAILURE;
+	}
+	return XST_SUCCESS;
+
+}
+
+

@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2016 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2017 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,15 +48,17 @@
 
 
 // IP VLNV: xilinx.com:user:newGpsIp:1.0
-// IP Revision: 22
+// IP Revision: 24
 
 (* X_CORE_INFO = "newGpsIp_v1_0,Vivado 2016.2" *)
 (* CHECK_LICENSE_TYPE = "gpsImode_newGpsIp_0_0,newGpsIp_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "gpsImode_newGpsIp_0_0,newGpsIp_v1_0,{x_ipProduct=Vivado 2016.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=newGpsIp,x_ipVersion=1.0,x_ipCoreRevision=22,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_GPS_AXI_DATA_WIDTH=32,C_GPS_AXI_ADDR_WIDTH=6}" *)
+(* CORE_GENERATION_INFO = "gpsImode_newGpsIp_0_0,newGpsIp_v1_0,{x_ipProduct=Vivado 2016.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=newGpsIp,x_ipVersion=1.0,x_ipCoreRevision=24,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_GPS_AXI_DATA_WIDTH=32,C_GPS_AXI_ADDR_WIDTH=6}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module gpsImode_newGpsIp_0_0 (
   PPS_IN,
   tstartCome,
+  triggerTime_out1,
+  triggerTime_out2,
   gps_axi_awaddr,
   gps_axi_awprot,
   gps_axi_awvalid,
@@ -82,6 +84,8 @@ module gpsImode_newGpsIp_0_0 (
 
 input wire PPS_IN;
 input wire tstartCome;
+output wire [31 : 0] triggerTime_out1;
+output wire [31 : 0] triggerTime_out2;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 GPS_AXI AWADDR" *)
 input wire [5 : 0] gps_axi_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 GPS_AXI AWPROT" *)
@@ -131,6 +135,8 @@ input wire gps_axi_aresetn;
   ) inst (
     .PPS_IN(PPS_IN),
     .tstartCome(tstartCome),
+    .triggerTime_out1(triggerTime_out1),
+    .triggerTime_out2(triggerTime_out2),
     .gps_axi_awaddr(gps_axi_awaddr),
     .gps_axi_awprot(gps_axi_awprot),
     .gps_axi_awvalid(gps_axi_awvalid),

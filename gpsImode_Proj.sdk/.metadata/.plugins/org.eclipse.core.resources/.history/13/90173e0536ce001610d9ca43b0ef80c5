@@ -1,0 +1,231 @@
+/*
+ * tdc.c
+ *
+ *  Created on: 2016Äê11ÔÂ12ÈÕ
+ *      Author: lin.zheng
+ */
+#include <stdio.h>
+#include "platform.h"
+#include "sleep.h"
+#include "xparameters.h"	/* SDK generated parameters */
+#include "xsdps.h"		/* SD device driver */
+#include "xil_printf.h"
+#include "ff.h"
+#include "xil_cache.h"
+#include "xplatform_info.h"
+
+
+#include "tdc.h"
+#include "SD_Card.h"
+
+
+extern unsigned int chandata[FIFO_SIZE][8];
+
+
+//tested.
+void TDC_config(void)
+{
+	TDC_init();
+	TDC_RegConfig(TDC_REG_0, 0x007FC81);
+	TDC_RegConfig(TDC_REG_1, 0x0000000);
+	TDC_RegConfig(TDC_REG_2, 0x0000002);
+	TDC_RegConfig(TDC_REG_3, 0x0000000);
+	TDC_RegConfig(TDC_REG_4, 0x6000000);
+	TDC_RegConfig(TDC_REG_5, 0x0E004DA| (1<<23) | (1<<21));
+	TDC_RegConfig(TDC_REG_6, 0x0000000);
+	TDC_RegConfig(TDC_REG_7, 0x0281FB4);
+	TDC_RegConfig(TDC_REG_11, 0x7FF0000);
+	TDC_RegConfig(TDC_REG_12, 0x0000000);
+	TDC_RegConfig(TDC_REG_14, 0x0000000);
+	TDC_RegConfig(TDC_REG_4, 0x6400000);
+
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG7_OFFSET , 0x00);
+	 //Enable inputs
+	return;
+}
+
+
+//tested.
+void TDC_resetFifoFullFlag(void){
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG3_OFFSET , 0x0c);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG0_OFFSET , 0x00);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG2_OFFSET , 0x00);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG2_OFFSET , 0x01);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG0_OFFSET , 0x01);
+}
+
+//tested.
+void TDC_init(void){
+
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG1_OFFSET , 0x01);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG0_OFFSET , 0x01);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG2_OFFSET , 0x01);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG7_OFFSET , 0x1F);
+		//Disable inputs
+	return;
+}
+
+//tested.
+void TDC_RegConfig(int regNum, int configData){
+	 MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG3_OFFSET , regNum);//ADDR_SET
+	 MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG0_OFFSET , 0x00);//CSN_SET
+	 MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG1_OFFSET , 0x00);//RDN_SET
+	 MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG4_OFFSET , configData);//WRITE_DATA
+	 MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG1_OFFSET , 0x01);//RDN_RESET
+	 MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG0_OFFSET , 0x01);//CSN_RESET
+
+	 return;
+}
+
+
+//tested.
+int TDC_ReadRegData(int regNum){
+
+	int readData = 0;
+
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG3_OFFSET , regNum);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG0_OFFSET , 0x00);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG2_OFFSET , 0x00);
+	readData= MYIMODE_mReadReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG4_OFFSET);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG2_OFFSET , 0x01);
+	MYIMODE_mWriteReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG0_OFFSET , 0x01);
+
+	return readData;
+}
+
+unsigned int TDC_GetTriTimes(int firstFlag){
+	int tirTimes = 0;
+	static unsigned int startTriCoOrig = 0;
+	unsigned int startTriCoNow = 0;
+
+	startTriCoNow = MYIMODE_mReadReg(TDC_BASEADDR, REG_START_TRI_COUNTTER);
+   	if(firstFlag)
+		startTriCoOrig = startTriCoNow;
+	tirTimes = startTriCoNow - startTriCoOrig;
+	return tirTimes;
+}
+
+//tested.
+void TDC_CheckIfNeedMasterRest(void){
+
+	static int count = 0;
+
+	if( ++count == 100)
+    {
+		 TDC_RegConfig(TDC_REG_4, 0x6400000);
+     	 count=0;
+    }
+	return;
+}
+
+//tested.
+extern  int yearMonthDayMillisec;
+extern  int hourMinuteSecondMicrosec;
+void TDC_PrintChDatas(unsigned int  (*chandata)[I_MODE_MAX_CH_NUM]){
+    int j;
+   	for(j=0;j<MyFileSize;j=j+300)
+   	{
+   		printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\r\n",
+   			chandata[j][0],chandata[j][1],
+			chandata[j][2],chandata[j][3],
+			chandata[j][4],chandata[j][5],
+			chandata[j][6],chandata[j][7]);
+   	}
+   	return;
+}
+
+//tested.
+TDC_FlagInfo TdcFlagCheck(TDC_FlagInfo tdcFlag){
+
+//	tdcFlag.IrFlag = System_ReadReg(REG_IRFLAG);
+//	tdcFlag.ErrFlag = System_ReadReg(REG_ERRFLAG);
+//	tdcFlagInfo->EF1 = System_ReadReg(REG_EF1);
+//	tdcFlagInfo->EF2 = System_ReadReg(REG_EF2);
+
+//--------------------------  QUESTION!  ------------------------------
+	tdcFlag.IrFlag = MYIMODE_mReadReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG8_OFFSET);
+	tdcFlag.ErrFlag= MYIMODE_mReadReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG12_OFFSET);
+	tdcFlag.EF1 = MYIMODE_mReadReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG5_OFFSET);
+	tdcFlag.EF2 = MYIMODE_mReadReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG6_OFFSET);
+
+	if(tdcFlag.IrFlag)
+	{
+		printf("interrupt\n\r");
+	}
+	if(tdcFlag.ErrFlag)
+	{
+		printf("error\n\r");
+	}
+
+	return tdcFlag;
+}
+
+void TDC_FlagCheck1(TDC_FlagInfo *tdcFlag){
+	tdcFlag->IrFlag = MYIMODE_mReadReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG8_OFFSET);
+	tdcFlag->ErrFlag= MYIMODE_mReadReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG12_OFFSET);
+	tdcFlag->EF1 = MYIMODE_mReadReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG5_OFFSET);
+	tdcFlag->EF2 = MYIMODE_mReadReg(TDC_BASEADDR,  MYIMODE_S00_AXI_SLV_REG6_OFFSET);
+
+	if(tdcFlag->IrFlag)
+	{
+		printf("interrupt\n\r");
+	}
+	if(tdcFlag->ErrFlag)
+	{
+		printf("error\n\r");
+	}
+	return;
+}
+
+//tested.
+void TDC_DataHandle(unsigned int triTimes,TDC_FlagInfo tdcFlag, int firstFlag){
+
+	 int r_data;
+	 int channel;
+	 int time;
+	 int chRecvFlag;
+
+	if(tdcFlag.EF1 == 0)
+	{
+		r_data = TDC_ReadRegData(TDC_REG_8);
+		channel=((r_data & 0xC000000)>>26) + 1;
+
+		time=(r_data & 0x1FFFF)-1242;//bylk
+		chRecvFlag = MYIMODE_mReadReg(TDC_BASEADDR, REG_RECV_FLAG);
+		TDC_setChData(channel,chRecvFlag,time,triTimes,chandata);
+	}
+	if(tdcFlag.EF2 == 0)
+	{
+		r_data = TDC_ReadRegData(TDC_REG_9);
+		channel=((r_data & 0xC000000)>>26) + 5;
+		time=(r_data & 0x1FFFF)-1242;//bylk
+		chRecvFlag = MYIMODE_mReadReg(TDC_BASEADDR, REG_RECV_FLAG);
+		TDC_setChData(channel,chRecvFlag,time,triTimes,chandata);
+	}
+
+	return;
+}
+
+//tested.
+void TDC_setChData(int channel, int chRecvFlag, int time, unsigned int triTimes, unsigned int (*chandata)[I_MODE_MAX_CH_NUM]){
+	if(((chRecvFlag>>(channel-1))&1)|(time>121500))
+		chandata[triTimes][channel-1]=-1;
+	else
+		chandata[triTimes][channel-1]=time;
+	return;
+}
+
+void TdcAndGps_PrintChDatas(unsigned int  (*chandata)[I_MODE_MAX_CH_NUM], Time_Data *timeData){
+    int j;
+   	for(j=0;j<MyFileSize;j=j+300)
+   	{
+   		GPS_timeDataDecode(&timeData[j]);
+   		GPS_printTime(&timeData[j]);
+   		printf("Chanal Data: %d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\r\n",
+   			chandata[j][0],chandata[j][1],
+			chandata[j][2],chandata[j][3],
+			chandata[j][4],chandata[j][5],
+			chandata[j][6],chandata[j][7]);
+   	}
+   	return;
+}

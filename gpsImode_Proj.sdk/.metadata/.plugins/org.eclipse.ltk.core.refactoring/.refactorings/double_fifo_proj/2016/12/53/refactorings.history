@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;double_fifo_proj/src/imodeAndGps_proj.c&apos; to &apos;double_fifo_proj.c&apos;" description="Rename resource &apos;imodeAndGps_proj.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/imodeAndGps_proj.c" name="double_fifo_proj.c" stamp="1482995799477" updateReferences="true"/>
+</session>

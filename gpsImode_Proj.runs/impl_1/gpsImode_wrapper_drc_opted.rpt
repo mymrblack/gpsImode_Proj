@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Tue Dec 06 15:00:24 2016
+| Date         : Fri Jan 06 14:31:49 2017
 | Host         : DESKTOP-G26N4G8 running 64-bit major release  (build 9200)
 | Command      : report_drc -file gpsImode_wrapper_drc_opted.rpt
 | Design       : gpsImode_wrapper
@@ -23,13 +23,153 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
+             Violations found: 29
 
 2. REPORT DETAILS
 -----------------
+IOSR-1#1 Warning
+IOB set reset sharing  
+IO data[0] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#2 Warning
+IOB set reset sharing  
+IO data[10] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#3 Warning
+IOB set reset sharing  
+IO data[11] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#4 Warning
+IOB set reset sharing  
+IO data[12] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#5 Warning
+IOB set reset sharing  
+IO data[13] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#6 Warning
+IOB set reset sharing  
+IO data[14] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#7 Warning
+IOB set reset sharing  
+IO data[15] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#8 Warning
+IOB set reset sharing  
+IO data[16] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#9 Warning
+IOB set reset sharing  
+IO data[17] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#10 Warning
+IOB set reset sharing  
+IO data[18] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#11 Warning
+IOB set reset sharing  
+IO data[19] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#12 Warning
+IOB set reset sharing  
+IO data[1] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#13 Warning
+IOB set reset sharing  
+IO data[20] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#14 Warning
+IOB set reset sharing  
+IO data[21] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#15 Warning
+IOB set reset sharing  
+IO data[22] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#16 Warning
+IOB set reset sharing  
+IO data[23] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#17 Warning
+IOB set reset sharing  
+IO data[24] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#18 Warning
+IOB set reset sharing  
+IO data[25] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#19 Warning
+IOB set reset sharing  
+IO data[26] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#20 Warning
+IOB set reset sharing  
+IO data[27] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#21 Warning
+IOB set reset sharing  
+IO data[2] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#22 Warning
+IOB set reset sharing  
+IO data[3] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#23 Warning
+IOB set reset sharing  
+IO data[4] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#24 Warning
+IOB set reset sharing  
+IO data[5] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#25 Warning
+IOB set reset sharing  
+IO data[6] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#26 Warning
+IOB set reset sharing  
+IO data[7] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#27 Warning
+IOB set reset sharing  
+IO data[8] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#28 Warning
+IOB set reset sharing  
+IO data[9] connects to flops which have these gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/allocateDataToEachChannel/negGet/SR[0], gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegRead/sfRdData_out[27]_i_1_n_0, gpsImode_i/myImode_0/inst/myImode_v1_0_S00_AXI_inst/tdcRegReadAndWrite/tdcRegWrite/data_out[27]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
 PLIO-7#1 Warning
 Placement Constraints Check for IO constraints  
-An IO Bus FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS33 (FIXED_IO_mio[15], FIXED_IO_mio[14], FIXED_IO_mio[13], FIXED_IO_mio[12], FIXED_IO_mio[11], FIXED_IO_mio[10], FIXED_IO_mio[9], FIXED_IO_mio[8], FIXED_IO_mio[7], FIXED_IO_mio[6], FIXED_IO_mio[5], FIXED_IO_mio[4], FIXED_IO_mio[3], FIXED_IO_mio[2], FIXED_IO_mio[1] (the first 15 of 16 listed)); LVCMOS18 (FIXED_IO_mio[53], FIXED_IO_mio[52], FIXED_IO_mio[51], FIXED_IO_mio[50], FIXED_IO_mio[49], FIXED_IO_mio[48], FIXED_IO_mio[47], FIXED_IO_mio[46], FIXED_IO_mio[45], FIXED_IO_mio[44], FIXED_IO_mio[43], FIXED_IO_mio[42], FIXED_IO_mio[41], FIXED_IO_mio[40], FIXED_IO_mio[39] (the first 15 of 38 listed)); 
+An IO Bus FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (FIXED_IO_mio[53], FIXED_IO_mio[52], FIXED_IO_mio[51], FIXED_IO_mio[50], FIXED_IO_mio[49], FIXED_IO_mio[48], FIXED_IO_mio[47], FIXED_IO_mio[46], FIXED_IO_mio[45], FIXED_IO_mio[44], FIXED_IO_mio[43], FIXED_IO_mio[42], FIXED_IO_mio[41], FIXED_IO_mio[40], FIXED_IO_mio[39] (the first 15 of 38 listed)); LVCMOS33 (FIXED_IO_mio[15], FIXED_IO_mio[14], FIXED_IO_mio[13], FIXED_IO_mio[12], FIXED_IO_mio[11], FIXED_IO_mio[10], FIXED_IO_mio[9], FIXED_IO_mio[8], FIXED_IO_mio[7], FIXED_IO_mio[6], FIXED_IO_mio[5], FIXED_IO_mio[4], FIXED_IO_mio[3], FIXED_IO_mio[2], FIXED_IO_mio[1] (the first 15 of 16 listed)); 
 Related violations: <none>
 
 

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;lidar_with_fifo_gps/src/SD.c&apos; to &apos;sd.c&apos;" description="Rename resource &apos;SD.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/SD.c" name="sd.c" stamp="1483604628233" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;lidar_with_fifo_gps/src/SD.h&apos; to &apos;sd.h&apos;" description="Rename resource &apos;SD.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/SD.h" name="sd.h" stamp="1483604634797" updateReferences="true"/>
+</session>

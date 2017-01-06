@@ -1,19 +1,217 @@
-16:57:04 **** Incremental Build of configuration Debug for project KaiImodeAndLynnGps ****
+13:45:17 **** Auto Build of configuration Debug for project KaiImodeAndLynnGps ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
+'Building file: ../src/GPS.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../KaiImodeAndLynnGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPS.d" -MT"src/GPS.o" -o "src/GPS.o" "../src/GPS.c"
+../src/GPS.c: In function 'Gps_GetTimeInfo':
+../src/GPS.c:71:2: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+  ^
+../src/GPS.c:71:2: warning: incompatible implicit declaration of built-in function 'sscanf'
+../src/GPS.c:71:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer,"$GNRMC,%2d%2d%2d",
+         ^
+../src/GPS.c:71:9: note: expected 'const char *' but argument is of type 'u8 *'
+../src/GPS.c:74:9: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+  sscanf(GpsBuffer+Index-15,"%2d%2d%2d",
+         ^
+../src/GPS.c:74:9: note: expected 'const char *' but argument is of type 'u8 *'
+'Finished building: ../src/GPS.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../KaiImodeAndLynnGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:17: warning: initialization from incompatible pointer type
+  int *pchandata=chandata;
+                 ^
+../src/helloworld.c: In function 'FfsSdPolledExample':
+../src/helloworld.c:442:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(SourceAddress + count_page * 100,
+           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/helloworld.c:34:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:221:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/helloworld.c:455:59: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/helloworld.c:34:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/helloworld.c:456:28: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    printf("%d\r\n", strlen(SourceAddress));
+                            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/helloworld.c:34:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/helloworld.c:463:12: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  if(strlen(SourceAddress) != 0)
+            ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/helloworld.c:34:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/helloworld.c:465:58: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   Res = f_write(&fil, (const void*)SourceAddress, strlen(SourceAddress),&NumBytesWritten);
+                                                          ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/helloworld.c:34:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/helloworld.c:466:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   printf("%d\r\n", strlen(SourceAddress));
+                           ^
+In file included from d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\stdio.h:29:0,
+                 from ../src/helloworld.c:34:
+d:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:33:9: note: expected 'const char *' but argument is of type 'u8 *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/myImode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/myImode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../KaiImodeAndLynnGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/myImode.d" -MT"src/myImode.o" -o "src/myImode.o" "../src/myImode.c"
+'Finished building: ../src/myImode.c'
+' '
+'Building file: ../src/myImode_selftest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/myImode_selftest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../KaiImodeAndLynnGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/myImode_selftest.d" -MT"src/myImode_selftest.o" -o "src/myImode_selftest.o" "../src/myImode_selftest.c"
+'Finished building: ../src/myImode_selftest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../KaiImodeAndLynnGps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
 'Building target: KaiImodeAndLynnGps.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../KaiImodeAndLynnGps_bsp/ps7_cortexa9_0/lib -o "KaiImodeAndLynnGps.elf"  ./src/GPS.o ./src/helloworld.o ./src/myImode.o ./src/myImode_selftest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../KaiImodeAndLynnGps_bsp/ps7_cortexa9_0/lib -o "KaiImodeAndLynnGps.elf"  ./src/GPS.o ./src/helloworld.o ./src/myImode.o ./src/myImode_selftest.o ./src/platform.o   
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _vector_table; defaulting to 00100000
+./src/GPS.o: In function `Gps_Init':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:29: undefined reference to `XUartLite_Initialize'
+./src/GPS.o: In function `WaitUnitlPpsCome':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:41: undefined reference to `usleep'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:40: undefined reference to `Xil_In32'
+./src/GPS.o: In function `Gps_GetInfoFromUart':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:51: undefined reference to `XUartLite_Recv'
+./src/GPS.o: In function `GPS_SetTime':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:111: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:112: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:113: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:114: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:115: undefined reference to `Xil_Out32'
+./src/GPS.o:C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:116: more undefined references to `Xil_Out32' follow
+./src/GPS.o: In function `Gps_FuncTest':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:127: undefined reference to `usleep'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:128: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:129: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:130: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:131: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:132: undefined reference to `Xil_In32'
+./src/GPS.o:C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:133: more undefined references to `Xil_In32' follow
+./src/GPS.o: In function `Gps_FuncTest':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:137: undefined reference to `xil_printf'
+./src/GPS.o: In function `GPS_TriggerTimeTest':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:152: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:153: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:165: undefined reference to `xil_printf'
+./src/GPS.o: In function `Gps_GetTriggerTimeFromFpga':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:175: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:176: undefined reference to `Xil_In32'
+./src/GPS.o: In function `GPS_printTime':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/GPS.c:193: undefined reference to `xil_printf'
+./src/helloworld.o: In function `main':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:111: undefined reference to `print'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:112: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:124: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:131: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:132: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:133: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:134: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:135: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:136: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:137: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:140: undefined reference to `usleep'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:141: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:146: undefined reference to `usleep'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:147: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:151: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:152: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:156: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:157: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:158: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:159: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:160: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:161: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:165: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:197: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:198: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:199: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:200: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:201: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:202: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:205: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:237: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:238: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:239: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:240: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:241: undefined reference to `Xil_Out32'
+./src/helloworld.o:C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:242: more undefined references to `Xil_Out32' follow
+./src/helloworld.o: In function `main':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:254: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:262: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:266: undefined reference to `xil_printf'
+./src/helloworld.o: In function `TDC_config':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:274: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:275: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:276: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:279: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:282: undefined reference to `Xil_Out32'
+./src/helloworld.o:C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:283: more undefined references to `Xil_Out32' follow
 ./src/helloworld.o: In function `FfsSdPolledExample':
-E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:408: undefined reference to `f_mount'
-E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:417: undefined reference to `f_open'
-E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:422: undefined reference to `f_lseek'
-E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:455: undefined reference to `f_write'
-E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:465: undefined reference to `f_write'
-E:\Lin\vivado_learing\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:469: undefined reference to `f_close'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:408: undefined reference to `f_mount'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:417: undefined reference to `f_open'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:422: undefined reference to `f_lseek'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:455: undefined reference to `f_write'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:456: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:465: undefined reference to `f_write'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:466: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:469: undefined reference to `f_close'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/helloworld.c:470: undefined reference to `xil_printf'
+./src/myImode_selftest.o: In function `MYIMODE_Reg_SelfTest':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/myImode_selftest.c:39: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/myImode_selftest.c:40: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/myImode_selftest.c:41: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/myImode_selftest.c:46: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/myImode_selftest.c:49: undefined reference to `Xil_Out32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/myImode_selftest.c:51: undefined reference to `Xil_In32'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/myImode_selftest.c:52: undefined reference to `xil_printf'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/myImode_selftest.c:56: undefined reference to `xil_printf'
+./src/platform.o: In function `disable_caches':
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/platform.c:71: undefined reference to `Xil_DCacheDisable'
+C:\Users\Lin\Desktop\sd\gpsImode_Proj\gpsImode_Proj.sdk\KaiImodeAndLynnGps\Debug/../src/platform.c:72: undefined reference to `Xil_ICacheDisable'
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/v7-a/fpv3/hard\libc.a(lib_a-writer.o): In function `_write_r':
+writer.c:(.text+0x28): undefined reference to `_write'
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/v7-a/fpv3/hard\libc.a(lib_a-closer.o): In function `_close_r':
+closer.c:(.text+0x1c): undefined reference to `_close'
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/v7-a/fpv3/hard\libc.a(lib_a-lseekr.o): In function `_lseek_r':
+lseekr.c:(.text+0x28): undefined reference to `_lseek'
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/v7-a/fpv3/hard\libc.a(lib_a-readr.o): In function `_read_r':
+readr.c:(.text+0x28): undefined reference to `_read'
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/v7-a/fpv3/hard\libc.a(lib_a-sbrkr.o): In function `_sbrk_r':
+sbrkr.c:(.text+0x1c): undefined reference to `_sbrk'
 collect2.exe: error: ld returned 1 exit status
 make: *** [KaiImodeAndLynnGps.elf] ´íÎó 1
 
-16:57:05 Build Finished (took 406ms)
+13:45:18 Build Finished (took 1s.219ms)
 

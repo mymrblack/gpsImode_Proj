@@ -41,6 +41,8 @@ module newGpsIp_v1_0_GPS_AXI #
 		// Users to add ports here
 		input PPS_IN,
 		input tstartCome,
+		output [C_S_AXI_DATA_WIDTH-1:0]  triggerTime_out1,    	
+        output [C_S_AXI_DATA_WIDTH-1:0]  triggerTime_out2,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -138,8 +140,7 @@ module newGpsIp_v1_0_GPS_AXI #
     wire [C_S_AXI_DATA_WIDTH-1:0]  millisec_out;    	
 	wire [C_S_AXI_DATA_WIDTH-1:0]  contrl_out;
 
-    wire [C_S_AXI_DATA_WIDTH-1:0]  triggerTime_out1;    	
-	wire [C_S_AXI_DATA_WIDTH-1:0]  triggerTime_out2;
+
 	//------------------------------------------------
 	//-- Number of Slave Registers 11
 	reg [C_S_AXI_DATA_WIDTH-1:0]	YEAR_READ;

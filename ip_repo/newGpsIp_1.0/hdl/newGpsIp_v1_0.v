@@ -17,6 +17,8 @@
 		// Users to add ports here
 		input PPS_IN,
         input tstartCome,
+        output [31:0]  triggerTime_out1,    	
+        output [31:0]  triggerTime_out2,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -51,6 +53,8 @@
 	) newGpsIp_v1_0_GPS_AXI_inst (
         .PPS_IN(PPS_IN),
         .tstartCome(tstartCome),	    
+        .triggerTime_out1(triggerTime_out1),
+        .triggerTime_out2(triggerTime_out2),
 		.S_AXI_ACLK(gps_axi_aclk),
 		.S_AXI_ARESETN(gps_axi_aresetn),
 		.S_AXI_AWADDR(gps_axi_awaddr),

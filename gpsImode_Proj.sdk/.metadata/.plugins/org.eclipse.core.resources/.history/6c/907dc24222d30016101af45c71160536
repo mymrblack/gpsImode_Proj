@@ -1,0 +1,23 @@
+/*
+ * SD.h
+ *
+ *  Created on: 2017Äê1ÔÂ5ÈÕ
+ *      Author: Lin
+ */
+
+#ifndef SRC_SD_H_
+#define SRC_SD_H_
+
+#include "gps.h"
+#define MyFileSize  100000     //  10min*60*5kHz
+
+int indexFile;
+
+
+
+
+
+int FfsSdPolledExample(int *pchandata, Time_Data *timeData);
+
+
+#endif /* SRC_SD_H_ */
