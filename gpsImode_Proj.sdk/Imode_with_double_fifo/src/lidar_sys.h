@@ -1,6 +1,0 @@
-#include <stdio.h>
-
-#define IMODE 1
-#define FIFO_SIZE           8192
-
-
